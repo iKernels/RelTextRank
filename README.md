@@ -5,12 +5,6 @@
 
 
 
-This readme covers the following topics:
-
-* [Configuration parameters description](https://github.com/iKernels/RelationalTextRanking/blob/acl2017demo/README.md#parameters-and-configurations)
-* [Training a model example usage](https://github.com/iKernels/RelationalTextRanking/blob/acl2017demo/README.md#training-a-model)
-* [Installation instructions](https://github.com/iKernels/RelationalTextRanking/blob/acl2017demo/README.md#installation)
-
 #Running the application#
 
 
