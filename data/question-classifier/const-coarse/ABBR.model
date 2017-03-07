@@ -1,0 +1,481 @@
+SVM-light Version V5.01-TK-1.5
+5 # kernel type
+3 # kernel parameter -d 
+1 # kernel parameter -g 
+1 # kernel parameter -s 
+1 # kernel parameter -r 
+empty# kernel parameter -u 
+0.4 # kernel parameter -L 
+1 # kernel parameter -T 
+T # kernel parameter -C 
+2 # kernel parameter -F 
+1 # kernel parameter -S 
+0.400000 # kernel parameter -M 
+3 # kernel parameter -N 
+S # kernel parameter -V 
+S # kernel parameter -W 
+0 # kernel parameter -U 
+10 # highest feature index 
+5451 # number of training documents 
+461 # number of support vectors plus 1 
+1.1494979 # threshold b, each following line is a SV (starting with alpha*y)
+-0.08336948206618549628288405983767  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBD (do))(NP (CD (8)))(, (,))(NP (NP (NNP (cd))(NNP (nns))(NNP (vbp)))(VP (TO (to))(NP (NNP (vb))(NNP (nnp))(NNP (pos))(NNP (nn)))))))(. (.))))) |ET| 
+-0.36384175015277642195599128172034  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (be))(NP (NNS (tonsil)))(PP (IN (for))))(. (?))))) |ET| 
+-0.3764490858817851615114591368183  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (address)))(PP (IN (for))(NP (NP (DT (the))(JJ (main))(NN (government))(NN (office)))(PP (IN (in))(NP (NNP (rome))(, (,))(NNP (italy))))))))(. (?))))) |ET| 
+-0.40408827412855491401089125247381  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (who)))(SQ (VP (VBZ (do))(NP (NP (DT (the))(NN (advertizing)))(PP (IN (for))(NP (NNP (frito-lay)))))))(. (?))))) |ET| 
+-0.0014757606784271872640834644130337  |BT| (ROOT (ROOT (S (NP (DT (the))(NN (corpus))(NN (callosum)))(VP (VBZ (be))(PP (IN (in))(NP (NP (WP (what))(NN (part)))(PP (IN (of))(NP (DT (the))(NN (body)))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (full))(NN (form)))(PP (IN (of)))))(. (.))))(ROOT (FRAG (NP (NN (com)))(. (?))))) |ET| 
+0.20289254409663004530273155978648  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (sids)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (inri)))(VP (VB (stand))(PP (IN (for))(SBAR (WHADVP (WRB (when)))(S (VP (VBN (use))(PP (IN (on))(NP (NP (NNP (jesus))(POS (')))(NN (cross))))))))))(. (?))))) |ET| 
+0.20289254409664186917794381770364  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (s.o.s.)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (S (NP (NNP (cnn)))(VP (VBZ (be))(NP (NP (DT (the))(NN (abbreviation)))(PP (IN (for))(NP (WP (what))))))(. (?))))) |ET| 
+-1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (hazmat)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NN (laser)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (ribavirin)))(VP (VB (consist))(PP (IN (of)))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (PP (IN (in))(NP (DT (a))(NN (computer))))(, (,))(WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (scsi)))(VP (VB (mean))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (a))(`` (``))(JJ (usb))('' (''))(NN (port)))(PP (IN (on))(NP (DT (a))(NN (computer))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NNP (mikhail))(NNP (gorbachev))(POS ('s)))(NP (JJ (middle))(JJ (initial)))))(. (?))))) |ET| 
+-0.15143258844886312020072693940165  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (average))(NN (weight)))(PP (IN (for))(NP (DT (a))(NN (man))))))(. (?))))) |ET| 
+-0.028952522165548756627462267942974  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (narcolepsy))))(. (?))))) |ET| 
+-0.070546459877206091348966765508521  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (fine)))(PP (IN (for))(S (VP (VBG (have))(NP (NP (DT (a))(NN (dog)))(PP (IN (on))(NP (DT (a))(NN (beach))))))))))(. (?))))) |ET| 
+0.72173771346429060891125573107274  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NN (hiv)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+0.54367274981270152789392113845679  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NN (snafu)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+0.54367274981271140887884030235  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NN (ph)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.12929202714417420416737058985746  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NN (ouija)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.12929202714417331598895088973222  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NN (seccession)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.74677696419138506200852134497836  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (elysium)))(VP (VB (mean))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (abbreviated))(NN (form)))(PP (IN (of))(NP (NP (DT (the))(NNP (national))(NNP (bureau)))(PP (IN (of))(NP (NNP (investigation))))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (abbreviated))(NN (expression)))(PP (IN (for))(NP (NP (DT (the))(NNP (national))(NNP (bureau)))(PP (IN (of))(NP (NNP (investigation))))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (abbreviation)))(PP (IN (of))(NP (NP (DT (the))(NNP (national))(NNP (bureau)))(PP (IN (of))(NP (NNP (investigation))))))))(. (?))))) |ET| 
+-0.70737475902875468491970423201565  |BT| (ROOT (ROOT (S (NP (NNP (italy)))(VP (VBZ (be))(NP (NP (DT (the))(JJS (largest))(NN (producer)))(PP (IN (of))(NP (WP (what))))))(. (?))))) |ET| 
+-0.46841091802444456693166330296663  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NN (website)))(PP (IN (of))(NP (NP (DT (the))(NNP (international))(NNP (court)))(PP (IN (of))(NP (NNP (justice))))))))(. (?))))) |ET| 
+-0.39194425944057864619196607236518  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (telephone))(NN (number)))(PP (IN (for))(NP (NP (DT (the))(NNP (university)))(PP (IN (of))(NP (NNP (kentucky))))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (necrosis)))(VP (VB (mean))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (lol)))(VP (VB (mean))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (jessica)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.74714214368155484891076412168331  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (tiffany)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.74714214368155040801866562105715  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (aaron)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.74677696419138506200852134497836  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (melissa)))(VP (VB (mean))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (acronym)))(PP (IN (for))(NP (NP (DT (the))(NN (rating))(NN (system)))(PP (IN (for))(NP (NN (air))(NN (conditioner))(NN (efficiency))))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (full))(NN (name)))(PP (IN (of))(NP (DT (the))(NNP (plo))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (correct))(NN (way)))(S (VP (TO (to))(VP (VB (abbreviate))(NP (NN (cc))))))))(. (.))))(ROOT (FRAG (PP (IN (at))(NP (NP (DT (the))(NN (bottom)))(PP (IN (of))(NP (DT (a))(NN (business))(NN (letter))))))(. (?))))) |ET| 
+-0.26795853325956969781529437568679  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (name)))(PP (IN (of))(NP (NP (DT (the))(NN (vaccine)))(PP (IN (for))(NP (NN (chicken))(NN (pox))))))))(. (?))))) |ET| 
+-0.28790927756798362358026110996434  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (country)))(PP (IN (of))(NP (NP (NN (origin)))(PP (IN (for))(NP (DT (the))(NN (name))(NNP (thomas))))))))(. (?))))) |ET| 
+-0.081639580467822200904315366187802  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (seafaring))(NN (name)))(PP (IN (for))(NP (NP (DT (the))(JJ (southern))(NN (tip)))(PP (IN (of))(NP (NNP (south))(NNP (america))))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (btu)))(VP (VB (mean))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (`` (``))(NNP (b.y.o.b.))('' ('')))(VP (VB (mean))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (word))(NN (laser)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.82627420540090390499443628868903  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (`` (``))(NNP (janelle))('' ('')))(VP (VB (mean))))(. (?))))) |ET| 
+-0.51410927695445129970153175236192  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (word))(NN (terrorism)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.091686147639613913007394785381621  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (`` (``))(NN (antidisestablishmentarianism))('' ('')))(VP (VB (mean))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (abbreviation)))(PP (IN (of))(NP (DT (the))(NNP (international))(NNP (olympic))(NNP (committee))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (abbreviation)))(PP (IN (of))(NP (NNP (general))(NNPS (motors))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (abbreviation)))(PP (IN (of))(NP (NP (DT (the))(NN (company))(NN (name)))(NP (`` (`))(NNP (general))(NNP (motors))(POS (')))))))(. (?))))) |ET| 
+-0.037409160775157990208583669300424  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (speed)))(PP (IN (of))(NP (DT (the))(NNP (mississippi))(NNP (river))))))(. (?))))) |ET| 
+-0.30268180090585450336959638661938  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (origin)))(PP (IN (of))(NP (NP (DT (the))(NN (word)))(, (,))(NP (NN (jj)))))))(. (.))))) |ET| 
+-0.0078998074300504535910638637119519  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (do))(NP (NNPS (italians)))(VP (VB (call))(NP (NNP (florence)))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (acronym))(NNP (cpr)))(VP (VB (mean))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (nn))(NNP (o)))(VP (`` (``))(VB (mean))(SBAR (WHADVP (WRB (when)))(S (VP (VBN (use))(PP (IN (as))(NP (NP (DT (a))(NN (prefix)))(PP (IN (in))(NP (JJ (irish))(NNS (surname)))))))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (do))(SBAR (S (NP (NNP (ms.))(, (,))(NNP (miss))(, (,))(CC (and))(NNP (mrs.)))(VP (VBP (stand))(PP (IN (for))))))))(. (?))))) |ET| 
+-1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (a))(NNP (nihilist)))(VP (VB (believe))(PP (IN (in)))))(. (?))))) |ET| 
+-0.00075287376027510788389918161556125  |BT| (ROOT (ROOT (SBARQ (WHNP (WDT (what))(NN (corporation)))(SQ (VBZ (do))(NP (NNP (madonna)))(VP (VB (advertise))(PP (IN (for)))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NNP (ram)))(PP (IN (in))(NP (DT (the))(NN (computer))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (sap))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (dsl))))(. (?))))) |ET| 
+-0.68747489719827392651296804615413  |BT| (ROOT (ROOT (SBARQ (WHNP (WDT (what))(NN (corporation)))(SQ (VBZ (do))(NP (NNP (madonna)))(VP (VB (advertise))(PP (IN (for)))))(. (?))))) |ET| 
+-0.27892657046148455757261785947776  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(NN (virus))(NN (hiv))))(. (?))))) |ET| 
+-0.028804838444930702667790001214598  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (ethology))))(. (?))))) |ET| 
+-0.028804838444930869201243694988079  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (titanium))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (S (NP (NNP (cnn)))(VP (VBZ (be))(NP (NP (DT (a))(NN (acronym)))(PP (IN (for))(NP (WP (what))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NP (NNP (a&w)))(PP (IN (of))(NP (NN (root))(NN (beer))(NN (fame)))))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (do))(NP (DT (the))(NNS (letter))(NNP (ce)))(VP (VB (stand))(PP (IN (for))(IN (on))(NP (NP (RB (so))(JJ (many))(NNS (product)))(, (,))(ADJP (RB (particularly))(JJ (electrical)))(, (,))(VP (VBN (purchase))(ADVP (RB (now))))))))(. (?))))) |ET| 
+-1  |BT| (ROOT (ROOT (S (NP (NNP (hazmat)))(VP (VBZ (stand))(WHPP (IN (for))(WHNP (WP (what)))))(. (?))))) |ET| 
+-0.10075875138094045335712678479467  |BT| (ROOT (ROOT (S (SBAR (WHADVP (WRB (when)))(S (VP (VBN (call))(PP (IN (upon))(NP (S (VP (TO (to))(VP (VB (surrender)))))(, (,))(SBAR (WHNP (WDT (what)))(S (NP (NNP (american))(JJ (general)))(VP (VBD (reply))(, (,))(S (`` (``))(NP (NNP (sir))))))))))))(, (,))(NP (PRP (i)))(VP (VBP (have))(RB (not))(ADVP (RB (yet)))(VP (VBN (begin))(S (VP (TO (to))(VP (VB (fight)))))))(. (.))('' (''))))(ROOT (NP (. (?))))) |ET| 
+-0.065148473985337670977280311035429  |BT| (ROOT (ROOT (S (NP (NNP (cnn)))(VP (VBZ (be))(VP (VBN (own))(PP (IN (by))(NP (WP (whom))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (bph))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (rcd))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (html))))(. (?))))) |ET| 
+-0.58210858530995457371659540513065  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (gymnophobia))))(. (?))))) |ET| 
+-0.58210858530995546189501510525588  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (paracetamol))))(. (?))))) |ET| 
+-0.58210858530995812643027420563158  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (olestra))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (SBAR (WHADVP (WRB (when)))(S (VP (VBG (read))(NP (VBN (classify))(NNS (ad))))))(, (,))(WHNP (WP (what)))(SQ (VP (VBZ (do))(NP (NNP (eenty))))(: (:))(NP (NP (JJ (other))(NN (stand)))(PP (IN (for)))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (do))(NP (NP (DT (the))(NN (number)))(`` (``))(NP (CD (5)))('' ('')))(VP (VB (stand))(PP (IN (for))(PP (IN (on))(NP (NNP (fubu))(NN (clothing))))))))(. (?))))) |ET| 
+0.93231820284014432775876457526465  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(`` (``))(NN (c))('' ('')))(VP (VB (stand))(PP (IN (for))(IN (in))(NP (NP (DT (the))(NN (equation))(NN (e)))(NP (JJ (=))(NN (mc2)))))))(. (?))))) |ET| 
+-1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (do))(NP (NP (DT (the))(JJ (red-and-white))(NNS (stripe)))(PP (IN (on))(NP (DT (a))(NN (barbershop))(NN (pole)))))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.45019089853204086182358878431842  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (be))(NP (`` (``))(NP (DT (the))(NN (computer)))(PP (IN (for))(NP (NP (DT (the))(NN (rest)))(PP (IN (of))(NP (PRP (we))))))('' ('')))))(. (?))))) |ET| 
+-0.23981718988801326020166015950963  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (deadrise))(, (,))(JJ (nautical))(, (,))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (afs))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (deet))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (dtmf))))(. (?))))) |ET| 
+-0.58210858530995501780580525519326  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (spumante))))(. (?))))) |ET| 
+-0.58201218240361174416364065109519  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (plc))))(. (?))))) |ET| 
+-0.25218110896738776816050631168764  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (god))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (S (NP (NNP (cpr)))(VP (VBZ (be))(NP (NP (DT (the))(NN (abbreviation)))(PP (IN (for))(NP (WP (what))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (do))(NP (DT (the))(NNS (letter))(NNP (zip)))(VP (VB (stand))(PP (IN (for))(PP (IN (in))(NP (DT (the))(NN (phrase))(`` (``))(NN (zip))(NN (code))('' ('')))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (ioc))(DT (a))(NN (abbreviation)))(PP (IN (of))))(. (?))))) |ET| 
+-0.75494520757214333972484610058018  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(NNP (s&p))(CD (500)))(VP (VBN (use))(PP (IN (for)))))(. (?))))) |ET| 
+-0.21779675954501825918541157989239  |BT| (ROOT (ROOT (SBARQ (PP (IN (at))(NP (NNP (christmas))(NN (time))))(, (,))(WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (traditional))(NN (thing)))(S (VP (TO (to))(VP (VB (do))(PP (IN (under))(NP (DT (the))(NN (mistletoe)))))))))(. (?))))) |ET| 
+-0.052212079000037062148642519332498  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBD (be))(NP (NP (DT (the))(NN (education))(NN (system)))(PP (IN (in))(NP (NP (DT (the)))(NP (CD (1960))(POS ('s)))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (hdlc))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (svhs))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (lmds))))(. (?))))) |ET| 
+-0.58210858530996079096553330600727  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (hebephrenia))))(. (?))))) |ET| 
+-0.58201218240361640710034407675266  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (thalassemia))))(. (?))))) |ET| 
+-0.58201218240361518585501698908047  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (tetrinet))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(JJ (abbreviated))(NN (term)))(VP (VBN (use))(PP (IN (for))(NP (NP (DT (the))(NNP (national))(NNP (bureau)))(PP (IN (of))(NP (NNP (investigation))))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (r.e.m.)))(VP (VB (stand))(PP (IN (for))))(, (,))(PP (IN (as))(PP (IN (in))(NP (DT (the))(NN (rock))(NN (group))(NNP (r.e.m.))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NNP (t.s.)))(VP (VB (stand))(PP (IN (for))(PP (IN (in))(NP (NP (NNP (t.s.))(NNP (eliot))(POS ('s)))(NN (name)))))))(. (?))))) |ET| 
+-0.079963111870499620215113623089564  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBD (be))(VP (VBN (organize))(PP (IN (as))(NP (NP (NP (DT (a))(JJ (confederate))(NNS (veteran))(POS (')))(JJ (social))(NN (club)))(PP (IN (in))(NP (NNP (pulaski))))(, (,))(PP (IN (in))(NP (NNP (tennessee))))(, (,))(PP (IN (in))(NP (NNP (1866))))))))(. (?))))) |ET| 
+-0.44803014243557381934834893399966  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (larry))(NNP (king)))(VP (VB (do))(PP (IN (for))(NP (DT (a))(NN (living))))))(. (?))))) |ET| 
+-0.44803014243557404139295385903097  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (nicholas))(NNP (cage)))(VP (VB (do))(PP (IN (for))(NP (DT (a))(NN (living))))))(. (?))))) |ET| 
+-0.13857391101928800969389499186946  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (FW (caliente)))(VP (VB (translate))(PP (TO (to)))(PP (IN (in))(NP (NNP (english))))))(. (?))))) |ET| 
+-0.38170835415026943548966187336191  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(JJ (greek))(NN (word))(FW (polis)))(VP (VB (mean)))(, (,))(PP (IN (as))(PP (IN (in))(NP (NNP (minneapolis))))))(. (?))))) |ET| 
+-0.09211051812298387542199407107546  |BT| (ROOT (ROOT (FRAG (PP (IN (in))(NP (NP (NP (NNP (sinclair))(NNP (lewis))(POS (')))(`` (``))(NNP (main))(NNP (street)))(, (,))('' (''))(SBAR (WHNP (WP (what)))(S (VP (VBD (be))(NP (NP (DT (the))(NN (name)))(PP (IN (of))(NP (DT (the))(JJ (typical))(JJ (american))(NN (town))))))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (abbreviation)))(PP (IN (for))(NP (NN (trinitrotoluene))))))(. (?))))) |ET| 
+-0.5755299716293635903241465712199  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NNP (latin)))(PP (IN (for))(NP (JJ (incompetent))))))(. (?))))) |ET| 
+-0.48691097695320928462336951270117  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (alphabet)))(PP (IN (for))(NP (NNP (latin))))))(. (?))))) |ET| 
+-0.3667216495173730161916125780408  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(VBN (recommend))(JJ (daily))(NN (requirement)))(PP (IN (for))(NP (NP (JJ (folic))(NN (acid)))(PP (IN (for))(NP (JJ (pregnant))(NNS (woman))))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (RB (p.m.))(DT (a))(NN (abbreviation)))(PP (PP (IN (for)))(, (,))(CONJP (IN (as)))(PP (IN (in))(NP (CD (5))(NN (p.m.)))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (do))(NP (DT (the))(NN (abbreviation))(NN (cwt)))))(. (.))))(ROOT (NP (. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(`` (``))(JJ (blue))(NN (ribbon))('' ('')))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.12726402051206314736120361885696  |BT| (ROOT (ROOT (SBARQ (WHNP (WDT (what))(NNP (stephen))(NNP (sondheim))(NN (ballad)))(SQ (VP (VBZ (end))(: (:))(FRAG (INTJ (`` (``))(UH (well)))(, (,))(RB (maybe))(NP (JJ (next))(NN (year)))(. (.)))))))(ROOT (NP (. (.))))(ROOT (S (VP (. (.))('' ('')))))(ROOT (NP (. (?))))) |ET| 
+-0.43074665842320242203911107026215  |BT| (ROOT (ROOT (FRAG (SBAR (WHNP (WP (what)))(S (VP (VBZ (be))(NP (NNP (idealab))))))(. (!))))(ROOT (NP (. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (abbreviation)))(PP (IN (for))(NP (JJ (micro))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (abbreviation)))(PP (IN (for))(NP (NNP (original))(NNP (equipment))(NNP (manufacturer))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (abbreviation)))(PP (IN (for))(NP (JJ (limited))(NN (partnership))))))(. (?))))) |ET| 
+-0.56076669094478137633785763682681  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (treatment)))(PP (IN (for))(NP (NN (depression))))))(. (?))))) |ET| 
+-0.49368338007234879860618548264029  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (temperature)))(PP (IN (for))(NP (NN (cooking))))))(. (?))))) |ET| 
+-0.24312012731922216790536594999139  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (symbol)))(PP (IN (for))(NP (DT (the))(JJ (zodiacal))(NN (sign))(NNP (gemini))))))(. (?))))) |ET| 
+0.20199840316744530066550566971273  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (nasdaq)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+0.20289254409666154788105529860331  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (g.m.t.)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.58471387377550709807394468953134  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (esa-pekka))(NN (salonen)))(VP (VB (look))(PP (IN (like)))))(. (?))))) |ET| 
+-0.63145332966309364319812402754906  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (a))(NN (echidna)))(VP (VB (look))(PP (IN (like)))))(. (?))))) |ET| 
+-0.20221225845997559122935172126745  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (do))(NP (JJ (idle))(NN (mean)))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (acronym)))(PP (IN (for))(NP (NP (DT (the))(NNP (national))(NNP (bureau)))(PP (IN (of))(NP (NNP (investigation))))))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (do))(NP (DT (the))(NNS (letter))(NNP (d.c.)))(VP (VB (stand))(PP (IN (for))(PP (IN (in))(NP (NNP (washington))(, (,))(NNP (d.c.)))))))(. (?))))) |ET| 
+-0.30469131099745833113345838683017  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (website)))(PP (IN (for))(NP (DT (the))(NNP (usa))(NN (journal))))))(. (?))))) |ET| 
+-0.31174226804953703018341570896155  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (quantity)))(PP (IN (of))(NP (NP (JJ (american))(NNS (soldier)))(ADJP (RB (still))(JJ (unaccounted))(PP (IN (for))(PP (IN (from))(NP (DT (the))(NNP (vietnam))(NN (war))))))))))(. (?))))) |ET| 
+-0.50153301352619461539461553911678  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (motto)))(PP (IN (for))(NP (NP (DT (the))(NN (state)))(PP (IN (of))(NP (NNP (maryland))))))))(. (?))))) |ET| 
+0.87822818733027729898310553835472  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (`` (`))(NNP (psi))('' (')))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+0.77300591010439634320761115304776  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (FW (e.g.)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+0.20289254409659343569849454524956  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (nafta)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.69371040781672466124518905417062  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what))(RB (else)))(SQ (VBZ (have))(NP (DT (the))(NN (swastika)))(VP (VBD (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.47186627929841684636613763359492  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (archimedes)))(ADJP (JJ (famous))(PP (IN (for)))))(. (?))))) |ET| 
+-0.72001264618530114169914213562151  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (god)))(VP (VB (create))(PP (IN (in))(NP (NP (DT (the))(JJ (first))(NN (sentence)))(PP (IN (of))(NP (DT (the))(NNP (bible))))))))(. (?))))) |ET| 
+-0.31786635956572284467114286599099  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NP (DT (the))(NNP (ouarterly))(NNP (review)))(PP (IN (of))(NP (NNP (doublespeak)))))(VP (VB (call))(NP (DT (a))(`` (``))(JJ (inoperative))(NN (statement))('' ('')))))(. (?))))) |ET| 
+-0.4717429204215683458123464788514  |BT| (ROOT (ROOT (SBARQ (WHADVP (WRB (why)))(SQ (VBZ (be))(NP (DT (the))(NN (word))(`` (``))(NN (abbreviation))('' ('')))(ADVP (RB (so))(RB (long))))(. (?))))) |ET| 
+1  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (e)))(VP (VB (stand))(PP (IN (for))(IN (in))(NP (NP (DT (the))(NN (equation))(NN (e)))(NP (JJ (=))(NN (mc2)))))))(. (?))))) |ET| 
+-0.14719530118053564260449661560415  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (be))(NP (NNP (cushman))(CC (and))(NNP (wakefield)))(VP (VBN (know))(PP (IN (for)))))(. (?))))) |ET| 
+-0.17567835293833800047735849148012  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBD (be))(NP (NP (NNP (al))(NNP (capone)))(SBAR (S (ADVP (RB (finally)))(VP (VBD (imprison))(PP (IN (for)))(, (,))(PP (IN (in))(NP (CD (1931)))))))))(. (?))))) |ET| 
+-0.28764644757114843365286560583627  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (do))(NP (NNS (peacock)))(VP (VB (mate))(PP (IN (with)))))(. (?))))) |ET| 
+-0.40542196114814094132228206035506  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (difference)))(PP (IN (between))(NP (NNP (j.d.))(CC (and))(NNP (ll))))))(. (.))))(ROOT (INTJ (NN (m.))(. (?))))) |ET| 
+-0.2058909957394529921526071802873  |BT| (ROOT (ROOT (S (VP (VB (name))(NP (NP (DT (the))(NN (vessel)))(VP (VBN (use))(PP (IN (by))(NP (NP (DT (the))(NNP (atari))(NNP (force)))(PP (IN (in))(NP (DT (the))(NN (dc))(NNS (comic)))))))))(. (.))))) |ET| 
+-0.1972220828375728096659713628469  |BT| (ROOT (ROOT (SBARQ (SBAR (WHADVP (WRB (when)))(S (NP (PRP (it)))(VP (VBZ (be))(NP (NN (time))(S (VP (TO (to))(VP (VB (relax)))))))))(, (,))(WHNP (WDT (what))(CD (one))(NN (beer)))(SQ (VP (VBZ (stand))(ADJP (JJ (clear)))))(. (?))))) |ET| 
+0.93586516447139678209765634164796  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (channel))(NNP (espn)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+0.19430241284882132646316676982678  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (ibm)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.27460571765012681266782124112069  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(JJ (double-o)))(VP (VBP (indicate))(PP (IN (in))(NP (CD (007))))))(. (?))))) |ET| 
+-0.34453798704907062644409165841353  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NN (saliva)))(VP (VBP (consist))(PP (IN (of)))))(. (?))))) |ET| 
+-0.3119863624287346204333459809277  |BT| (ROOT (ROOT (SBARQ (WHNP (WDT (what))(NN (cruise))(NN (line)))(SQ (VBZ (do))(NP (NNP (kathie))(NNP (lee))(NNP (gifford)))(VP (VB (advertise))(PP (IN (for)))))(. (?))))) |ET| 
+-0.052729050573731950368738807810587  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (current))(NN (population)))(PP (IN (for))(NP (DT (these))(NNS (country))))))(: (:))(NP (NP (NNP (france))(, (,))(NNP (spain))(, (,))(NNP (italy))(, (,))(NNP (greece))(, (,))(NNP (austria))(, (,))(NNP (germany))(, (,))(NNP (switzerland))(, (,)))(NP (DT (the))(NNP (netherlands))))(. (?))))) |ET| 
+-0.072129362637325611373739775444847  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NP (DT (the))(NN (protagonist))(POS ('s)))(NN (name)))(PP (IN (in))(NP (NP (NNP (dostoevski))(POS ('s)))(`` (``))(NX (DT (the))(NN (idiot)))('' (''))))))(. (?))))) |ET| 
+-0.021155711524910580934033532685135  |BT| (ROOT (ROOT (SBARQ (WHADVP (WRB (where)))(SQ (MD (can))(NP (PRP (i)))(VP (VB (find))(NP (DT (the))(NNS (lyric)))(PP (IN (for))(NP (NP (DT (the))(NN (song)))(`` (`))(VP (VBG (get))(S (VP (NNP (married))(S (NP (NNP (today))(POS (')))(VP (IN (from))(NP (DT (the))(JJ (musical))(`` (`))(NN (company))('' ('))))))))))))(. (?))))) |ET| 
+0.19452765730980581260212147753919  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (u.s.s.r.)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+0.19444215618989524330118001671508  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (shield)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+0.19430241284882310282000617007725  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (msg)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.49364346015358406827289172724704  |BT| (ROOT (ROOT (SBARQ (WHNP (WDT (which))(JJ (soft))(NN (drink)))(SQ (VBZ (do))(NP (NNP (madonna)))(VP (VB (advertise))(PP (IN (for)))))(. (?))))) |ET| 
+-0.44943790335508748690074298792752  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NN (storm))(NN (wave)))(VP (VB (mean))(PP (IN (in))(NP (NNP (japanese))))))(. (?))))) |ET| 
+-0.22467972580282488670455620649591  |BT| (ROOT (ROOT (SBARQ (WHNP (WDT (what))(CD (four))(NNS (form)))(SQ (VBZ (do))(NP (NN (gold)))(VP (VB (occur))(PP (IN (in)))))(. (?))))) |ET| 
+-0.21559107696743148863127714776056  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (term)))(PP (IN (for))(NP (DT (any))(JJ (four-sided))(NN (figure))))))(. (?))))) |ET| 
+-0.28609141260766601799758745983127  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (airport))(NN (code)))(PP (IN (for))(NP (NNP (los))(NNP (angeles))(NNP (international))))))(. (?))))) |ET| 
+-0.33211818681258925556321059957554  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (chiricahua))(DT (the))(NN (name)))(PP (IN (of))))(. (?))))) |ET| 
+-0.31949454440371360952610757522052  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBD (be))(NP (NP (JJ (simple))(NNP (simon))(NN (fishing)))(PP (IN (for))(PP (IN (in))(NP (NP (PRP$ (he))(NN (mother))(POS ('s)))(NN (pail)))))))(. (?))))) |ET| 
+-0.17741060276431824815901450165256  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(JJ (six-footed))(NNP (musca))(NNP (domestica)))(VP (VB (become))(SBAR (WHADVP (WRB (when)))(S (NP (PRP (it)))(VP (VBZ (enter))(NP (DT (a))(NN (house))))))))(. (?))))) |ET| 
+-0.4138502231799016661817347539909  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NP (DT (the))(NNP (statue)))(PP (IN (of))(NP (NNP (liberty)))))(VP (VB (wear))(PP (IN (on))(NP (PRP$ (she))(NNS (foot))))))(. (?))))) |ET| 
+-0.12704849863330233694647120046284  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (meaning)))(PP (IN (of))(NP (NP (FW (caliente)))(, (,))(PP (IN (in))(NP (NNP (english))))(, (,))))))(. (?))))) |ET| 
+-0.30320901211779249795341684148298  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (`` (`))(JJ (last))(NN (chance)))(PP (IN (for))(NP (NNS (animal))(POS ('))))))(. (?))))) |ET| 
+-0.13450611141041660112627198486734  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NNP (li))(POS (')))(NP (NP (NN (l)))(NP (NP (NNP (abner))(POS ('s)))(JJ (last))(NN (name))))))(. (?))))) |ET| 
+-0.2249844430147452389867623878672  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (a))(NN (bone))(NN (marrow))(NN (transplant)))(SBAR (S (VP (VBD (mean))(PP (IN (for))))))))(. (?))))) |ET| 
+-0.24799458641434377059731275494414  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (be))(`` (``))(NP (NP (DT (the))(NN (airline)))(VP (VBN (build))(PP (IN (for)))(NP (JJ (professional))(NNS (traveler)))('' (''))))))(. (?))))) |ET| 
+-0.2957630657360919013143529809895  |BT| (ROOT (ROOT (SBARQ (WHNP (WDT (what))(NP (JJ (general))(NN (direction))))(SQ (VBZ (do))(NP (NP (DT (the))(NN (journey)))(PP (IN (in))(PP (IN (around))(NP (NP (DT (the))(NN (world)))(PP (IN (in))(NP (CD (80))(NNS (day))))))))(VP (VB (proceed))(PP (IN (in)))))(. (?))))) |ET| 
+-0.16785731360772787601476352392638  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (do))(NP (DT (the))(NNS (figure)))(VP (VBP (represent))(PP (IN (on))(NP (DT (the))(NNP (easter))(NNP (island))))))(. (?))))) |ET| 
+0.19430241284881333285738946869969  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (vcr)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+0.19452765730981064207227859697014  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (nasa)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.32503444704174860868661767199228  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (visine)))(VP (VB (get))(PRT (RP (out)))))(. (?))))) |ET| 
+-0.3731833296224625340364866588061  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBD (do))(NP (NNP (shostakovich)))(VP (VB (write))(PP (IN (for))(NP (NNP (rostropovich))))))(. (?))))) |ET| 
+-0.32242832312407038175550155756355  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (be))(NP (NP (DT (those))(JJ (little))(JJ (blue))(NNS (reflector)))(PP (IN (in))(NP (NP (DT (the))(NN (middle)))(PP (IN (of))(NP (NP (DT (the))(NN (road)))(PP (IN (for)))))))))(. (?))))) |ET| 
+-0.18076270174821645886353849164152  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (full))(NN (classification)))(PP (IN (of))(NP (DT (a))(NN (lady))(NN (bug))))))(. (?))))) |ET| 
+-0.12114197137610323296019743111174  |BT| (ROOT (ROOT (SQ (VP (VB (name))(PP (IN (of))(NP (DT (the))(NN (lady))))(NP (NP (DT (the))(NNP (great))(NNP (gatsby))(NNS (pine)))(PP (IN (for)))))(. (?))))) |ET| 
+0.19452765730979210134776735685591  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (iq)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+0.1945276573097834416081752806349  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (bmw)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+0.19406204209401378690813544380944  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (rca)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.1994188059510365318427460579187  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (do))(NP (NP (DT (the))(NN (term)))(`` (``))(NP (NNS (spaghetti))(JJ (western)))('' ('')))(VP (VB (mean)))))(. (?))))) |ET| 
+-0.16539016790723337635427014902234  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (name))(NNP (billie)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.157288784981325369116689216753  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (name))(NNP (gina)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.25168981159796893765090430861164  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (chemical))(NN (formulum)))(PP (IN (for))(NP (NN (napalm))))))(. (?))))) |ET| 
+-0.39835139758800341969191549651441  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (common))(NN (name)))(PP (IN (for))(NP (JJ (acetylsalicylic))(NN (acid))))))(. (?))))) |ET| 
+-0.34398600043091215328061593936582  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (origin)))(PP (IN (of))(NP (NP (JJ (blue)))(PP (IN (for))(NP (NNS (boy))(CC (and))(NN (pink))))(PP (IN (for))(NP (NNS (girl))))))))(. (?))))) |ET| 
+-0.38523042442203481172668944054749  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (donation))(NN (process)))(VP (VB (entail))))(. (?))))) |ET| 
+-0.27306429447372637664415151448338  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (el))(NNP (nino)))(VP (VB (mean))(PP (IN (in))(NP (NNP (spanish))))))(. (?))))) |ET| 
+-0.31893336711224518076335243677022  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (price)))(PP (IN (for))(NP (NN (tuberculosis))(NNS (drug))))))(. (?))))) |ET| 
+-0.43137292896187240387462225044146  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (meaning)))(PP (IN (of))(NP (`` (``))(NNP (cpr))('' (''))))))(. (?))))) |ET| 
+-0.31577837112981071987505288234388  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (celtic))(NN (symbol)))(PP (IN (for))(NP (`` (``))(NN (life))('' (''))))))(. (?))))) |ET| 
+-0.43548876356827781464176041481551  |BT| (ROOT (ROOT (S (NP (DT (a))(NN (corgi)))(VP (VBZ (be))(NP (NP (DT (a))(NN (kind)))(PP (IN (of))(NP (WP (what))))))(. (?))))) |ET| 
+-0.1684526421916942573453468412481  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NP (DT (a))(NN (teaspoon)))(PP (IN (of))(NP (NN (matter)))))(VP (VB (weigh))(PP (IN (in))(NP (DT (a))(JJ (black))(NN (hole))))))(. (?))))) |ET| 
+-0.12290413981481877747636843878354  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (do))(NP (DT (a))(NN (collier))(NN (mine)))))(. (?))))) |ET| 
+-0.16264626336484225288536720199772  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (international))(NN (radio))(NN (code))(NN (word)))(PP (IN (for))(NP (DT (the))(NN (letter))(NN (b))))))(. (?))))) |ET| 
+-0.16208333208302491690311342154018  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (international))(NN (radio))(NN (code))(NN (word)))(PP (IN (for))(NP (DT (the))(NN (letter))(NN (f))))))(. (?))))) |ET| 
+-0.19684706095374887580007339238364  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(CD (401))(, (,))(NNP (k))(, (,))(NN (plan))))(. (?))))) |ET| 
+-0.081112326797661588040355695738981  |BT| (ROOT (ROOT (SBARQ (WHADVP (WRB (when)))(PRN (RB (not))(NP (NP (NN (adventuring)))(PP (IN (on))(NP (NNP (rann))))(, (,))(NP (WP (what)))))(SQ (VBZ (do))(NP (NNP (adam))(NNP (strange)))(VP (VB (call))(NP (PRP$ (he))(NN (profession)))))(. (?))))) |ET| 
+-0.15723015494750103293597476294963  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (do))(NP (NP (DT (the))(NNS (name))(NNP (neil)))(, (,))(NP (NNP (mary)))(, (,))(CC (and))(NP (NNP (anthony))))(VP (VB (mean))))(. (?))))) |ET| 
+-0.15587790319246028203359344388446  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (meaning)))(PP (IN (of))(NP (NP (DT (the))(JJ (latin))(NN (battle))(NN (cry)))(: (:))(NP (NP (NN (ad)))(NP (FW (arma))))(, (,))(NP (NP (NN (ad)))(NP (FW (arma))))))))(. (.))))) |ET| 
+-0.3113878424036879422054369115358  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (mascot)))(PP (IN (for))(NP (NNP (notre))(NNP (dame))(NNP (university))))))(. (?))))) |ET| 
+-0.23114705404671687105633282044437  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(VBG (start))(NN (salary)))(PP (IN (for))(S (VP (VBG (begin))(NP (NNS (lawyer))))))))(. (?))))) |ET| 
+-0.24211039552714133660238360334915  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (gestation))(NN (period)))(PP (IN (for))(NP (JJ (human))(NNS (pregnancy))))))(. (?))))) |ET| 
+-0.13178036041478424778006228734739  |BT| (ROOT (ROOT (SBARQ (WHNP (WHADJP (WRB (how))(JJ (many)))(NNS (muscle)))(SQ (VP (VBZ (do))(NP (DT (the))(JJ (average))(JJ (adult))(NN (use)))(SBAR (WHADVP (WRB (when)))(S (VP (VBG (go))(PP (IN (for))(NP (DT (a))(NN (walk)))))))))(. (?))))) |ET| 
+-0.17009846468625730575574550584861  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NP (NP (DT (the))(NN (theory)))(PP (IN (of))(NP (NN (quantum)))))(VP (VBZ (leap))))(VP (VB (mean))(PP (IN (in))(NP (JJR (simpler))(NNS (term))))))(. (?))))) |ET| 
+-0.27963360419845173510111635550857  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NP (DT (the))(NN (dot)))(PP (IN (on))(NP (NP (DT (the))(NN (letter)))(NP (FW (i))))))(VP (VB (mean))))(. (?))))) |ET| 
+-0.13903370122123243080025645213027  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJS (best))(NN (internet))(NN (business)))(S (VP (TO (to))(VP (VB (go))(PP (IN (into))))))))(. (?))))) |ET| 
+-0.16008823074033462496856827783631  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(NNP (milky))(NNP (way))))(. (?))))) |ET| 
+-0.029641255375905051910878640342162  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NNP (dick))(NNP (clark))(POS ('s)))(NN (birthday))))(. (?))))) |ET| 
+-0.48537934569894847225413059277344  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (nickname)))(PP (IN (for))(NP (NP (DT (the))(NN (state)))(PP (IN (of))(NP (NNP (mississippi))))))))(. (?))))) |ET| 
+-0.2085360343900578561360248386336  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (world))(NN (population)))(PP (IN (as))(PP (IN (of))(NP (NN (today)))))))(. (?))))) |ET| 
+-0.20498846985713958801511580531951  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (do))(NP (NP (DT (the))(NN (policeman)))(VP (VBN (become))(PP (IN (in))(NP (NP (DT (the))(JJ (canadian))(NN (edition)))(PP (IN (of))(NP (NNP (monopoly))))))))))(. (?))))) |ET| 
+-0.10853774050402104078827392186213  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (colin))(NNP (powell)))(VP (ADVP (RB (best)))(VBN (know))(PP (IN (for)))))(. (?))))) |ET| 
+-0.1067283162701427312590851670393  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBD (do))(NP (NNP (cool))(NNP (hand))(NNP (luke)))(VP (VB (go))(PP (TO (to))(NP (NN (jail))))(PP (IN (for)))))(. (?))))) |ET| 
+-0.11515073373376247256594240298  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (black))(NNP (hills))))(, (,))(FRAG (NP (NP (NNP (south))(NNP (dakota)))(ADJP (RBS (most))(JJ (famous))))(PP (IN (for))))(. (?))))) |ET| 
+-0.11621672180706821286833019257756  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (islamic))(NN (equivalent)))(PP (IN (of))(NP (DT (the))(NNP (red))(NNP (cross))))))(. (?))))) |ET| 
+-0.14622837240789343660196664131945  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (a))(NN (term)))(PP (IN (for))(NP (NP (NN (behavior))(, (,))(NN (appearance))(, (,))(CC (or))(NN (expression)))(SBAR (WHNP (WDT (that)))(S (VP (VBZ (violate))(NP (NP (DT (the))(VBN (accept))(NNS (standard)))(PP (IN (of))(NP (JJ (sexual))(NN (morality))))))))))))(. (?))))) |ET| 
+-0.11534438967912979956409458281996  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (mystery)))(PP (IN (of))(NP (DT (the))(NNP (bermuda))(NNP (triangle))))))(. (?))))) |ET| 
+-0.14433118709477560370757487362425  |BT| (ROOT (ROOT (S (NP (NNP (aspartame)))(VP (VBZ (be))(ADVP (RB (also)))(VP (VBN (know))(PP (IN (as))(NP (WP (what))))))(. (?))))) |ET| 
+-0.09944987105989766540403707040241  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (MD (should))(NP (DT (the))(NN (oven)))(VP (VB (be))(VP (VBN (set))(PP (IN (at))(IN (for))(NP (VBG (bake))(JJ (peachy))(NN (oat))(NNS (muffin)))))))(. (?))))) |ET| 
+-0.14894584739308339149665982859005  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBD (do))(SBAR (S (NP (NP (NNP (andy))(NNP (hardy))(POS ('s)))(NN (father)))(VP (VBP (do))(PP (IN (for))(NP (DT (a))(NN (living)))))))))(. (?))))) |ET| 
+-0.13334170977159851001481172261265  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJS (best))(NN (brand)))(PP (IN (for))(NP (DT (a))(JJ (laptop))(NN (computer))))))(. (?))))) |ET| 
+-0.22007170063747538701903749824851  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (recipe)))(PP (IN (for))(NP (NNP (eggs))(NNP (benedict))))))(. (?))))) |ET| 
+-0.10537715412294224037736967147794  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (a))(`` (``))(NN (node))('' ('')))(PP (IN (in))(NP (NN (computer))(NNS (term))))))(. (?))))) |ET| 
+-0.021244921009740996148407177201989  |BT| (ROOT (ROOT (SBARQ (WHADVP (WRB (where)))(SQ (VBZ (do))(NP (NN (chocolate)))(VP (VB (come))(PP (IN (from)))))(. (?))))) |ET| 
+-0.038104779383520109847793833068863  |BT| (ROOT (ROOT (SBARQ (WHADVP (WRB (where)))(SQ (VBZ (do))(NP (NN (dew)))(VP (VB (come))(PP (IN (from)))))(. (?))))) |ET| 
+-0.17064417879634433128366310938873  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NNP (peugeot))(NN (company)))(VP (VB (manufacture))))(. (?))))) |ET| 
+-0.097227270910696161898556511005154  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(`` (``))(JJ (7-minute))(NN (cigarette))('' (''))))(. (?))))) |ET| 
+-0.097227270910696425576524859479832  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(`` (``))(JJ (global))(NN (economy))('' (''))))(. (?))))) |ET| 
+-0.097227270910696411698737051665375  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(`` (``))(JJ (fourth))(NN (dimension))('' (''))))(. (?))))) |ET| 
+-0.73937322159844964808428358082892  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (robert)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.15746049876423562352556473342702  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (name))(NNP (shawn)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.15746049876423529045865734588006  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (name))(NNP (kelly)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.15469636063229960654119565788278  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NNP (us))(NNP (federal))(NNP (government))(NN (website)))(PP (IN (for))(NP (NP (NNP (standard))(NNP (industrial))(NN (classification))(NNS (code)))(, (,))(NP (NNP (sic)))(, (,))))))(. (?))))) |ET| 
+-0.2753425533628126586904727446381  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (medical))(NN (term)))(PP (IN (for))(NP (NP (NN (cancer)))(PP (IN (of))(NP (DT (the))(NN (blood))))))))(. (?))))) |ET| 
+-0.11850713440880923654763279273539  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NP (NNP (mrs.))(NNP (bridges))(POS ('s)))(NN (job)))(PP (IN (on))(NP (NP (NP (NN (tv))(POS ('s)))(NNP (upstairs)))(, (,))(NP (NNP (downstairs)))))))(. (?))))) |ET| 
+-0.13244189396031563754618787243089  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NNP (georgetown))(`` (``))(NNP (hoya))('' ('')))(VP (VB (mean))))(. (?))))) |ET| 
+-0.16771088004959219808220893810358  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (name))(`` (`))(NNP (alexandra))('' (')))(VP (VB (mean))))(. (?))))) |ET| 
+-0.18587877795847465578482626824552  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (collective))(NN (noun)))(PP (IN (for))(NP (NNS (goose))))))(. (?))))) |ET| 
+-0.15122737168704228349902507488878  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (price)))(PP (IN (for))(NP (NP (NNP (aaa))(POS ('s)))(NN (liability))(NN (auto))(NN (insurance))))))(. (?))))) |ET| 
+-0.12368954454658759312124516327458  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (average))(NN (cost)))(PP (IN (for))(NP (NP (CD (four))(NNS (year)))(PP (IN (of))(NP (JJ (medical))(NN (school))))))))(. (?))))) |ET| 
+0.53546593175941170628107101947535  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NN (bud)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.11526578415265698041025643760804  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (do))(NP (DT (a))(NN (phobophobe))(NN (fear)))))(. (?))))) |ET| 
+-0.11986003162997427295977104222402  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (do))(NP (DT (a))(NN (pedometer))(NN (measure)))))(. (?))))) |ET| 
+-0.093946390630111592523476815586037  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (only))(NN (substance)))(SBAR (WHNP (WDT (that)))(S (VP (VBZ (give))(NP (NN (food)))(NP (PRP$ (its))(`` (``))(NN (taste))('' ('')))(SBAR (WHADVP (WRB (when)))(S (VP (VBN (eat))))))))))(. (?))))) |ET| 
+-0.27188480158542283060540967198904  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (function)))(PP (IN (of))(NP (NNP (ram))))))(. (?))))) |ET| 
+-0.57392815228587545917093848402146  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (zionism))))(. (?))))) |ET| 
+-0.57392815228587457099251878389623  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (java))))(. (?))))) |ET| 
+-0.078064393515544935886474320341222  |BT| (ROOT (ROOT (SBARQ (WHADVP (WRB (where)))(SQ (VBD (do))(NP (NP (DT (the))(NN (energy)))(PP (IN (for))(NP (DT (the))(NNP (big))(NNP (bang)))))(VP (VB (come))(PP (IN (from)))))(. (?))))) |ET| 
+-0.13621926665852621129992883197701  |BT| (ROOT (ROOT (SBARQ (WHNP (WDT (what))(NN (store)))(SQ (VBZ (do))(NP (NNP (martha))(NNP (stewart)))(VP (VB (advertise))(PP (IN (for)))))(. (?))))) |ET| 
+-0.07017968552492925837782422604505  |BT| (ROOT (ROOT (SBARQ (SBAR (WHNP (WDT (what)))(FRAG (ADVP (RB (exactly)))))(, (,))(SQ (ADVP (RB (specifically)))(VP (VBZ (do))(S (VP (VB (sleep))(VP (VB (do))(PP (IN (for))(NP (PRP (you)))))))))(. (?))))) |ET| 
+-0.15449384231138468814847897192521  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(`` (``))(JJ (coppertop))('' (''))(NN (battery))))(. (?))))) |ET| 
+-0.57392815228587812370619758439716  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (smartnet))))(. (?))))) |ET| 
+-0.57392815228587634734935818414669  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (doegs))))(. (?))))) |ET| 
+-0.072247468349807247856020353538042  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBD (be))(NP (NP (NP (NNP (franklin))(NNP (roosevelt))(POS ('s)))(NN (program)))(PP (IN (for))(NP (JJ (economic))(NN (recovery)))))(VP (VBN (call))(PP (IN (during))(NP (DT (the))(NNP (great))(NNP (depression))))))(. (?))))) |ET| 
+-0.060658962061690566147653669304418  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (MD (will))(NP (DT (a))(NN (kid)))(VP (VP (VB (eat))(NP (NP (DT (the))(NN (middle)))(PP (IN (of)))))(, (,))(CC (and))(VP (VB (save))(NP (DT (the))(NN (chocolate)))(PP (IN (on))(NP (NP (DT (the))(JJ (outside)))(PP (IN (for))(NP (JJ (last)))))))))(. (?))))) |ET| 
+-0.074796728486086122567044753850496  |BT| (ROOT (ROOT (NP (NP (NNP (independent)))(NP (NP (NP (NN (silversmith))(POS ('s)))(NN (account)))(PP (IN (for))(NP (NP (WP (what))(NN (percentage)))(PP (IN (of))(NP (NN (silver))(NN (production)))))))(. (?))))) |ET| 
+-0.57392815228586480102990208251867  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (linux))))(. (?))))) |ET| 
+-0.047326108509416466019192881731215  |BT| (ROOT (ROOT (SBARQ (SBARQ (WHNP (WP (what)))(SQ (VBP (be))(NP (NP (DT (the))(NNS (name)))(PP (IN (of))(NP (NP (PDT (all))(DT (the))(NNS (sea)))(PP (IN (in))(NP (DT (the))(NN (world)))))))))(CC (and))(SBARQ (WHNP (WP (what))(NN (ocean)))(SQ (VBP (do))(NP (PRP (they)))(VP (VB (drain))(PP (IN (into)))))(. (?)))))) |ET| 
+-0.16998978677985479568413040851738  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(JJS (fastest))(NN (computer))))(. (?))))) |ET| 
+-0.11081950617860331087527470117493  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(JJ (first))(JJ (personal))(NN (computer))(NN (company))))(. (?))))) |ET| 
+-0.065495299813595087012885187505162  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (be))(NP (NP (DT (the))(NN (shoe))(NNS (size)))(PP (IN (of))(NP (NP (NN (o)))(`` (`))(NP (NNP (neal))(, (,))(NNP (jordan)))(, (,))(CC (and))(NP (NNP (mutombo)))(, (,)))))(NP (DT (the))(NNP (nba))(NNS (player))))(. (?))))) |ET| 
+-0.044384478988088033046821578864183  |BT| (ROOT (ROOT (SBARQ (WHADVP (WRB (how)))(SQ (VBZ (do))(NP (NN (light)))(VP (VB (travel))(PP (IN (through))(NP (NP (DT (the))(NN (void)))(PP (IN (of))(NP (NN (space))))))(SBAR (IN (if))(S (NP (EX (there)))(VP (VBZ (be))(NP (NP (DT (no))(NN (medium)))(PP (IN (for))(NP (PRP (it))))(S (VP (TO (to))(VP (VP (`` (`))(VB (wave))('' (')))(CC (or))(VP (`` (`))(VB (pulse))('' ('))))))))))))(. (.))))) |ET| 
+-0.12125164550010225639198324643075  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBD (be))(NP (NP (NNP (mao)))(, (,))(NP (DT (the))(NP (JJ (chinese))(NN (leader))(POS ('s))))(, (,))(NP (JJ (full))(NN (name))))))(. (?))))) |ET| 
+-0.086587991609225353761836174726341  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NP (`` (``))(NNP (e))(NNP (pluribus))(NNP (unum))('' ('')))(PP (IN (on))(NP (DT (the))(NN (penny)))))(VP (VB (mean))))(. (?))))) |ET| 
+-0.089319715888899198219519348640461  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NP (DT (the))(NN (number))(CD (33)))(PP (IN (on))(NP (DT (the))(NNP (rolling))(NNP (rock))(NN (beer))(NN (bottle)))))(VP (VB (mean))))(. (?))))) |ET| 
+-0.03116307271325551020435540294784  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (final))(CD (four)))(VP (VB (refer))(PP (TO (to)))(PP (IN (in))(NP (DT (the))(NNS (sport))(NN (world))))))(. (?))))) |ET| 
+-0.11980070397733438847254205938953  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (recipe))(CC (or))(NN (formulum)))(PP (IN (for))(NP (NNP (coca-cola))))))(. (?))))) |ET| 
+-0.092384714565162381894047882724408  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (definition)))(PP (IN (of))(`` (`))(NP (JJ (graphic))(NP (NNS (detail))(POS (')))))))(. (?))))) |ET| 
+-0.16339115742920648499669766806619  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (zodiac))(NN (sign)))(PP (IN (for))(NP (NNP (august))(CD (14))))))(. (?))))) |ET| 
+-0.111039122272685600312236431364  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (n)))(VP (VB (est-ce))(S (NP (FW (pas)))(VP (VB (mean))))))(. (?))))) |ET| 
+-0.15728878498132090046901510049793  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (name))(NNP (calder)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.1572887849813222882477958819436  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (name))(NNP (jenna)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.12788587837809203828776105638099  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (location)))(PP (IN (of))(NP (NNP (edinburgh))(, (,))(NNP (scotland))))))(. (?))))) |ET| 
+-0.11534438967913107632057290174998  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (text)))(PP (IN (of))(NP (DT (the))(NNP (fifth))(NNP (amendment))))))(. (?))))) |ET| 
+-0.059271102053409741028389134953613  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (distinction)))(PP (IN (of))(NP (NP (NNP (erle))(NNP (stanley))(NNP (gardner))(POS ('s)))(NP (NP (DT (the))(NN (case)))(PP (IN (of))(NP (DT (the))(JJ (terrified))(NN (typist)))))))))(. (?))))) |ET| 
+-0.090875560245315886720440801127552  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (jane))(NNP (goodall)))(VP (VBN (know))(PP (IN (for)))))(. (?))))) |ET| 
+-0.090875560245315900598228608942009  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (d.b.))(NNP (cooper)))(VP (VBN (know))(PP (IN (for)))))(. (?))))) |ET| 
+-0.090875560245315512020169990137219  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NNP (margaret))(NNP (thatcher)))(VP (VBN (know))(PP (IN (for)))))(. (?))))) |ET| 
+-0.24847430950870530441676464761258  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NN (usenet)))(PP (IN (for))(NP (DT (the))(NN (internet))))))(. (?))))) |ET| 
+-0.016156277630208912970966039779341  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (who)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (founder))(CC (and))(NN (editor)))(PP (IN (of))(NP (DT (the))(NNP (national))(NNP (review))))))(. (?))))) |ET| 
+-0.10563393657788386348350684329489  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (world))(NN (record)))(PP (IN (for))(NP (DT (the))(JJS (longest))(NN (hair))))))(. (?))))) |ET| 
+0.19452765730981014247191751564969  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NNP (ekg)))(VP (VB (stand))(PP (IN (for)))))(. (?))))) |ET| 
+-0.065961080447378611646414015012851  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (a))(JJ (polyorchid))(NN (man)))(VP (VB (have))(NP (NP (QP (XS (IN (at))(JJS (least)))(CD (three))))(PP (IN (of))))))(. (?))))) |ET| 
+-0.095625118574357736989099976199213  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (american))(NN (dollar))(NN (equivalent)))(PP (IN (for))(NP (NP (CD (8))(NNS (pound)))(PP (IN (in))(NP (DT (the))(NNP (u.k.))))))))(. (?))))) |ET| 
+-0.18233293622884411133711068941921  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (temperature)))(PP (IN (for))(S (VP (VBG (bake))(NP (JJ (peachy))(NN (oat))(NNS (muffin))))))))(. (?))))) |ET| 
+-0.063997799866108456834368212184927  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (do))(PP (SYM (e))(S (VP (SYM (=))(NP (FW (mc2))))))(S (VP (VB (mean))))))(. (?))))) |ET| 
+-0.080556258570278080344273519131093  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (JJ (camera-ready))(NN (art)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.072533606576175579938592363760108  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (`` (``))(FW (semper))(FW (fidelis))('' ('')))(VP (VB (mean))))(. (?))))) |ET| 
+-0.11370406956605386139536051359755  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (JJ (chronic))(NN (constipation)))(NP (NP (DT (a))(NN (symptom)))(PP (IN (of))))))(. (?))))) |ET| 
+-0.061112487849289423569310031325585  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (correct))(NN (way)))(S (VP (TO (to))(VP (VB (mount))(NP (NP (DT (a))(NN (roll)))(PP (IN (of))(NP (NN (toilet))(NN (paper))))))))))(. (?))))) |ET| 
+-0.091334227299483122797241207990737  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (another))(NN (term)))(PP (IN (for))(NP (DT (the))(JJ (painful))(NN (wrist))(NN (syndrome))))))(. (?))))) |ET| 
+-0.086895784907599082913520760484971  |BT| (ROOT (ROOT (SBARQ (WHADVP (WRB (when)))(SQ (VBD (do))(NP (NNP (cnn)))(VP (VB (go))(PP (IN (on))(NP (DT (the))(NN (air))))))(. (?))))) |ET| 
+-0.045831711679778272539032002441672  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (do))(NP (PRP (you)))(VP (VB (say))(PP (TO (to))(NP (NP (DT (a))(NN (friend)))(SBAR (WHNP (WP (who)))(S (VP (VBZ (ignore))(NP (PRP (you)))(PP (IN (for))(NP (JJ (other))(NNS (friend)))))))))))(. (?))))) |ET| 
+-0.034377932399199548352264343975548  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (happen))(SBAR (WHADVP (WRB (when)))(S (NP (DT (a))(NN (body))(NN (part)))(VP (VBZ (fall))(ADJP (RB (asleep))))))))(. (?))))) |ET| 
+-0.049234598567460284568308992447783  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (who)))(SQ (VP (VBD (take))(NP (NP (DT (the))(NNS (toy)))(VP (VP (VBN (donate))(PP (IN (for))(NP (NP (DT (the))(NNP (doodyville))(NNS (orphan))(POS (')))(NN (fund)))))(CC (and))(VP (VBD (keep))(NP (PRP (they)))(PP (IN (for))(NP (PRP (himself)))))))))(. (?))))) |ET| 
+-0.051836787858057203903783261011995  |BT| (ROOT (ROOT (SBARQ (WHNP (WRB (how))(RB (much)))(SQ (VP (VBD (do))(NP (DT (the))(JJ (first))(NNP (barbie))(NN (doll))(NN (sell)))(PP (IN (for))(PP (IN (in))(NP (CD (1959)))))))(. (?))))) |ET| 
+-0.070729247300259950881340387240925  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (do))(NP (NP (DT (each)))(PP (IN (of))(NP (DT (the))(NNS (utility))(NN (cost)))))(PP (IN (in))(NP (NNP (monopoly))))))(. (?))))) |ET| 
+-0.12316708670203926900832414048637  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(JJ (feudal))(NN (system))))(. (?))))) |ET| 
+-0.08763596369842717448417346304268  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(NNP (aim-54c))(NNP (phoenix))))(. (?))))) |ET| 
+-0.086297577627536092848004045663401  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(NNP (bernoulli))(NNP (principle))))(. (?))))) |ET| 
+-0.030528609476940804512423710548319  |BT| (ROOT (ROOT (SBARQ (SBARQ (WHNP (WDT (what))(NP (NN (chemical))(PP (IN (in))(NP (JJ (red))(NN (wine))))))(SQ (VBZ (be))(NP (NP (JJ (good)))(PP (IN (for))(NP (DT (the))(NN (heart)))))))(CC (and))(SBARQ (WHNP (WP (what))(RB (exactly)))(SQ (VBZ (do))(NP (PRP (it)))(VP (VB (do))(PP (TO (to))(NP (PRP$ (you))(NN (body))))))(. (?)))))) |ET| 
+-0.028573375740090438401619366004525  |BT| (ROOT (ROOT (S (PP (IN (in))(NP (NP (NP (NNP (waugh))(POS ('s)))(NX (`` (``))(NP (DT (a))(NN (handful)))(PP (IN (of))(NP (NN (dust))))(, (,))('' (''))))(SBAR (WHNP (WP (what)))(S (VP (VBZ (do)))))))(NP (DT (the))(JJ (mad))(JJ (old))(NN (man)))(VP (VB (force))(NP (DT (the))(NN (hero))(S (VP (TO (to))(VP (VB (do))(NP (DT (every))(NN (afternoon))))))))(. (?))))) |ET| 
+-0.017104649233079471937202242770582  |BT| (ROOT (ROOT (SBARQ (WHADVP (WRB (why)))(SQ (VP (VBP (do))(SBAR (S (NP (NP (NNS (people)))(PP (IN (in))(NP (NP (DT (the))(JJ (upper))(NN (peninsula)))(PP (IN (of))(NP (NNP (michagin)))))))(VP (VBP (say))(VP (FRAG (INTJ (`` (``))(UH (eh))(. (?))('' (''))))))))))))(ROOT (NP (. (?))))) |ET| 
+-0.082085848585301490754062569976668  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NNP (english))(NN (translation)))(PP (IN (for))(NP (DT (the))(NN (word))(`` (``))(FW (caliente))('' (''))))))(. (?))))) |ET| 
+-0.12923858039684843479477649452747  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (hungarian))(NN (word)))(PP (IN (for))(NP (NN (pepper))))))(. (?))))) |ET| 
+-0.05835956645161394229504026043287  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (meaning)))(PP (IN (of))(NP (NP (NP (NNP (w.b.))(NNP (yeat))(POS ('s)))(NN (poem)))(, (,))(NP (`` (``))(DT (the))(CD (three))(NNS (hermit)))))))(. (?))('' (''))))) |ET| 
+-0.044611375627919946929011985048419  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (fare))(NN (cost)))(PP (IN (for))(NP (NP (DT (the))(NN (round))(NN (trip)))(PP (IN (between))(NP (NNP (new))(NNP (york))(CC (and))(NNP (london))))(PP (IN (on))(NP (NNP (concorde))))))))(. (?))))) |ET| 
+-0.054589418485481350229449049038521  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (term)))(PP (IN (for))(NP (NP (DT (the))(NN (sum)))(PP (IN (of))(NP (NP (DT (all))(JJ (genetic))(NN (material)))(PP (IN (in))(NP (DT (a))(VBN (give))(NN (organism))))))))))(. (?))))) |ET| 
+-0.077017182580223844667877131087153  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (exchange))(NN (rate)))(PP (IN (for))(NP (NP (JJ (australian)))(PP (TO (to))(NP (JJ (american))(NN (money))))))))(. (?))))) |ET| 
+-0.068309119582886948518485326076188  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (purpose)))(PP (IN (of))(NP (NP (DT (the))(NNP (sysrq))(NN (key)))(PP (IN (on))(NP (PRP$ (my))(NN (computer))(NN (keyboard))))))))(. (?))))) |ET| 
+-0.097183596725112453285078117914964  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (per-capita))(NN (income)))(PP (IN (of))(NP (NP (NNP (colombia)))(, (,))(NP (NNP (south))(NNP (america)))(, (,))))))(. (?))))) |ET| 
+-0.086770642718285662109423128640628  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(NNP (golden))(NNP (rule))))(. (?))))) |ET| 
+-0.087635963698427063461871000527026  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(NNP (peloponnesian))(NNP (league))))(. (?))))) |ET| 
+-0.028804838444929536933614144800231  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (molybdenum))))(. (?))))) |ET| 
+-0.054665299216885940292165457776719  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (name)))(PP (IN (of))(NP (NP (DT (the))(NN (pop))(NN (singer)))(SBAR (WHNP (WP$ (whose))(NN (song)))(S (VP (VBD (become))(NP (DT (the))(NN (theme))(NN (song)))(PP (IN (for))(NP (NP (DT (a))(NN (brand)))(PP (IN (of))(NP (NN (catsup)))))))))))))(. (?))))) |ET| 
+-0.10282628787557224203652594951564  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBD (be))(NP (NP (NNP (baffin))(, (,))(NNP (frobisher))(CC (and))(NNP (franklin)))(VP (VBG (look))(PP (IN (for))))))(. (?))))) |ET| 
+-0.091345322365841613576620261483185  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (FW (caliente)))(VP (VB (mean)))(, (,))(PP (IN (in))(NP (NNP (english)))))(. (?))))) |ET| 
+-0.052302707613362198202366926125251  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (history)))(PP (IN (of))(`` (``))(NP (DT (the))(NN (toast)))('' ('')))))(. (?))))) |ET| 
+-0.088126246067461999622594248648966  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (population)))(PP (IN (of))(NP (NNP (arcadia))(, (,))(NNP (florida))))))(. (?))))) |ET| 
+-0.041165626460731609415066856172416  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (definition)))(PP (IN (of))(NP (DT (the))(NN (term))(`` (``))(NNS (weapon))(NN (system))('' (''))))))(. (?))))) |ET| 
+-0.081003817805924069328504799614166  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (do))(NP (DT (the))(NNPS (japanese)))(VP (VBP (call))(NP (NNP (japan)))))(. (?))))) |ET| 
+-0.12449376278276477747475325941195  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (term)))(PP (IN (for))(NP (DT (a))(JJ (young))(NN (fox))))))(. (?))))) |ET| 
+-0.032081827819092398335065752235096  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (second-highest))(NN (mountain)))(PP (IN (in))(NP (DT (the))(NN (world))))))(. (?))))) |ET| 
+-0.045117098508994465944077489893971  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (supreme))(JJ (policy-making))(NN (bureau)))(PP (IN (of))(NP (DT (the))(JJ (soviet))(NNP (communist))(NNP (party))))))(. (?))))) |ET| 
+-0.087621796703137827533325321383018  |BT| (ROOT (ROOT (SBARQ (WHNP (WDT (what))(NN (sign)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (water))(NN (carrier)))(NP (DT (the))(JJ (zodiacal))(NN (symbol))))(PP (IN (for))))(. (?))))) |ET| 
+-0.080803819891093836558226826127793  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (MD (should))(NP (PRP (you)))(VP (VB (do))(PP (IN (for))(NP (DT (a))(NN (ankle))(NN (sprain))))))(. (?))))) |ET| 
+-0.033894041460655270625590418376305  |BT| (ROOT (ROOT (FRAG (WHNP (WDT (what))(NNS (school)))(PP (IN (in))(NP (NP (DT (the))(NNP (washington)))(, (,))(NP (NNP (dc))(NNP (nn))(NNP (nn))(NNP (vbp))(NNP (nn))(NNP (nn))(NNP (nn))(NNP (nn)))))(. (.))))) |ET| 
+-0.041180904646475197106170185179508  |BT| (ROOT (ROOT (SBARQ (SBAR (WHADVP (WRB (when)))(S (NP (DT (the))(NNP (tutankhamun))(NN (exhibit)))(VP (VBD (be))(PP (IN (on))(NP (NP (NN (display)))(PP (IN (in))(NP (DT (the))(NNP (u.s.)))))))))(, (,))(WHNP (WP (what)))(S (VP (VBG (move))(SBAR (S (NP (NN (company)))(VP (VBD (transport))(NP (PRP (it))))))))(. (?))))) |ET| 
+-0.037432114331978197374617423065501  |BT| (ROOT (ROOT (S (SBAR (WHNP (WDT (what)))(S (NP (NN (shakespeare)))(VP (VBP (play))(SBAR (S (VP (VBZ (open))(PP (IN (with))(NP (DT (the))(NN (line))))))))))(: (:))(`` (``))(ADVP (RB (now)))(VP (VBZ (be))(NP (NP (DT (the))(NN (winter)))(PP (IN (of))(NP (PRP$ (we))(NN (discontent))))))(. (.))))(ROOT (NP (. (.))))(ROOT (S (VP (. (.))('' ('')))))(ROOT (NP (. (?))))) |ET| 
+-0.059768554470796486643990874654264  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (`` (``))(DT (the))(JJ (washed))(NN (vodka))('' (''))))(. (?))))) |ET| 
+-0.035264332604081516375771343518863  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (a))(JJ (edentulous))(NN (smile))(NN (lack))))(. (?))))) |ET| 
+-0.058249911784233054934389883783297  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(ADJP (VBN (lose)))(NP (NNP (colony)))))(. (?))))) |ET| 
+-0.029807692071574388992249993179939  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBD (do))(NP (NNP (louis))(NNP (cartier)))(VP (VB (invent))(PP (IN (for))(NP (NP (NN (aviator))(NNP (santos))(NNP (dumont)))(PP (IN (in))(NP (CD (1940))))))))(. (?))))) |ET| 
+-0.057034227732643522079669651247968  |BT| (ROOT (ROOT (S (NP (NNP (colin))(NNP (powell)))(VP (VBZ (be))(ADJP (JJ (famous))(WHPP (IN (for))(WHNP (WP (what))))))(. (?))))) |ET| 
+-0.035082257477232973996716935971563  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (be))(NP (NP (DT (some))(NN (fun))(NNS (thing)))(S (VP (TO (to))(VP (VB (do))(PP (IN (in))(NP (NP (NNP (cozumel))(, (,))(NNP (mexico)))(PP (IN (for))(NP (NNS (teenager)))))))))))(. (?))))) |ET| 
+-0.028804838444927649554472282034112  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (viscosity))))(. (?))))) |ET| 
+-0.025847126312550060267536622404805  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (color))))(. (?))))) |ET| 
+-0.029168220009276213389171061862726  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (pandoro))))(. (?))))) |ET| 
+-0.062410099880521763271445934151416  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NP (NNP (lloyd))(POS ('s)))(NP (NNP (lutine))(NNP (bell))))(VP (VB (announce))))(. (?))))) |ET| 
+-0.028510342692068091352552983153146  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (saltpeter))))(. (?))))) |ET| 
+-0.029168220009274659076936586643569  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (magnetar))))(. (?))))) |ET| 
+-0.028804838444927538532169819518458  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (moxie))))(. (?))))) |ET| 
+-0.10152407874413164889926264322639  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (chemical))(NN (symbol)))(PP (IN (for))(NP (NN (nitrogen))))))(. (?))))) |ET| 
+-0.072156330566832321826709062406735  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (rathaus)))(PP (IN (in))(NP (NNP (frankfurt))))))(. (?))))) |ET| 
+-0.01189811414518158680375670144258  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NP (DT (the))(NN (definition)))(PP (IN (of))(NP (`` (``))(NN (chancery))('' (''))(NN (file)))))(PP (IN (in))(NP (JJ (real))(NN (estate))))))(. (?))))) |ET| 
+-0.054431383640186778438696535431518  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NP (DT (the))(NN (maximum))(NN (length)))(, (,))(PP (IN (in))(NP (NNS (inch))))(, (,)))(PP (IN (of))(NP (NP (DT (a))(JJ (first))(NN (baseman))(POS ('s)))(NN (glove))))))(. (?))))) |ET| 
+-0.038766125571916165704067225306062  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (happen))(SBAR (WHADVP (WRB (when)))(S (NP (NN (lightning)))(VP (VBZ (strike))(NP (NP (DT (a))(NN (body)))(PP (IN (of))(NP (NN (water))))))))))(. (?))))) |ET| 
+-0.025612808491499175489458650645247  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (a))(NN (chef)))(VP (VBP (coddle))(NP (NNS (egg)))(PP (IN (in)))))(. (?))))) |ET| 
+-0.078280628421315667786473113665124  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (size)))(PP (IN (of))(NP (NP (DT (the))(NN (student))(NN (body)))(PP (IN (at))(NP (NP (DT (the))(NNP (university)))(PP (IN (of))(NP (NP (NNP (massachusetts)))(PP (IN (in))(NP (NNP (amherst))))))))))))(. (?))))) |ET| 
+-0.046089319230686931483376156393206  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (islamic))(NN (counterpart)))(PP (TO (to))(NP (DT (the))(NNP (red))(NNP (cross))))))(. (?))))) |ET| 
+-0.026733074542972967702070263840142  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (biblical))(NN (meaning)))(PP (IN (of))(`` (`))(NP (NNS (stone)))(POS (')))))(. (?))))) |ET| 
+-0.037884189751051469685627637318248  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJS (best))(NN (way)))(S (VP (TO (to))(VP (VB (travel))(PP (IN (in))(NP (NNP (japan)))))))))(. (?))))) |ET| 
+-0.082825956236193487569607896148227  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (a))(NN (synonym)))(PP (IN (for))(NP (NN (aspartame))))))(. (?))))) |ET| 
+-0.024880409735770658841147451312281  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (who)))(SQ (VBD (do))(NP (DT (the))(CD (seven))(NNS (mule)))(VP (VBP (block))(PP (IN (for)))))(. (?))))) |ET| 
+-0.036590523706502023348896557308763  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (a))(JJ (topophobic))(NN (actor)))(VP (VBP (suffer))(PP (IN (from)))))(. (?))))) |ET| 
+-0.03179054103228498573407989624684  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (`` (``))(JJ (intractable))(JJ (plantar))(NN (keratoma))('' ('')))(VP (VB (mean))))(. (?))))) |ET| 
+-0.02610696067832999137103833220408  |BT| (ROOT (ROOT (SBARQ (PP (IN (in))(NP (CD (1990))))(, (,))(WHNP (WHNP (WDT (what))(NN (day)))(PP (IN (of))(NP (DT (the))(NN (week)))))(SQ (VBD (do))(NP (NNP (christmas)))(VP (VB (fall))(PP (IN (on)))))(. (?))))) |ET| 
+-0.02895252216554898561096109688151  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (pasta))))(. (?))))) |ET| 
+-0.02895252216554967256145758369712  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (digitali))))(. (?))))) |ET| 
+-0.025847126312550372517762298230082  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (ethylene))))(. (?))))) |ET| 
+-0.017643773634124025606606522842412  |BT| (ROOT (ROOT (S (NP (DT (the))(NNPS (iraqis)))(VP (VBD (launch))(NP (PRP$ (they))(NN (attack)))(PP (IN (on))(NP (NNP (kuwait))))(PP (IN (on))(NP (WP (what))))(NP-TMP (NN (day))))(. (?))))) |ET| 
+-0.055232475742793191164636823486944  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NNP (jimmy))(NNP (olsen))(POS ('s)))(JJ (full))(NN (name))))(. (?))))) |ET| 
+-0.028952522165548055799177973312908  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (hypertext))))(. (?))))) |ET| 
+-0.026127626564728834157591563780443  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (leukemia))))(. (?))))) |ET| 
+-0.026127626564734218739260995789664  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (hyperopium))))(. (?))))) |ET| 
+-0.026127626564733497094294989437913  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (e-commerce))))(. (?))))) |ET| 
+-0.042002468027297346075954465050017  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (name)))(PP (IN (of))(NP (NP (DT (the))(NN (star)))(PP (IN (of))(NP (NP (DT (the))(NN (cooking))(NN (show)))(, (,))(NP (`` (``))(NNP (galloping))(NNP (gourmet))('' ('')))))))))(. (?))))) |ET| 
+-0.011700819986929567040334632110898  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (term)))(PP (IN (for))(NP (NP (DT (the))(NN (side)))(PP (IN (of))(NP (NP (DT (the))(NN (mountain)))(SBAR (WHNP (WDT (that)))(S (VP (VBZ (face))(NP (DT (the))(VBG (prevail))(NNS (wind))))))))))))(. (?))))) |ET| 
+-0.023632823148693981457624246900195  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (history)))(PP (IN (of))(NP (NP (NNP (spartacus)))(, (,))(NP (DT (the))(NNP (roman))(NN (slave)))(CC (and))(NP (NN (gladiator)))))))(. (?))))) |ET| 
+-0.031644511510573458679118630243465  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (design)))(PP (IN (of))(NP (DT (the))(NN (ship))(NNP (titanic))))))(. (?))))) |ET| 
+-0.029850037696696890554548531326873  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (name)))(PP (IN (of))(NP (DT (the))(NNP (tokyo))(NNP (stock))(NNP (exchange))))))(. (?))))) |ET| 
+-0.025847126312546365306532791805694  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (hypnotherapy))))(. (?))))) |ET| 
+-0.025847126312549283111419384795227  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (crabgrass))))(. (?))))) |ET| 
+-0.025847126312548950044511997248264  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (diabetes))))(. (?))))) |ET| 
+-0.046642053034447045201105197520519  |BT| (ROOT (ROOT (S (NP (DT (the))(JJ (jewish))(NN (alphabet)))(VP (VBZ (be))(VP (VBN (know))(PP (IN (as))(NP (WP (what))))))(. (?))))) |ET| 
+-0.0697413276524914693688117495185  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (FW (gringo)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.06974132765249099752402628382697  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (FW (verdandi)))(VP (VB (mean))))(. (?))))) |ET| 
+-0.031642670862539815090919148588  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (term)))(PP (IN (for))(NP (NP (NN (someone)))(SBAR (WHNP (WP (who)))(S (VP (VBZ (hate))(NP (NN (mankind))))))))))(. (?))))) |ET| 
+-0.029636629075234455221732332574902  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (a))(NN (dipsomaniac)))(VP (VBP (crave))))(. (?))))) |ET| 
+-0.029284715770814994523218999233904  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJS (best))(NN (place)))(S (VP (TO (to))(VP (VB (live))(PP (IN (in))(NP (NP (DT (the))(NN (world)))(, (,))(NP (NP (VBG (consider))(NN (climate)))(, (,))(NP (NN (civilization)))))))))))(. (?))))) |ET| 
+-0.022086211294512842623349868631522  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (goldenseal))))(. (?))))) |ET| 
+-0.037873944641024455404210158349088  |BT| (ROOT (ROOT (SBARQ (SBAR (WHADVP (WRB (when)))(S (NP (NNP (mighty))(NN (mouse)))(VP (VBD (be))(VP (VBN (conceive))))))(, (,))(WHNP (WP (what)))(SQ (VBD (be))(NP (PRP$ (he))(JJ (original))(NN (name))))(. (?))))) |ET| 
+-0.021302595348692651699984423885326  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJS (greatest))(NN (source)))(PP (IN (of))(NP (NP (`` (``))(JJ (white))('' (''))(NN (magic)))(PP (IN (in))(NP (DT (the))(NNP (marvel))(NNP (universe))))))))(. (?))))) |ET| 
+-0.02177986510651273507899183812242  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (origin)))(PP (IN (of))(NP (NP (DT (the))(NN (term)))(NP (`` (``))(NP (JJ (buffalo))(NNS (wing)))('' (''))(SBAR (WHNP (WDT (that)))(S (VP (VBZ (be))(VP (VBN (use))(PP (IN (as))(NP (NP (DT (a))(NN (menu))(NN (item)))(PP (IN (in))(NP (NNS (bar))))))(PP (IN (across))(NP (NP (DT (the))(NN (nation)))(PP (IN (for))(NP (NP (NN (chicken))(NNS (wing)))(PP (IN (in))(NP (DT (a))(NN (spicey))(NN (sauce)))))))))))))))))(. (?))))) |ET| 
+-0.029124637618994510257497410066208  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (word)))(PP (IN (for))(NP (NP (NN (love)))(PP (IN (of))(NP (NN (pain))(CC (or))(NN (abuse))))))))(. (?))))) |ET| 
+-0.018304935835103848529303860459549  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (NP (DT (the))(NN (technique)))(VP (VBN (call))(NP (`` (``))(JJ (cold))(NN (fusion))('' ('')))))(VP (VB (produce))))(. (?))))) |ET| 
+-0.012928971132735660176660275055838  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (name))(`` (``))(NNP (justin))('' ('')))(VP (VB (mean))))(. (?))))) |ET| 
+-0.022189455368305861793221112066021  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (amezaiku))))(. (?))))) |ET| 
+-0.022189455368305903426584535509392  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (troilism))))(. (?))))) |ET| 
+-0.022189455368305681381979610478083  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (hydrogen))))(. (?))))) |ET| 
+-0.027378336446039996249224302005132  |BT| (ROOT (ROOT (SBARQ (WHADVP (WRB (where)))(SQ (VBZ (do))(NP (NP (DT (the))(JJ (weird))(NN (shape)))(PP (IN (of))(NP (DT (the))(NN (dinner))(NN (fish))(NN (knife)))))(VP (VB (originate))(PP (IN (from)))))(. (?))))) |ET| 
+-0.022086211294513231201408487436311  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (chromatology))))(. (?))))) |ET| 
+-0.022266960312966155299818638013676  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (porphyrium))))(. (?))))) |ET| 
+-0.021757056822853268474027288448269  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (limbo))))(. (?))))) |ET| 
+-0.030333145031696755189454250967174  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (form))(NN (drag))))(. (?))))) |ET| 
+-0.023297761431982547120078663738241  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (hydroelectricity))))(. (?))))) |ET| 
+-0.022266960312966099788667406755849  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (splatterpunk))))(. (?))))) |ET| 
+-0.023108315947522467537211809940345  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (second-biggest-selling))(NN (magazine)))(PP (IN (in))(NP (NNP (america))))))(. (?))))) |ET| 
+-0.015820329880950886186630199858882  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (definition)))(PP (IN (of))(NP (DT (the))(NNP (scrabble))(NN (word))(`` (`))(NN (syzygy))('' ('))))))(. (?))))) |ET| 
+-0.01535765278450058023140822882624  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NP (NNP (nathan))(NNP (hamill))(POS ('s)))(NN (role)))(PP (IN (in))(NP (DT (the))(JJ (new))(NNP (star))(NNP (wars))(NN (prequel))))))(. (?))))) |ET| 
+-0.021869786608666126614952673890002  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (origin)))(PP (IN (of))(NP (NP (DT (the))(NN (typing))(NN (practice))(NN (sentence)))(`` (``))(S (NP (RB (now)))(VP (VBZ (be))(NP (NP (DT (the))(NN (time)))(PP (IN (for))(NP (DT (all))(JJ (good))(NNS (man))))(S (VP (TO (to))(VP (VB (come))(PP (TO (to))(NP (NP (DT (the))(NN (aid)))(PP (IN (of))(NP (PRP$ (they))(NN (country))))))))))))('' (''))))))(. (?))))) |ET| 
+-0.022266960312967404300721341314784  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (infomatic))))(. (?))))) |ET| 
+-0.022022475788089093673427498742967  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (endometriosis))))(. (?))))) |ET| 
+-0.022086211294512988340121850683317  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (cunnilingus))))(. (?))))) |ET| 
+-0.0147771153495137863576047720926  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (be))(NP (NP (DT (the))(CD (7))(NNS (principle)))(PP (IN (of))(S (VP (VBG (learn))(PP (IN (from))(NP (NP (DT (the))(NNP (institute)))(PP (IN (for))(NP (NNP (research))))))(PP (IN (on))(NP (NNP (learning))(, (,))(NNP (irl)))))))))(. (?))))) |ET| 
+-0.016142057098724866409655831489545  |BT| (ROOT (ROOT (SBARQ (WHNP (WHNP (WDT (what))(NN (body)))(PP (IN (of))(NP (NN (water)))))(SQ (VBZ (do))(NP (DT (the))(NNP (yukon))(NNP (river)))(VP (VB (empty))(PP (IN (into)))))(. (?))))) |ET| 
+-0.026466868640712043481144633005897  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NNP (president))(NNP (nixon))(POS ('s)))(NN (birthdate))))(. (?))))) |ET| 
+-0.026990497015120532009468945489061  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NNP (maurizio))(NNP (pellegrin))(POS ('s)))(NN (age))))(. (?))))) |ET| 
+-0.022266960312966543877877256818465  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (ouzo))))(. (?))))) |ET| 
+-0.022086211294513210384726775714626  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (sound))))(. (?))))) |ET| 
+-0.022022475788089204695729961258621  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (osmosis))))(. (?))))) |ET| 
+-0.022022475788087907122569930606915  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (goulash))))(. (?))))) |ET| 
+-0.013747166021332829499712602228101  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (second-largest))(NN (island)))(PP (IN (in))(NP (DT (the))(NN (world))))))(. (?))))) |ET| 
+-0.011303793635177767501476253642068  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (mean))(NN (income)))(PP (IN (of))(NP (NP (DT (the))(JJ (top))(CD (10))(NN (%)))(, (,))(NP (NP (QP (JJ (top))(CD (5)))(NN (%)))(, (,))(CC (and))(NP (QP (JJ (top))(CD (1)))(NN (%))))))))(. (?))))) |ET| 
+-0.017103945551648479239670308515997  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (PRP (it)))(VP (VB (mean))(S (`` (``))(NP (NN (rupee)))(VP (VBZ (depreciate)))('' ('')))))(. (?))))) |ET| 
+-0.023392998315091256822384480074106  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (be))(NP (NP (NNP (cobol)))(, (,))(NP (NNP (fortran)))(, (,))(CC (and))(NP (NNP (pascal)))))(. (?))))) |ET| 
+-0.022189455368305213006641096740168  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (deconstructionism))))(. (?))))) |ET| 
+-0.022086211294513793251814703921809  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (tyvek))))(. (?))))) |ET| 
+-0.022266960312965988766364944240195  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (humidity))))(. (?))))) |ET| 
+-0.015785687749926377576592528839683  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (word))(FW (camaro)))(VP (VB (mean))(, (,))(PP (IN (from))(NP (DT (the))(NNP (gm))(NN (car))))(NP (DT (the))(NNP (camaro)))))(. (?))))) |ET| 
+-0.010415466787041071164421346395557  |BT| (ROOT (ROOT (SBARQ (WHNP (WHADJP (WRB (how))(JJ (many)))(NNS (people)))(SQ (VBZ (do))(NP (NNP (honda)))(VP (VB (employ))(PP (IN (in))(NP (DT (the))(NNP (u.s.))))))(. (?))))) |ET| 
+-0.021757056822854031752356718243391  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (yohimbine))))(. (?))))) |ET| 
+-0.022189455368305736893130841735911  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (cosmology))))(. (?))))) |ET| 
+-0.022022475788089666132174571089308  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (fellatio))))(. (?))))) |ET| 
+-0.022022475788089641846045907414009  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NN (platinum))))(. (?))))) |ET| 
+-0.0071554275325598215573563720681705  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (name))(`` (``))(NNP (sabrina))('' ('')))(VP (VB (mean))))(. (?))))) |ET| 
+-0.0071554275325590582790269422730489  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (name))(`` (``))(NNP (sheri))('' ('')))(VP (VB (mean))))(. (?))))) |ET| 
+-0.012096571236416019112791531142648  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJS (largest))(NN (letter)))(PP (IN (in))(NP (NP (NNP (salvador))(NNP (dali))(POS ('s)))(NN (signature))))))(. (?))))) |ET| 
+-0.0088999938108955956028722766859573  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (be))(VP (VBG (approach))(SBAR (WHADVP (WRB (when)))(S (NP (DT (a))(NN (cyclist)))(VP (VBZ (shout))(: (:))(NP (`` (``))(NNP (oil))('' ('')))))))))(. (?))))) |ET| 
+-0.0084226896648094268238438075968588  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJS (longest))(NN (chemical))(NN (name)))(PRN (, (,))(S (VP (VBG (consist)))))(PP (IN (of))(NP (CD (35))(NNS (letter))))))(. (?))))) |ET| 
+-0.011028946254711180507968038000399  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (MD (will))(VP (VB (happen))(SBAR (WHADVP (WRB (when)))(S (NP (NN (sodium)))(VP (VBZ (be))(VP (VBN (put))(PP (IN (in))(NP (NN (water)))))))))))(. (?))))) |ET| 
+-0.0078605275807597518866742802856606  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (a))(NN (farrier)))(VP (VBD (put))(NP (NNS (shoe)))(PP (IN (on)))))(. (?))))) |ET| 
+-0.016669156850964206295628855514224  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (the))(NN (river))(NNP (seine)))(ADJP (JJ (empty))(PP (IN (into)))))(. (?))))) |ET| 
+-0.0092249427816734549945287824357365  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (be))(NP (NP (DT (the))(JJ (correct))(NN (way)))(SBAR (S (S (VP (TO (to))(VP (VB (use)))))(`` (``))(VP (MD (may)))('' (''))))(PP (IN (vs.))(`` (``))(S (VP (MD (might))))('' (''))))))(. (?))))) |ET| 
+-0.0078443188701352306591019214465632  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(NN (c))(NN (programming))(NN (language))))(. (?))))) |ET| 
+-0.010241242175996694008244247697803  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (do))(NP (DT (a))(JJ (chairbound))(NN (basophobic))(NN (fear))))(. (?))))) |ET| 
+-0.0045255016842438433588569068888319  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (do))(NP (NNS (player)))(VP (VB (try))(S (VP (TO (to))(VP (VB (do))(SBAR (WHADVP (WRB (when)))(S (NP (DT (the))(NN (music)))(VP (VBZ (stop))(PP (IN (in))(NP (NP (DT (a))(NN (game)))(PP (IN (of))(NP (JJ (musical))(NNS (chair))))))))))))))(. (?))))) |ET| 
+-0.0080980218912036772138662854558788  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (fear)))(PP (IN (of))(NP (DT (the))(NN (computer)))))(VP (VBN (call))))(. (?))))) |ET| 
+-0.0063419798590195197718344388704281  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (be))(NP (NP (JJ (main))(NN (reason)))(SBAR (S (PP (IN (for))(NP (DT (that))))(NP (JJ (electric))(NNS (vehicle)))(VP (MD (can)))('' ('))))))(NP (NN (t)))(VP (VB (be))(ADJP (JJ (popular)))(ADVP (RB (nowadays)))))(. (?))))) |ET| 
+-0.0047569689100828427275047260991414  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(ADJP (RBS (most))(RB (commonly))(VBN (use)))(NP (CD (1))(NN (letter))(NN (word))))(PP (IN (in))(NP (DT (the))(NNP (english))(NN (language)))))(. (?))))) |ET| 
+-0.0023406153863176348828289974335348  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VP (VBZ (cause))(NP (NP (DT (the))(NN (redness)))(PP (IN (in))(NP (PRP$ (you))(NNS (cheek))))(SBAR (WHADVP (WRB (when)))(S (NP (PRP (you)))(VP (VBP (blush))))))))(. (?))))) |ET| 
+-0.0038907226175359131345454777317627  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (DT (the))(NNP (home))(NNP (rule))(NNP (act))))(. (?))))) |ET| 
+-0.004076170115565769247467642344418  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (NP (NN (nature))(POS ('s)))(NN (purpose)))(PP (IN (for))(NP (NNS (tornado))))))(. (?))))) |ET| 
+-0.0043632660709312298327744450432419  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (who)))(SQ (VP (VBD (do))(NP (NNP (dita))(NNP (beard))(NN (work)))(PP (IN (for)))))(. (?))))) |ET| 
+-0.002885349841351003349898540761842  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBD (do))(NP (DT (the))(NNP (yalta))(NNP (conference)))(VP (VB (lead))(PP (TO (to)))))(. (?))))) |ET| 
+-0.0028141624499687448168749881460826  |BT| (ROOT (ROOT (SBARQ (WHADVP (WRB (why)))(SQ (VP (VBZ (do))(SBAR (S (NP (NP (DT (a))(NN (wheel)))(, (,))(NP (NP (FW (e.g.)))(NP (DT (a))(NN (car))(NN (tire))))(, (,)))(VP (VBP (appear))(S (VP (TO (to))(VP (VB (spin))(PP (IN (in))(NP (DT (the))(JJ (opposite))(NN (direction))))(SBAR (IN (as))(S (NP (PRP (it)))(VP (VBZ (slow))(PRT (RP (down))))))))))))))(. (?))))) |ET| 
+-0.0025921967848536869860609499482962  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBP (be))(NP (NP (JJ (new))(NN (computer))(NNS (game)))(PP (IN (for))(NP (NNP (windows))(CD (95))(CC (or))(CD (98))))))(. (?))))) |ET| 
+-0.0013935247085283195001004230562103  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(ADJP (RBS (most))(JJ (abundant)))(NN (element)))(PP (IN (in))(NP (DT (the))(NN (sun))))))(. (?))))) |ET| 
+-0.00090321154955975979650162344114506  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(NN (name)))(PP (IN (of))(NP (NP (NP (NN (actor))(NN (rex)))(NP (NP (NNP (harrison))(POS ('s)))(NN (son))))(, (,))(SBAR (WHNP (WP (who)))(S (VP (VBD (star))(PP (IN (in))(NP (DT (a))(ADJP (RB (modestly))(JJ (popular)))(NN (tv))(NN (show))))(PP (IN (during))(NP (NP (DT (the))(JJ (late)))(NP (CD (1960))(POS ('s))))))))))))(. (?))))) |ET| 
+-0.00075915138083334707252980422254041  |BT| (ROOT (ROOT (SBARQ (WHNP (WP (what)))(SQ (VBZ (be))(NP (NP (DT (the))(JJ (average))(NN (date)))(SBAR (WHADVP (WRB (when)))(S (NP (RBS (most))(NNS (mall)))(VP (VBP (begin))(S (VP (VBG (put))(PRT (RP (up)))(NP (NNP (christmas))(NN (holiday))(NNS (decoration))))))))))(. (?))))) |ET| 

@@ -1,0 +1,114 @@
+<configuration>
+  <appender name="STDOUT"
+   class="ch.qos.logback.core.ConsoleAppender">
+   <encoder>
+     <pattern>
+        %logger{36} - %msg%n
+      </pattern>
+    </encoder>
+  </appender>
+  
+  <appender name="SHORT_STDOUT"
+   class="ch.qos.logback.core.ConsoleAppender">
+   <encoder>
+     <pattern>
+        %msg%n
+      </pattern>
+    </encoder>
+  </appender>
+  
+  <appender name="STDERR"
+   class="ch.qos.logback.core.ConsoleAppender">
+   <encoder>
+     <pattern>
+        %logger{36} - %msg%n
+      </pattern>
+    </encoder>
+    <target>System.err</target>
+  </appender>
+  
+  <logger name="it.unitn.nlpir.uima" level="INFO" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+ 
+  
+  <logger name="it.unitn.nlpir.annotators.resources" level="INFO" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+  
+    
+  <logger name="it.unitn.nlpir.annotators" level="INFO" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+  
+  <logger name="it.unitn.nlpir.util.MatchingTreeUtils" level="DEBUG" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+  
+  <logger name="it.unitn.nlpir.annotators.FromFileQuestionClassifier" level="DEBUG" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+   <logger name="it.unitn.nlpir.annotators.arabicfile.ArabicFromFile" level="WARN" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+  
+  
+  <logger name="it.unitn.nlpir.projectors.LODMultiProjector" level="DEBUG" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+  
+   <logger name="it.unitn.nlpir.projectors.MultiProjector" level="DEBUG" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+  
+
+    <logger name="it.unitn.nlpir.experiment.rer" level="DEBUG" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+   
+   <logger name="it.unitn.nlpir.experiment" level="DEBUG" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+  
+   <logger name="it.unitn.nlpir.uima.Analyzer" level="INFO" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+  
+  <logger name="it.unitn.nlpir.util.wiki" level="DEBUG" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+  
+  
+  
+  
+  <logger name="it.unitn.nlpir.util" level="INFO" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+   <logger name="it.unitn.nlpir.util.wiki.RDFWikiWrapper" level="DEBUG" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+  
+   <logger name="it.unitn.nlpir.util.wiki.WikiTreeUtil" level="INFO" additivity="false">
+    <appender-ref ref="STDOUT" />
+  </logger>
+  
+  <logger name="it.unitn.nlpir.system" level="DEBUG" additivity="false">
+    <appender-ref ref="SHORT_STDOUT" />
+  </logger>
+<logger name="it.unitn.nlpir.system.ae.QAAnswerExtractorFull" level="DEBUG" additivity="false">
+    <appender-ref ref="SHORT_STDOUT" />
+  </logger>
+  <logger name=" it.unitn.nlpir.questions" level="DEBUG" additivity="false">
+    <appender-ref ref="SHORT_STDOUT" />
+  </logger>
+  
+ <logger name="it.unitn.nlpir.nodematchers.tm" level="INFO" additivity="false">
+    <appender-ref ref="SHORT_STDOUT" />
+  </logger>
+  
+  
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />
+  </root>
+  
+</configuration>

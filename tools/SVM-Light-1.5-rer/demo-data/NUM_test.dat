@@ -1,0 +1,500 @@
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN abbreviation))(PP (IN for)(NP (NNP Texas))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (NNP I.V.))(VP (VB stand)(PP (IN for))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (NNPS USPS))(VP (VB stand)(PP (IN for))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NNP TMJ)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (DT the)(JJ technical)(NN term)(NN ISDN))(VP (VB mean)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (NNP CPR))(VP (VB stand)(PP (IN for))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (DT the)(NN acronym)(NN NASA))(VP (VB stand)(PP (IN for))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (NNP NASA))(VP (VB stand)(PP (IN for))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (DT the)(NN abbreviation))(ADVP (RB SOS))(VP (VB mean)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT an)(NN atom)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Why))(SQ (VBZ does)(NP (DT the)(NN moon))(VP (VB turn)(NP (NN orange))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN autism)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN epilepsy)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN biosphere)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (JJR bipolar)(NN disorder))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN cholesterol)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ caffeine))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ invertebrates))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NNP Teflon)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ amitriptyline))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN shaman)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ triglycerides))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ amphibians))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ fibromyalgia))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(VP (VBN done)(PP (IN with)(NP (ADJP (JJ worn)(CC or)(VBN outdated))(NNS flags))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (NP (NN cc))(PP (IN in)(NP (NNS engines))))(VP (VB mean)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (RBR spider)(JJ veins))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN pH)(NN scale)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN prism)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Why))(SQ (VBZ is)(NP (DT a)(NN ladybug))(ADJP (JJ helpful)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ amoxicillin))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ xerophytes))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN desktop))(VP (VBG publishing)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ cryogenics))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(NP (JJ coral)(NNS reefs))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ neurology))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB How))(SQ (VBP do)(NP (PRP you))(VP (VB measure)(NP (NNS earthquakes))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN micron)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ acupuncture))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT an)(NN eclipse)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NNP Wimbledon)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (NP (NN target)(NN heart))(ADJP (NN rate)))(VP (VB mean)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN foreclosure)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ platelets))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN severance)(NN pay)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ poliomyelitis))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (NNP Phi)(NNP Beta)(NNP Kappa))(VP (VB mean)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ nicotine))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ sunspots))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ nanotechnology))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT an)(JJ obtuse)(NN angle)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ polymers))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ acetaminophen))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ supernova))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ neuropathy))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ cryptography))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN leukemia)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADVP (JJ relative))(ADJP (JJ humidity))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (DT a)(NN defibrillator))(VP (VB do)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN effect))(PP (IN of)(NP (NN acid)(NN rain))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN fungus)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN sodium)(NN chloride)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ influenza))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN ozone)(NN depletion)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ does)(SBAR (S (`` ``)(NP (NNP Sitting)(NNP Shiva))('' '')(VP (VBP mean))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ does)(SBAR (S (NP (PRP$ your)(NN spleen))(VP (VBP do))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ phenylalanine))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN sonar)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ phosphorus))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (NNP Valentine)(POS 's))(NN Day))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ causes)(NP (JJ gray)(NN hair))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN hypertension)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ bandwidth))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN parasite)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN home)(NN equity)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBP do)(NP (NNS meteorologists))(VP (VB do)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ pilates))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NNP Mardi)(NNP Gras)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (DT the)(NN word)(NN fortnight))(VP (VB mean)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ dianetics))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB How))(SQ (VBD did)(NP (NNP Janice)(NNP Joplin))(VP (VB die)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN difference))(PP (IN between)(NP (NNP AM)(NN radio)(NNS stations)(CC and)(NN FM)(NN radio)(NNS stations))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ osteoporosis))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ peyote))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NNS esophagus))(VP (VBN used)(PP (IN for)))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ viscosity))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN chunnel)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ antacids))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (RB pulmonary)(JJ fibrosis))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(NP (NNS Quaaludes))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ naproxen))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN strep)(NN throat)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(NP (NNS Aborigines))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ hybridization))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (JJ solar)(NN wind))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN pneumonia)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN fuel)(NN cell)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN diabetes)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Why))(SQ (VBZ is)(NP (DT the)(NN sun))(ADJP (JJ yellow)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NNP Milky)(NN Way)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN mold)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ semolina))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NNP Ursa)(NNP Major)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN effect))(PP (IN of)(NP (NP (NNS volcanoes))(PP (IN on)(NP (DT the)(NN climate))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN acid)(NN rain)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJR quicksilver))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Why))(SINV (PP (IN in)(NP (NN tennis)))(VBP are)(NP (NN zero)(NNS points))(VP (VBN called)(NP (NN love))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN thyroid)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (NN ciao))(VP (VB mean)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (JJ acetic)(NN acid))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (DT the)(NNP Moulin)(NNP Rouge))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ pathogens))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (JJ mad)(NN cow)(NN disease))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(NP (NNS ethics))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT an)(NN annuity)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NNP Muscular)(NNP Dystrophy)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN propylene))(ADJP (JJ glycol)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN panic)(NN disorder)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN carcinogen)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN nepotism)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ die-casting))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ myopia))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN carbon)(NN dioxide)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN metabolism)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(NP (NNS semiconductors))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (JJ nuclear)(NN power))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN tsunami)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN genocide)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT an)(NN earthquake)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ enzymes))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ bangers)(CC and)(JJ mash))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT an)(NN ulcer)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN vertigo)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN spirometer)(NN test)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN schizophrenia)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ angiotensin))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ pediatricians))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(NP (JJ solar)(NNS cells))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(VP (VBN compounded)(NP (NN interest)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(ADJP (JJ capers))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT an)(NN antigen)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN thermometer)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(VP (VBN rheumatoid)(NP (NN arthritis)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ cerebral)(RB palsy))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ pectin))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ bio-diversity))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(ADJP (JJ e-coli))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (NNP Australia)(POS 's))(JJ national)(NN flower))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN metal))(VP (VBZ has)(NP (DT the)(JJS highest)(NN melting)(NN point))))(. ?))) |ET| 
+-1      |BT| (ROOT (S (NP (NNP Material))(VP (VBD called)(SBAR (S (NP (NN linen))(VP (VBZ is)(VP (VBN made)(PP (IN from)(NP (WDT what)(NN plant))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ proper)(NN name))(PP (IN for)(NP (DT a)(JJ female)(NNS walrus))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT a)(NN group))(PP (IN of)(NP (NP (NNS turkeys))(VP (VBN called)))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBP do)(NP (NNS bats))(VP (VB eat)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBP do)(NP (PRP you))(VP (VB call)(NP (DT a)(ADJP (JJ newborn))(NN kangaroo))))(. ?))) |ET| 
+-1      |BT| (ROOT (S (NP (NP (WP What)(NN type))(PP (IN of)(NP (NN currency))))(VP (VBZ is)(VP (VBN used)(PP (IN in)(NP (NNP Australia)))))(. ?))) |ET| 
+-1      |BT| (ROOT (S (NP (NP (DT The)(NNP U.S.)(NNP Department))(PP (IN of)(NP (NNP Treasury))))(ADVP (RB first))(VP (VBD issued)(NP (NN paper)(NN currency))(PP (IN for)(NP (DT the)(NAC (NNP U.S.)(PP (IN during)(WHNP (WDT which))))(NN war))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(JJ longest)(JJ major)(NN league))(VP (VBG baseball-winning)(NP (NN streak))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (DT the)(NNP Ohio)(NN state)(NN bird))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN color)))(SQ (VBZ is)(NP (DT a)(NN poison)(NN arrow))(VP (VBG frog)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (NNP Hawaii)(POS 's))(NN state)(NN flower))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN mineral))(VP (VBZ helps)(VP (VB prevent)(NP (NNS osteoporosis)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBD was)(NP (DT the)(JJ first)(NN satellite)(S (VP (TO to)(VP (VB go)(PP (IN into)(NP (NN space)))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ major)(NN fault)(NN line))(PP (IN near)(NP (NNP Kentucky))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN name))(PP (IN of)(NP (NP (NNP Roy)(NNP Roger)(POS 's))(NN dog))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN baby)(NN turkey))(VP (VBN called))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJS longest)(NN bone))(PP (IN in)(NP (DT the)(JJ human)(NN body))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(S (VP (VBD were)(NP (NP (NNP Christopher)(NNP Columbus)(POS '))(CD three)(NNS ships))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT another)(NN name))(PP (IN for)(NP (NN vitamin)(NN B1))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT another)(JJ astronomic)(NN term))(PP (IN for)(NP (DT the)(JJ Northern)(NNS Lights))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (JJ primary)(NNS colors)))(SQ (VBP do)(NP (PRP you))(VP (VB mix)(S (VP (TO to)(VP (VB make)(NP (NN orange)))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (JJ natural)(NN gas))(VP (VBN composed)(PP (IN of)))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN birthstone))(PP (IN for)(NP (NNP June))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NNS sales)(NN tax))(PP (IN in)(NP (NNP Minnesota))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN currency))(VP (VBZ is)(VP (VBN used)(PP (IN in)(NP (NNP Algeria))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBD was)(NP (DT the)(ADJP (RBS most)(JJ popular))(NN toy))(PP (IN in)(NP (CD 1957)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NNS pastrami))(VP (VBN made)(PP (IN of)))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN name))(PP (IN of)(NP (NP (DT the)(NN satellite))(SBAR (IN that)(S (NP (DT the)(NNP Soviet)(NNP Union))(VP (VBD sent)(PP (IN into)(NP (NN space)))(PP (IN in)(NP (CD 1957)))))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(S (VP (VBP are)(NP (NP (DT the)(NNS animals))(SBAR (IN that)(S (NP (NP (NNP don)(POS '))(NN t))(VP (VBP have)(ADVP (RB backbones))(VP (VBN called))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(ADJP (ADVP (RBS most)(RB frequently))(JJ spoken))(NN language))(PP (IN in)(NP (DT the)(NNPS Netherlands))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are))(NP (DT the)(NNS spots))(PP (IN on)(NP (NP (NNS dominoes))(VP (VBN called)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ electrical)(NN output))(PP (IN in)(NP (NNP Madrid)(, ,)(NNP Spain))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NN plastic))(VP (VBN made)(PP (IN of)))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(NP (NP (DT the)(CD two)(NNS houses))(PP (IN of)(NP (DT the)(NNP Legislative)(NN branch))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN criterion))(PP (IN for)(S (VP (VBG being)(ADJP (RB legally)(JJ blind))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBD did)(NP (NP (NNP Edward)(NNP Binney))(CC and)(NP (NNP Howard)(NNP Smith)))(VP (VB invent)(PP (IN in)(NP (CD 1903))))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN statue))(PP (IN of)(NP (NP (NN liberty))(VP (VBN made)(PP (IN of))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ colorful)(JJ Korean)(JJ traditional)(NN dress))(VP (VBN called)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN instrument)))(SQ (VBD did)(NP (NNP Glenn)(NNP Miller))(VP (VB play)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ primary)(NN language))(PP (IN in)(NP (NNP Iceland))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN mirror))(VP (VBN made)(PRT (RP out))(PP (IN of)))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NN foot)(CC and)(NN mouth)(NN disease))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBP do)(NP (PRP you))(VP (VB call)(NP (DT a)(JJ professional)(NN map)(NN drawer))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN color))(VP (VBZ is)(ADJP (NN indigo))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ does)(NP (DT a)(NN barometer))(VP (VB measure)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN color))(VP (VBZ is)(NP (NP (DT a)(NN giraffe)(POS 's))(NN tongue))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(NP (NP (DT the)(CD two)(NNS types))(PP (IN of)(NP (NNS twins))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN color))(VP (VBZ is)(NP (NN yak)(NN milk))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT a)(NN group))(PP (IN of)(NP (NP (NNS frogs))(VP (VBN called)))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN name))(PP (IN of)(NP (NP (NNP William)(NNP Penn)(POS 's))(NN ship))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN fruit)))(SQ (VBZ is)(NP (NNP Melba)(NN sauce))(VP (VBN made)(PP (IN from)))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBD was)(SBAR (S (NP (NP (NNP President)(NNP Lyndon)(NNP Johnson)(POS 's))(NN reform)(NN program))(VP (VBD called))))))(. ?))) |ET| 
+-1      |BT| (ROOT (NP (NP (NN Name))(NP (DT a)(NN stimulant))(. .))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (DT the)(NNP Illinois)(NN state)(NN flower))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (NNP Maryland)(POS 's))(NN state)(NN bird))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NN kind)(PP (IN of)(NP (NN dog))))(SQ (VP (VBD was)(NP (NP (NNP Toto))(PP (IN in)(NP (NP (DT the)(NNP Wizard))(PP (IN of)(NP (NNP Oz))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ only)(NN artery))(SBAR (WHNP (WDT that))(S (VP (VBZ carries)(NP (JJ blue)(NN blood))(PP (IN from)(NP (DT the)(NN heart)))))))(PP (TO to)(NP (DT the)(NNS lungs)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN color)))(SQ (VBZ does)(NP (NN litmus)(NN paper))(VP (VB turn)(SBAR (WHADVP (WRB when))(S (NP (PRP it))(VP (VBZ comes)(PP (IN into)(NP (NN contact)))(PP (IN with)(NP (DT a)(JJ strong)(NN acid))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(NP (NP (DT the)(NNS colors))(PP (IN of)(NP (DT the)(JJ German)(NN flag))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN currency)))(SQ (VBP do)(NP (PRP they))(VP (VB use)(PP (IN in)(NP (NNP Brazil)))))(. ?))) |ET| 
+-1      |BT| (ROOT (NP (NP (NN Name))(NP (NP (DT a)(NN food)(NN high))(PP (IN in)(NP (NN zinc))))(. .))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (ADVP (RB birthstone))(VBZ is)(VP (VBG turquoise))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT a)(NN baby)(NN lion))(VP (VBN called))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NP (DT the)(JJS heaviest))(ADVP (RB naturally)))(VP (VBG occurring)(NP (NN element)))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBP are)(NP (NNS cigarettes))(VP (VBN made)(PP (IN of)))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN state)(NN flower))(PP (IN of)(NP (NNP Michigan))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBD was)(NP (NP (DT the)(NN name))(PP (IN of)(NP (DT the)(NN plane)(NNP Lindbergh)(NNP flew)(NN solo))))(PP (IN across)(NP (DT the)(NNP Atlantic)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN monastery))(VP (VBD was)(VP (VBN raided)(PP (IN by)(NP (NNPS Vikings)))(PP (IN in)(NP (DT the)(JJ late)(JJ eighth)(NN century))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN name))(PP (VBN given)(PP (TO to)(NP (DT the)(NNP Tiger)))))(PP (IN at)(NP (NNP Louisiana)(NNP State)(NNP University)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJS smallest)(NN bird))(PP (IN in)(NP (NNP Britain))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NNS gasses))(SQ (VP (VBP are)(PP (IN in)(NP (DT the)(NN troposphere)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ scientific)(NN name))(PP (IN for)(NP (NN elephant))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SINV (ADVP (RB breed))(PP (IN of)(NP (NN hunting)(NN dog)))(VBD did)(NP (DT the)(NNP Beverly)(NNP Hillbillies))(VP (VB own)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBD was)(SBAR (S (NP (NP (NNP FDR)(POS 's))(NN dog))(VP (VBZ 's)(NP (NN name)))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NNS colors))(VP (VB need)(S (VP (TO to)(VP (VB be)(ADJP (JJ mixed)(S (VP (TO to)(VP (VB get)(S (NP (DT the)(NN color))(ADJP (JJ pink))))))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(ADJP (RBS most)(JJ popular))(NN sport))(PP (IN in)(NP (NNP Japan))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ active)(NN ingredient))(PP (IN in)(NP (JJ baking)(NN soda))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (DT the)(ADJP (RBS most)(JJ common))(NN eye)(NN color))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (NNP New)(NNP York)(POS 's))(NN state)(NN bird))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBP do)(NP (PRP you))(VP (VB call)(NP (NP (DT a)(NN word))(SBAR (WHNP (WDT that))(S (VP (VBZ is)(VP (VBN spelled)(NP (DT the)(JJ same))(ADVP (RB backwards)(CC and)(RB forwards)))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN currency)))(SQ (VBZ does)(NP (NNP Luxembourg))(VP (VB use)))(. ?))) |ET| 
+-1      |BT| (ROOT (S (NP (NP (WP What)(NN type))(PP (IN of)(NP (NN polymer))))(VP (VBZ is)(VP (VBN used)(PP (IN for)(NP (NN bulletproof)(NNS vests)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN currency)))(SQ (VBZ does)(NP (NNP Argentina))(VP (VB use)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN color))(VP (VBP are)(ADJP (JJ crickets))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SINV (VBD was)(NP (NP (DT the)(NN name))(PP (IN of)(NP (DT the)(JJ first)(NNP U.S.)(NN satellite))))(VP (VBN sent)(PP (IN into)(NP (NN space)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (JJ precious)(NN stone))(VP (VBZ is)(NP (NP (DT a)(NN form))(PP (IN of)(NP (JJ pure)(NN carbon))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NN kind)(PP (IN of)(NP (NN gas))))(SQ (VBZ is)(PP (IN in)(NP (DT a)(JJ fluorescent)(NN bulb))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN source))(PP (IN of)(NP (JJ natural)(NN gas))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SINV (PP (IN In)(NP (WDT what)(NN spacecraft)))(VBD did)(NP (NNP U.S.)(NN astronaut)(NNP Alan)(NNP Shepard))(VP (VB make)(NP (PRP$ his)(JJ historic)(CD 1961)(NN flight)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ 's)(NP (DT the)(JJS easiest)(NN way))(S (VP (TO to)(VP (VB remove)(NP (NN wallpaper)))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN money))(SBAR (S (NP (PRP they))(VP (VBP use)(PP (IN in)(NP (NNP Zambia)))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN birthstone))(PP (IN of)(NP (NNP October))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(NP (NNP Galileo))))(. ?))) |ET| 
+-1      |BT| (ROOT (S (NP (NNP George)(NNP Bush))(VP (VBD purchased)(NP (NP (DT a)(JJ small)(NN interest))(SBAR (WHPP (IN in)(WHNP (WDT which)))(S (NP (NN baseball))(VP (VB team))))))(. ?))) |ET| 
+-1      |BT| (ROOT (FRAG (SBAR (WHNP (WP What))(S (NP (NP (NN person)(POS 's))(NN head))(VP (VBZ is)(PP (IN on)(NP (DT a)(NN dime))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(NP (DT the)(JJ first)(NN man)(S (VP (TO to)(VP (VB fly)(PP (IN across)(NP (DT the)(NNP Pacific)(NNP Ocean)))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD developed)(NP (DT the)(NN vaccination))(PP (IN against)(NP (NN polio)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(ADJP (NP (DT the)(RB first))(JJ American))(S (VP (TO to)(VP (VB walk)(PP (IN in)(NP (NN space))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD developed)(NP (DT the)(NNP Macintosh)(NN computer))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN name))(PP (IN of)(NP (NP (DT the)(NN chocolate)(NN company))(PP (IN in)(NP (NNP San)(NNP Francisco))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD discovered)(NP (NNS x-rays))))(. ?))) |ET| 
+-1      |BT| (ROOT (SQ (VP (VB Which)(NP (NP (NP (NN comedian)(POS 's))(NN signature)(NN line))(SBAR (S (VP (VBZ is)))))(`` ``)(SQ (MD Can)(NP (PRP we))(VP (VB talk)))('' ''))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(S (VP (VBD was)(NP (NP (NNP W.C.)(NNP Fields)(POS '))(JJ real)(NN name))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SINV (VP (VBD was))(NP (NNP Abraham)(NNP Lincoln)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NNP American)(NN composer))(VP (VBD wrote)(NP (DT the)(NN music))(PP (IN for)(`` ``)(NP (NNP West)(NNP Side)(NNP Story))('' ''))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(NP (NP (DT the)(JJ first)(NN governor))(PP (IN of)(NP (NNP Alaska))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(VP (VBN elected)(NP (NP (NN president))(PP (IN of)(NP (NP (NNP South)(NNP Africa))(PP (IN in)(NP (CD 1994)))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VBD was)(NP (DT the)(JJ first)(NN female))(NP (NNP United)(NNP States)(NNP Representative))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJS oldest)(NN university))(PP (IN in)(NP (DT the)(NNP US))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD invented)(NP (DT the)(NN calculator))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VBZ is)(NP (NNP Duke)(NNP Ellington)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN name))(PP (IN of)(NP (NP (NNP Neil)(NNP Armstrong)(POS 's))(NN wife))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD won)(NP (NP (NNP Ms.)(NNP American))(PP (IN in)(NP (CD 1989))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD discovered)(NP (NNP America))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WDT Which))(SQ (NP (NN president))(VP (VBD was)(VP (VBN unmarried))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VBD was)(NP (DT the)(NN abolitionist))(SBAR (WHNP (WP who))(S (VP (VBD led)(NP (DT the)(NN raid))(PP (IN on)(NP (NP (NNP Harper)(POS 's))(NNP Ferry)))(PP (IN in)(NP (CD 1859))))))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD wrote)(S (NP (DT the)(NN hymn))(`` ``)(NP (NNP Amazing)(NNP Grace))('' ''))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN position)))(SQ (VBD did)(NP (NNP Willie)(NNP Davis))(VP (VB play)(PP (IN in)(NP (NN baseball)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VBZ is)(NP (DT a)(JJ German)(NN philosopher)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD discovered)(NP (NN radium))))(. ?))) |ET| 
+-1      |BT| (ROOT (FRAG (SBAR (WHNP (WP What))(S (NP (NN baseball)(NN team))(VP (VBD was)(NP (NP (DT the)(ADJP (JJ first)(S (VP (TO to)(VP (VB make)(NP (NNS numbers))))))(NN part))(PP (IN of)(NP (PRP$ their)(NN uniform)))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD founded)(NP (JJ American)(NX (NNP Red)(NNP Cross)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBZ is)(NP (NP (DT the)(NNP Prime)(NNP Minister))(PP (IN of)(NP (NNP Canada))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (JJ French)(NN ruler))(VP (VBD was)(VP (VBN defeated)(PP (IN at)(NP (NP (DT the)(NN battle))(PP (IN of)(NP (NNP Waterloo))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD invented)(NP (DT the)(NN hula)(NN hoop))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD invented)(NP (DT the)(JJ slinky))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(NP (NP (DT the)(JJ 23rd)(NN president))(PP (IN of)(NP (DT the)(NNP United)(NNPS States))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD invented)(NP (DT the)(NN telephone))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN name))(PP (IN of)(NP (NP (DT the)(NN leader))(PP (IN of)(NP (NNP Ireland))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBZ is)(NP (NP (DT the)(JJS tallest)(NN man))(PP (IN in)(NP (DT the)(NN world))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SINV (VBD was)(NP (DT the)(JJ first)(NNP African))(ADJP (JJ American)(S (VP (TO to)(VP (VB play)(PP (IN for)(NP (DT the)(NNP Brooklyn)(NNPS Dodgers))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(NP (NP (DT the)(JJ first)(NNP Prime)(NNP Minister))(PP (IN of)(NP (NNP Canada))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(NP (NP (DT the)(JJ first)(NN woman)(NN governor))(PP (IN in)(NP (DT the)(NNP U.S.))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBD was)(SBAR (S (NP (NP (NNP J.F.K.)(POS 's))(NN wife))(VP (VBZ 's)(NP (NN name)))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VBD was)(NP (DT the)(JJ first)(NN woman))(VP (VBN killed)(PP (IN in)(NP (DT the)(NNP Vietnam)(NNP War)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBZ is)(NP (NP (DT the)(NN governor))(PP (IN of)(NP (NNP Alaska))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(NP (DT the)(JJ first)(NNP U.S.)(NN president)(S (VP (TO to)(VP (VB appear)(PP (IN on)(NP (NN TV)))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VBZ is)(NP (DT the)(JJ only)(NN president))(VP (TO to)(VP (VB serve)(NP (CD 2)(JJ non-consecutive)(NNS terms)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD painted)(NP (NP (DT the)(NN ceiling))(PP (IN of)(NP (DT the)(NNP Sistine)(NNP Chapel))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD wrote)(`` ``)(NP (DT The)(NNP Divine)(NNP Comedy))('' '')))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD killed)(NP (NNP John)(NNP F.)(NNP Kennedy))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(NP (NP (DT the)(JJ first)(NN vice)(NN president))(PP (IN of)(NP (DT the)(NNP U.S.))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(VP (NP (DT the)(JJ first)(NNP US)(NNP President))(S (VP (TO to)(VP (VB ride)(PP (IN in)(NP (DT an)(NN automobile)))(PP (TO to)(NP (PRP$ his)(NN inauguration)))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD lived)(PP (IN in)(NP (DT the)(NNP Neuschwanstein)(NN castle)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD invented)(NP (DT the)(JJ instant)(NNP Polaroid)(NN camera))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (NNP Shakespeare)(POS 's))(NN nickname))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WDT Which))(SQ (NP (NNP U.S.A.)(NN president))(VP (VBD appeared)(PP (IN on)(`` ``)(ADJP (JJ Laugh-In))('' ''))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VBZ is)(NP (DT the)(NN congressman))(PP (IN from)(NP (NP (NN state))(PP (IN of)(NP (NP (NNP Texas))(PP (IN on)(NP (DT the)(JJ armed)(NNS forces)(NN committee))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(NP (NP (NN president))(PP (IN in)(NP (CD 1913))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD discovered)(NP (NN oxygen))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(NP (DT the)(JJ first)(NN person)(S (VP (TO to)(VP (VB reach)(NP (DT the)(NNP North)(NNP Pole))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD invented)(NP (NNP Trivial)(NNP Pursuit))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VBZ is)(NP (DT the)(NN actress))(VP (VBN known)(PP (IN for)(NP (NP (PRP$ her)(NN role))(PP (IN in)(NP (NP (DT the)(NN movie))(`` ``)(NNP Gypsy)('' ''))))))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SINV (VBD was)(NP (DT the)(JJ first)(NNP African))(ADJP (JJ American)(S (VP (TO to)(VP (VB win)(NP (NP (DT the)(NNP Nobel)(NNP Prize))(PP (IN in)(NP (NN literature)))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBD did)(NP (NNP Jesse)(NNP Jackson))(VP (VB organize)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN chain)(NN store))(VP (VBZ is)(VP (VBN headquartered)(PP (IN in)(NP (NNP Bentonville)(, ,)(NNP Arkansas))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP Who))(SQ (VP (VBD was)(NP (NP (DT the)(JJ 22nd)(NNP President))(PP (IN of)(NP (DT the)(NNP US))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN county))(VP (VBZ is)(NP (NP (NNP Modesto)(, ,)(NNP California))(PP (IN in)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN city))(VP (VBD had)(NP (NP (DT a)(NN world)(NN fair))(PP (IN in)(NP (CD 1900))))))(. ?))) |ET| 
+-1      |BT| (ROOT (S (NP (NP (WP What)(NN river))(PP (IN in)(NP (DT the)(NNP US))))(VP (VBZ is)(VP (VBN known)(PP (IN as)(NP (DT the)(NNP Big)(NNP Muddy)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(JJ imaginary)(NN line))(SQ (VP (VBZ is)(ADVP (RB halfway))(PP (IN between)(NP (DT the)(NNP North)(CC and)(NNP South)(NNPS Poles)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (NNP John)(NNP Wayne))(NP (NN airport))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NN hemisphere))(SQ (VBZ is)(NP (DT the)(NNP Philippines))(PP (IN in)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBP are)(NP (DT the)(NNP Rocky))(ADJP (JJ Mountains)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(NNP Orinoco)(NN River)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN capital))(PP (IN of)(NP (NNP Yugoslavia))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (NNP Milan)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJS oldest)(NN city))(PP (IN in)(NP (DT the)(NNP United)(NNPS States))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ river)(NP (NP (NNS flows))(PP (IN between)(NP (NP (NNP Fargo))(, ,)(NP (NNP North)(NNP Dakota))(CC and)(NP (NNP Moorhead)(, ,)(NNP Minnesota)))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN state)))(SQ (VBD did)(NP (NP (DT the)(NN Battle))(PP (IN of)(NP (NNP Bighorn))))(VP (VB take)(NP (NN place))(PRT (RP in)))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SINV (ADJP (JJ strait))(VP (VBZ separates))(NP (NNP North)(NNP America))(PP (IN from)(NP (NNP Asia))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJS largest)(NN city))(PP (IN in)(NP (DT the)(NN world))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(NNP Mall))(PP (IN of)(NP (DT the)(NNP America))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NN country))(SQ (VBD did)(NP (NNP Ponce)(NNP de)(NNP Leon))(VP (VB come)(PP (IN from))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (NNP Prince)(NNP Edward)(NNP Island)))(. ?))) |ET| 
+-1      |BT| (ROOT (FRAG (SBAR (WHNP (WP What))(S (NP (NN county))(VP (VBZ is)(NP (NNP Phoenix)))))(, ,)(NP (NNP AZ))(PP (IN in))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJS highest)(NN dam))(PP (IN in)(NP (DT the)(NNP U.S.))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (NNP Perth)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(NNP Holland)(NN Tunnel)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBP are)(NP (DT the)(NNP National))(ADJP (JJ Archives)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (ADVP (RB continent))(VBZ is)(VP (VBG Egypt)(PRT (RP on)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN capital))(PP (IN of)(NP (NNP Mongolia))))))(. ?))) |ET| 
+-1      |BT| (ROOT (S (PP (IN In)(NP (DT the)(JJ late)))(NP (NP (CD 1700)(POS 's))(JJ British)(NNS convicts))(VP (VBD were)(VP (VBN used)(S (VP (TO to)(VP (VB populate)(NP (WDT which)(NN colony)))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN state))(VP (VBZ is)(NP (NP (DT the)(JJ geographic)(NN center))(PP (IN of)(NP (DT the)(JJR lower)(NNP 48)(NNS states))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(NN volcano))(NP (NNP Mauna)(NNP Loa))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN peninsula)))(SQ (VBZ is)(NP (NNP Spain)(NN part))(PP (IN of)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN state))(VP (VBZ has)(NP (NP (DT the)(JJS least)(NN amount))(PP (IN of)(NP (NP (NN rain))(PP (IN per)(NP (NN year))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(NNP Shawnee)(NNP National)(NNP Forest)))(. ?))) |ET| 
+-1      |BT| (ROOT (FRAG (SBAR (WHNP (WP What))(S (NP (NP (NNP U.S.)(NN state)(POS 's))(NN motto))(VP (VBZ is)(`` ``)(ADJP (RB Live)(JJ free)(CC or)(JJ Die))('' ''))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(NNP Lourve)))(. ?))) |ET| 
+-1      |BT| (ROOT (S (NP (NP (WP What)(NN body))(PP (IN of)(NP (NN water))))(VP (VBP are)(NP (DT the)(NNP Canary)(NNP Islands))(PP (IN in)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(NNP Euphrates)(NN River)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBD did)(NP (NNP Howard)(NNP Hughes))(VP (VB die)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN city))(VP (VBZ has)(NP (NP (DT the)(NN zip)(NN code))(PP (IN of)(NP (CD 35824))))))(. ?))) |ET| 
+-1      |BT| (ROOT (FRAG (SBAR (WHNP (WP What))(S (NP (NP (NN city)(POS 's))(NN newspaper))(VP (VBZ is)(VP (VBN called)(S (`` ``)(NP (DT The)(NNP Enquirer))('' ''))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (NNS is)(NP (DT the)(NN volcano))(NP (NP (NNP Olympus)(NNP Mons))(ADJP (VBN located))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN province)))(SQ (VBZ is)(NP (NNP Montreal))(PP (IN in)))(. ?))) |ET| 
+-1      |BT| (ROOT (FRAG (SBAR (WHNP (WP What))(S (NP (NNP New)(NNP York)(NNP City)(NN structure))(VP (VBZ is)(ADVP (RB also))(VP (VBN known)(PP (IN as)(NP (DT the)(NNP Twin)(NNP Towers)))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WDT Which))(SQ (NP (NN mountain))(VP (VB range)(PP (IN in)(NP (NNP North)(NNP America)(NNS stretches)))(PP (IN from)(NP (NNP Maine)))(PP (TO to)(NP (NNP Georgia)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(NNP Grand))(ADJP (JJ Canyon)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (PP (IN In)(NP (NNP Poland)))(, ,)(WHADVP (WRB where))(SQ (VP (VB do)(S (NP (JJS most)(NNS people))(VP (VB live))))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN location))(PP (IN of)(NP (NP (DT the)(NNP Sea))(PP (IN of)(NP (NNP Tranquility))))))))(. ?))) |ET| 
+-1      |BT| (ROOT (S (SBAR (WHNP (WP What))(S (NP (JJ French)(NN province))(VP (VBZ is)(ADJP (JJ cognac)))))(VP (VBD produced)(PRT (RP in)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJS longest)(NN suspension)(NN bridge))(PP (IN in)(NP (DT the)(NNP U.S.))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBP are)(NP (DT the)(JJ twin)(NNS cities))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN planet))(VP (VBZ is)(VP (VBN known)(PP (IN as)(NP (DT the)(`` ``)(JJ red)('' '')(NN planet))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN capital))(PP (IN of)(NP (NNP Ethiopia))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WHNP (WRB Where))(PP (IN on)(NP (DT the)(NN body))))(SQ (VBZ is)(NP (DT a)(NN mortarboard))(ADJP (JJ worn)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (NNP Hitler))(VP (VBN buried))(. ?)))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJS largest)(NN city))(PP (IN in)(NP (DT the)(NNP U.S.))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(NNP Savannah)(NN River)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (ADVP (RB planet))(VBZ has)(NP (NP (DT the)(JJS strongest)(JJ magnetic)(NN field))(PP (IN of)(NP (PDT all)(DT the)(NNS planets))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN capital))(PP (IN of)(NP (NNP Persia))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SINV (VBZ is)(NP (DT the)(NNP Eiffel)(NNP Tower)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJS deepest)(NN lake))(PP (IN in)(NP (DT the)(NNP US))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(NNP Little)(NNP League)(NNP Museum)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (DT the)(JJS brightest)(NN star))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN street)(NN address))(PP (IN of)(NP (DT the)(NNP White)(NNP House))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN location))(PP (IN of)(NP (NNP Lake)(NNP Champlain))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (JJ soviet)(NN seaport)))(SQ (VBZ is)(PP (IN on)(NP (DT the)(NNP Black)(NNP Sea))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBP do)(NP (NN apple)(NNS snails))(VP (VB live)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ fourth)(JJS highest)(NN mountain))(PP (IN in)(NP (DT the)(NN world))))))(. ?))) |ET| 
+-1      |BT| (ROOT (FRAG (SBAR (WHNP (WP What))(S (NP (NP (NN city)(POS 's))(NN newspaper))(VP (VBZ is)(VP (VBN called)(S (`` ``)(NP (DT The)(NNP Star))('' ''))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(NNP Mason\/Dixon)(NN line)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN capital))(PP (IN of)(NP (NNP Zimbabwe))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(S (VP (VBP are)(NP (NP (NNP Canada)(POS 's))(CD two)(NNS territories))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (ADVP (RB continent))(VBZ is)(VP (VBG Argentina)(PRT (RP on)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBZ is)(NP (DT the)(JJ tallest)(NN roller)(NN coaster))(ADJP (JJ located)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VP (VBP are))(NP (DT the)(JJ British)(NN crown))(NP (NP (NNS jewels))(VP (VBN kept))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WDT Which)(NN country))(SQ (VP (VBZ has)(NP (DT the)(JJS most)(NN water)(NN pollution))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN rainiest)(NN place))(PP (IN on)(NP (NNP Earth))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHADVP (WRB Where))(SQ (VBD was)(NP (DT the)(JJ first)(NN golf))(NP (NP (NN course))(PP (IN in)(NP (DT the)(NNP United)(NNPS States)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NNP National)(NNP Park))(PP (IN in)(NP (NNP Utah))))))(. ?))) |ET| 
+-1      |BT| (ROOT (S (PP (IN In)(SBAR (WHNP (WDT which))(S (NP (NN state))(VP (MD would)))))(NP (PRP you))(VP (VBP find)(NP (DT the)(NNP Catskill)(NNPS Mountains)))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (JJ Canadian)(NN city))(VP (VBZ has)(NP (DT the)(JJS largest)(NN population))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WDT Which)(NN country))(SQ (VP (VBD gave)(NP (NNP New)(NNP York))(NP (NP (DT the)(NNP Statue))(PP (IN of)(NP (NNP Liberty))))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN river))(VP (VBZ runs)(PP (IN through)(NP (NNP Rowe)(, ,)(NNP Italy)))))(. ?))) |ET| 
+-1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NP (NN city))(VP (VBZ is)(ADVP (RB also))(VP (VBN known)(PP (IN as)(`` ``)(NP (NP (DT The)(NNP Gateway))(PP (TO to)(NP (DT the)(NNP West))))('' '')))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(RB far))(SQ (VBZ is)(NP (PRP it))(PP (IN from)(NP (NP (NNP Denver))(PP (TO to)(NP (NNP Aspen))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD did)(NP (NNP Hawaii))(VP (VB become)(NP (DT a)(NN state))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(ADJP (JJ tall)))(SQ (VBZ is)(NP (DT the)(NNP Sears))(VP (VBG Building)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ average)(NN weight))(PP (IN of)(NP (DT a)(NNP Yellow)(NNP Labrador))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD did)(NP (NNP Idaho))(VP (VB become)(NP (DT a)(NN state))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN life)(NN expectancy))(PP (IN for)(NP (NNS crickets))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN year)))(SQ (VBD did)(NP (DT the)(NNP Titanic))(VP (VB sink)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ average)(NN speed))(PP (IN of)(NP (NP (DT the)(NNS horses))(PP (IN at)(NP (DT the)(NNP Kentucky)(NNP Derby))))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN temperature))(PP (IN at)(NP (NP (DT the)(NN center))(PP (IN of)(NP (DT the)(NN earth))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD did)(NP (NNP John)(NNP F.)(NNP Kennedy))(VP (VB get)(VP (VBN elected)(PP (IN as)(NP (NNP President))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(ADJP (JJ old)))(SQ (VBD was)(NP (NNP Elvis)(NNP Presley))(SBAR (WHADVP (WRB when))(S (NP (PRP he))(VP (VBD died))))(. ?)))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(RB far))(SQ (VBZ is)(NP (DT the)(NN service)(NN line))(PP (IN from)(NP (NP (DT the)(NN net))(PP (IN in)(NP (NN tennis))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WHADJP (WRB How)(JJ much))(NNS fiber))(SQ (MD should)(NP (PRP you))(VP (VB have)(PP (IN per)(NP (NN day)))))(. ?))) |ET| 
+1      |BT| (ROOT (SBAR (WHADJP (WRB How)(JJ many))(S (NP (NNP Great)(NNP Lakes))(VP (VBP are)(ADVP (RB there))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(JJ long))(SQ (VBD did)(NP (NNP Rip)(NNP Van)(NNP Winkle))(VP (VB sleep)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WRB How)(JJ many))(SQ (VP (VBZ liters)(PP (IN in)(NP (DT a)(NN gallon)))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD did)(NP (NNP Elvis)(NNP Presley))(VP (VB die)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (NNS is)(NP (DT the)(NN speed))(NP (NP (NNS hummingbirds))(SBAR (S (VP (VBP fly))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (NP (NN day)(CC and)(NN month))(VBD did)(SBAR (S (NP (NNP John)(NNP Lennon))(VP (VBP die))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN population))(PP (IN of)(NP (NNP Seattle))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WRB How)(JJ much))(SQ (VP (VBD was)(NP (NP (DT a)(NN ticket))(PP (IN for)(NP (DT the)(NNP Titanic))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(ADJP (JJ tall)))(SQ (VBZ is)(NP (NP (DT the)(NNP Gateway)(NNP Arch))(PP (IN in)(NP (NP (NNP St.)(NNP Louis))(, ,)(NP (NNP MO))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WRB How)(JJ much))(SINV (VBZ does)(NP (DT the)(JJ human)(JJ adult)(JJ female)(NN brain))(VP (VB weigh)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (DT the)(JJ first)(NN liver))(ADJP (JJ transplant)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN population))(PP (IN of)(NP (NNP China))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (NNP Rosa)(NNP Parks))(VP (VBN born)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN temperature))(PP (IN of)(NP (NP (DT the)(NN sun)(POS 's))(NN surface))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN year)))(SQ (VBD did)(NP (NNP Canada))(VP (VB join)(NP (DT the)(NNP United)(NNPS Nations))))(. ?))) |ET| 
+1      |BT| (ROOT (S (NP (NP (NNP Mercury))(, ,)(SBAR (WHNP (WP what))(S (NP (NN year))(VP (VBD was)(NP (PRP it))))))(VP (VBD discovered))(. ?))) |ET| 
+1      |BT| (ROOT (S (NP (DT The)(NN sun))(VP (VBZ 's)(NP (NP (NN core))(, ,)(SBAR (WHNP (WP what))(S (VP (VBZ is)(NP (DT the)(NN temperature)))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SINV (VBD were)(NP (NP (NNP William)(NNP Shakespeare)(POS 's))(NNS twins))(ADJP (JJ born)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN length))(PP (IN of)(NP (NP (DT the)(NN coastline))(PP (IN of)(NP (NP (DT the)(NN state))(PP (IN of)(NP (NNP Alaska))))))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD did)(NP (DT the)(NNP Hindenberg))(VP (VB crash)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBD was)(NP (DT the)(JJ last)(NN year))(SBAR (IN that)(S (NP (DT the)(NNP Chicago)(NNP Cubs))(VP (VBD won)(NP (DT the)(NNP World)(NNP Series)))))(. ?)))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (NP (NN year))(VBD did)(SBAR (S (NP (NNP WWII))(VP (VBP begin))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN diameter))(PP (IN of)(NP (DT a)(NN golf)(NN ball))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN earth)(POS 's))(NN diameter))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADJP (WRB How)(JJ wide))(SQ (VBZ is)(NP (DT the)(NNP Milky)(NN Way))(ADVP (RB galaxy))(. ?)))) |ET| 
+1      |BT| (ROOT (S (PP (IN During)(SBAR (WHNP (WDT which))(S (NP (NN season))(VP (VBP do)))))(NP (JJS most)(NNS thunderstorms))(VP (VBP occur))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN gestation)(NN period))(PP (IN for)(NP (DT a)(NN cat))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(RB far))(SQ (VBZ is)(NP (DT a)(JJ nautical)(NN mile)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (NNP Algeria))(ADJP (JJ colonized)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBZ is)(NP (NP (NN hurricane)(NN season))(PP (IN in)(NP (DT the)(NNP Caribbean)))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (NNP Lyndon)(NNP B.)(NNP Johnson))(VP (VBN born)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (NP (NN year))(VBD did)(SBAR (S (NP (DT the)(NNP Milwaukee)(NNPS Braves))(VP (VBP become)(NP (DT the)(NNP Atlanta)(NNPS Braves)))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(JJ fast))(SQ (VBZ is)(NP (NN alcohol))(VP (VBN absorbed))(. ?)))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBZ is)(NP (DT the)(NN summer))(ADJP (JJ solstice)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (DT the)(JJ first)(NN stamp))(VP (VBN issued)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(RB far))(SQ (VBZ is)(NP (NNP Pluto))(PP (IN from)(NP (DT the)(NN sun))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN distance))(PP (IN in)(NP (NP (NNS miles))(PP (IN from)(NP (NP (DT the)(NN earth))(PP (TO to)(NP (DT the)(NN sun))))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ average)(NN life)(NN span))(PP (IN for)(NP (DT a)(NN chicken))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (DT the)(JJ first)(JJ Wal-Mart)(NN store))(VP (VBN opened)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN melting)(NN point))(PP (IN of)(NP (NN copper))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(JJ average)(NN body)(NN temperature)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (NP (NN year))(VBD did)(SBAR (S (NP (DT the)(NNP United)(NNPS States))(VP (VB abolish)(NP (DT the)(NN draft)))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(JJ fast))(SQ (VBZ is)(NP (NP (DT the)(NN speed))(PP (IN of)(NP (NN light)))))(. ?))) |ET| 
+1      |BT| (ROOT (FRAG (SBARQ (WHADVP (WRB How))(SQ (NP (JJ many)(NNS pounds))(PP (IN in)(NP (DT a)(NN ton))))(. ?)))) |ET| 
+1      |BT| (ROOT (S (NP (WP What))(NP (NN year))(VP (VBD was)(NP (NP (DT the)(NNP Mona)(NNP Lisa))(VP (VBN painted))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN population))(PP (IN of)(NP (NNP Nigeria))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN year)))(SQ (VBD did)(NP (DT the)(NNP U.S.))(VP (VB buy)(NP (NNP Alaska))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How))(S (NP (NP (JJ many)(NNS gallons))(PP (IN of)(NP (NN water))))(VP (VBP are)(ADVP (RB there))(PP (IN in)(NP (DT a)(JJ cubic)(NN foot)))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(JJ fast))(SQ (VBZ is)(NP (NN sound)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN depth))(PP (IN of)(NP (DT the)(NNP Nile)(NN river))))))(. ?))) |ET| 
+1      |BT| (ROOT (S (NP (JJ Mexican)(NNS pesos))(VP (VBP are)(ADJP (JJ worth)(SBAR (WHNP (WP what))(FRAG (PP (IN in)(NP (NNP U.S.)(NNS dollars)))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBAR (WHADJP (WRB How)(JJ many))(S (NP (NNP Admirals))(VP (VBP are)(ADVP (RB there))(PP (IN in)(NP (DT the)(NNP U.S.)(NNP Navy)))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How))(S (NP (JJ old))(VP (VBD was)(NP (NP (NNP Joan))(PP (IN of)(NP (NNP Arc)))(SBAR (WHADVP (WRB when))(S (NP (PRP she))(VP (VBD died)))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHPP (IN For)(WHNP (WRB how)(RB long)))(SQ (VBZ is)(NP (DT an)(NN elephant))(ADJP (JJ pregnant)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (NP (NN year))(VBD did)(SBAR (S (NP (NNP Oklahoma))(VP (VBP become)(NP (DT a)(NN state)))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN life)(NN expectancy))(PP (IN of)(NP (DT a)(NN dollar)(NN bill))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(ADJP (JJ old)))(SQ (VBP do)(NP (PRP you))(VP (VB have)(S (VP (TO to)(VP (VB be)(SBAR (IN in)(NN order)(S (VP (TO to)(VP (VB rent)(NP (NP (DT a)(NN car))(PP (IN in)(NP (NNP Italy)))))))))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (NP (NN year))(VBD did)(SBAR (S (NP (DT the)(NNP NFL))(VP (VBP go)(PP (IN on)(NP (NN strike))))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN date)))(SQ (VBD did)(NP (NNP Neil)(NNP Armstrong))(VP (VB land)(PP (IN on)(NP (DT the)(NN moon)))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (NNP Hiroshima))(VP (VBN bombed)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (NP (NN year))(VBD did)(SBAR (S (NP (NNP Mussolini))(VP (VBP seize)(NP (NP (NN power))(PP (IN in)(NP (NNP Italy)))))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WHADJP (WRB How)(JJ many))(NNS hearts))(SQ (VBZ does)(NP (DT an)(NNS octopus))(VP (VB have)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (NNP President)(NNP Kennedy))(VP (VBN shot)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN date)))(SQ (VBD was)(NP (NNP Dwight)(NNP D.)(NNP Eisenhower))(VP (VBN born)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN conversion)(NN rate))(PP (IN between)(NP (NNS dollars)(CC and)(NNS pounds))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (NNP Abraham)(NNP Lincoln))(VP (VBN born)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN year)))(SQ (VBD was)(NP (NNP Mozart))(VP (VBN born)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN melting)(NN point))(PP (IN of)(NP (NN gold))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (NP (DT the)(NN percentage))(PP (IN of)(NP (NN water))))(ADJP (JJ content)(PP (IN in)(NP (DT the)(JJ human)(NN body))))(. ?)))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WRB How)(JJ much))(SQ (VBZ does)(NP (NN water))(VP (VB weigh)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VBZ is)(NP (DT the)(NN murder)(NN rate))(PP (IN in)(NP (NNP Windsor)(, ,)(NNP Ontario))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN population))(PP (IN of)(NP (NNP Australia))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What)(NP (NN year)))(SQ (VBD did)(NP (DT the)(NNP Andy)(NNP Griffith)(NN show))(VP (VB begin)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN date))(PP (IN of)(NP (NP (NNP Mexico)(POS 's))(NN independence))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN speed))(PP (IN of)(NP (NN light))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN width))(PP (IN of)(NP (DT a)(NN football)(NN field))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(RB often))(SQ (VBZ does)(NP (NNP Old)(NNP Faithful))(VP (VB erupt)(PP (IN at)(NP (NNP Yellowstone)(NNP National)(NNP Park)))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN elevation))(PP (IN of)(NP (NP (NNP St.)(NNP Louis))(, ,)(NP (NNP MO)))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(JJ atomic)(NN weight))(PP (IN of)(NP (NN silver))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD did)(NP (NNP North)(NNP Carolina))(VP (VB enter)(NP (DT the)(NN union))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How))(S (NP (JJ old))(VP (VBD was)(NP (NP (DT the)(JJS youngest)(NN president))(PP (IN of)(NP (DT the)(NNP United)(NNPS States))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (NNP Ulysses)(NNP S.)(NNP Grant))(VP (VBN born)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN world)(POS 's))(NN population))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NNS sales)(NN tax)(NN rate))(PP (IN in)(NP (NNP New)(NNP York))))))(. ?))) |ET| 
+1      |BT| (ROOT (S (NP (VBG Developing)(NNS nations))(VP (VBP comprise)(NP (NP (WP what)(NN percentage))(PP (IN of)(NP (NP (DT the)(NN world)(POS 's))(NN population)))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SINV (VP (VBZ is))(NP (NP (NNP Father)(POS 's))(NN Day)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How)(JJ long))(SQ (VBZ is)(NP (NP (DT the)(NNP Columbia)(NNP River))(PP (IN in)(NP (NNS miles)))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (DT the)(NNP Boston)(NN tea))(NP (NN party))(. ?)))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (DT the)(JJ first)(NN kidney))(ADJP (JJ transplant)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBZ is)(NP (NP (DT the)(JJ official)(JJ first)(NN day))(PP (IN of)(NP (NN summer)))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SINV (VP (VBZ is))(NP (NP (NNP St.)(NNP Patrick)(POS 's))(NN Day)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (NNP Thomas)(NNP Jefferson))(VP (VBN born)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADJP (WRB How)(JJ cold))(SQ (MD should)(NP (DT a)(NN refrigerator))(VP (VB be))(. ?)))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB When))(SQ (VBD was)(NP (DT the)(NN telephone))(VP (VBN invented)))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (NNP Susan)(NNP B.)(NNP Anthony)(POS 's))(NN birthday))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (VBZ is)(NP (NP (DT the)(NN population))(PP (IN of)(NP (NNP Venezuela))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHADVP (WRB How))(SQ (ADVP (RB far)(RB away))(VP (VBZ is)(NP (DT the)(NN moon))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WP What))(SQ (VP (NP (NN year))(VBD did)(SBAR (S (NP (DT the)(NNP Titanic))(VP (VBP start)(PP (IN on)(NP (PRP$ its)(NN journey))))))))(. ?))) |ET| 
+1      |BT| (ROOT (SBARQ (WHNP (WHNP (WRB How)(JJ much))(PP (IN of)(NP (DT an)(NN apple))))(SQ (VBZ is)(NP (NN water)))(. ?))) |ET| 
+1      |BT| (ROOT (FRAG (SBARQ (WHADVP (WRB How))(SQ (NP (JJ many)(NNS feet))(PP (IN in)(NP (DT a)(NN mile))))(. ?)))) |ET| 
