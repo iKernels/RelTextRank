@@ -8,7 +8,7 @@
 This readme covers the following topics:
 
 * [Configuration parameters description](https://github.com/iKernels/RelationalTextRanking/blob/acl2017demo/README.md#parameters-and-configurations)
-* [End-to-end example usage](https://github.com/iKernels/RelationalTextRanking/blob/acl2017demo/README.md#running-an-end-to-end-example)
+* [Training a model example usage](https://github.com/iKernels/RelationalTextRanking/blob/acl2017demo/README.md#training-a-model)
 * [Installation instructions](https://github.com/iKernels/RelationalTextRanking/blob/acl2017demo/README.md#installation)
 
 #Running the application#
@@ -65,7 +65,7 @@ Usage: it.unitn.nlpir.system.core.TextPairPrediction
   -expConfigPath [String] Experiment configuration path OPTIONAL
 
 ```
-##Running an end-to-end example##
+##Training a model##
 The example employs data from the [WikiQA](https://www.microsoft.com/en-us/research/publication/wikiqa-a-challenge-dataset-for-open-domain-question-answering/) dataset.
 
 First you need to download the WikiQA data following the above link.
@@ -98,13 +98,6 @@ Train a reranking SVM model with  Partial Tree Kernel applied to the trees and a
 tools/SVM-Light-1.5-rer/svm_learn -W R -V R -t 5 -F 3 -C + -m 5000  data/examples/wikiqa/svm.train data/wikiQA/wikiqa-ch-rer-baselinefeats.model  data/examples/wikiqa/wikiqa-ch-rer-baselinefeats.pred
 ```
 
-Run classification on the test data:
-```bash
-java -Xmx5G -Xss512m  it.unitn.nlpir.system.core.TextPairPrediction -expClassName it.unitn.nlpir.experiment.fqa.CHExperiment -candidatesToKeep 1000 -svmModel data/wikiQA/wikiqa-ch-rer-baselinefeats.model -featureExtractorClass it.unitn.nlpir.features.presets.BaselineFeatures -questionsPath data/wikiQA/WikiQA-test.questions.txt -answersPath data/wikiQA/WikiQA-test.tsv.resultset -outputDir data/examples/wikiqa -outputFile wikiqa-ch-rer-baselinefeats.pred  -mode reranking -filePersistence CASes/wikiQA/test
-```
-
-
-Please note, that the model you have trained in this usage example is a basic model and it does not provide state-or-the-art performance. 
 
 #Installation#
 
