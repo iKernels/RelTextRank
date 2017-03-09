@@ -65,9 +65,11 @@ public class TextPairPrediction extends RERTextPairConversion {
 	protected RerankingDataGen instantiateRerankingDataGen(String mode, String outputDir) {
 		RerankingDataGen rerankingDataGen = null;
 
-		logger.info("Generating data in the train mode");
-		if (mode.equals(RERANKING_MODE))
+		logger.info(String.format("Generating data in the %s mode", TextPairPrediction.mode));
+		
+		if (TextPairPrediction.mode.equals(RERANKING_MODE)){
 			rerankingDataGen = new RerankingDataGenScoresPrediction(svmModel, outputDir, outputFile);
+		}
 		else 
 			rerankingDataGen = new ClassificationDataGenScoresPrediction(svmModel, outputDir, outputFile);
 		

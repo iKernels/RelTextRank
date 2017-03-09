@@ -51,6 +51,7 @@ public class RerankingDataGenScoresPrediction
 	
 			String example = generateExample(qa, pairVectorFeatures,
 					documentTree);
+			logger.debug(example);
 			Double score = classifier.classify(example);
 			this.predFile.writeLn(score.toString());
 		}		

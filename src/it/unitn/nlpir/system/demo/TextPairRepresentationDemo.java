@@ -10,7 +10,6 @@ import it.unitn.nlpir.uima.UIMAUtil;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.Properties;
 import java.util.Scanner;
 
 import org.apache.uima.jcas.JCas;

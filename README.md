@@ -1,9 +1,15 @@
 
-#Please note that the repository is currently under update and the code is not completely stable yet. The final version of the software and the documentation will be made available on March 8, 2017#
+#The detailed documentation on how to set up all possible experimental configurations will be made avaialble on March 10, 2017. An [end-to-end example](#running-an-end-to-end-example) usage is already available.#
 
 **RelTextRank** is flexible Java pipeline for converting pairs of raw texts into structured representations and enriching them with semantic information about the relations between the two pieces of text (e.g., lexical exact match). 
 
 
+
+This readme covers the following topics:
+
+* [Configuration parameters description](#parameters-and-configurations)
+* [End-to-end example usage](#running-an-end-to-end-example)
+* [Installation instructions](#installation)
 
 #Running the application#
 
@@ -59,7 +65,7 @@ Usage: it.unitn.nlpir.system.core.TextPairPrediction
   -expConfigPath [String] Experiment configuration path OPTIONAL
 
 ```
-##Training a model##
+##Running an end-to-end example##
 The example employs data from the [WikiQA](https://www.microsoft.com/en-us/research/publication/wikiqa-a-challenge-dataset-for-open-domain-question-answering/) dataset.
 
 First you need to download the WikiQA data following the above link.
@@ -92,6 +98,29 @@ Train a reranking SVM model with  Partial Tree Kernel applied to the trees and a
 tools/SVM-Light-1.5-rer/svm_learn -W R -V R -t 5 -F 3 -C + -m 5000  data/examples/wikiqa/svm.train data/wikiQA/wikiqa-ch-rer-baselinefeats.model  data/examples/wikiqa/wikiqa-ch-rer-baselinefeats.pred
 ```
 
+Run classification on the test data:
+```bash
+java -Xmx5G -Xss512m  it.unitn.nlpir.system.core.TextPairPrediction -expClassName it.unitn.nlpir.experiment.fqa.CHExperiment -candidatesToKeep 1000 -svmModel data/wikiQA/wikiqa-ch-rer-baselinefeats.model -featureExtractorClass it.unitn.nlpir.features.presets.BaselineFeatures -questionsPath data/wikiQA/WikiQA-test.questions.txt -answersPath data/wikiQA/WikiQA-test.tsv.resultset -outputDir data/examples/wikiqa -outputFile wikiqa-ch-rer-baselinefeats.pred  -mode reranking -filePersistence CASes/wikiQA/test
+```
+
+Evaluate:
+``` bash
+python scripts/eval/ev.py --ignore_noanswer --ignore_allanswer -t 1000 data/wikiQA/WikiQA-test.tsv.resultset data/examples/wikiqa/wikiqa-ch-rer-baselinefeats.pred
+```
+* ``--ignore_noanswer`` means that the questions which have no correct answer passage in ``data/wikiQA/WikiQA-test.tsv.resultset`` will be excluded from the evaluation, as they are not useful for comparing the performance of the answer passage reranking systems 
+* ``--ignore_allanswer`` means that the questions which have only correct answer  passage in ``data/wikiQA/WikiQA-test.tsv.resultset`` will be excluded from the evaluation, as they are not useful for comparing the performance of the answer passage reranking systems 
+* ``-t 1000`` means that we evaluate using only 1000 top-ranked answer passages per question (i.e. all of them in case of WikiQA corpus)
+
+If you have followed all of the instructions above, the output must be as follows:
+
+| System | MRR | MAP  | P@1 |
+|----|----|----|----|
+|REF_FILE |  100.00 | 100.00 | 100.00 |
+|SVM   |  71.69 |  70.31 |  56.12 |
+
+Here MRR, MAP and P@1 are Mean Reciprocal Rank, Mean Average Precision and Precision at rank 1, respectively.
+* *SVM* line reports the output of the system (``data/examples/wikiqa/wikiqa-ch-rer-baselinefeats.pred``).
+* *REF_FILE* is the performance evaluated on the gold standard file  (``data/wikiQA/WikiQA-test.tsv.resultset``). Given that this is the file with the gold labels and we leave the questions without the correct answer passage out of the consideration (``--ignore_noanswer``), the the values of all the metrics are 100.00.
 
 #Installation#
 

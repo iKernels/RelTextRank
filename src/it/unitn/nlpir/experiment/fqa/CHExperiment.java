@@ -34,7 +34,7 @@ public class CHExperiment extends StanfordAETrecQAWithQCExperiment {
 	}
 	
 	protected void setupProjector() {
-		this.pruningRay = 2;
+		this.pruningRay = -1;
 		logger.info(String.format("Pruning ray: %d", this.pruningRay));
 		this.projector = Projectors.getFocusProjector(new PosChunkTreeBuilder(), pruningRay, new StartsWithOrContainsTagPruningRule());
 		
