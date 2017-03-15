@@ -1,4 +1,4 @@
-###Repository updates: we have published a [project wiki](https://github.com/iKernels/RelTextRank/wiki). It will be expanded and edited during 13-17 March, 2017. ###
+### Repository updates: we have published a [project wiki](https://github.com/iKernels/RelTextRank/wiki). It will be expanded and edited during 13-17 March, 2017. 
 
 
 **RelTextRank** is a flexible Java pipeline for converting pairs of raw texts into structured representations and enriching them with semantic information about the relations between the two pieces of text (e.g., lexical exact match). 
@@ -8,9 +8,9 @@ See the [System](https://github.com/iKernels/RelTextRank/wiki/System-module) pag
 This readme provides [Installation instructions](#installation) and  [End-to-end example usage](#running-an-end-to-end-example).
 
 
-#Installation#
+# Installation
 
-###Prerequisites###
+### Prerequisites
 The tool requires the following prerequisites:
 *	Java 1.8+
 *	Apache Maven > 3.3.9. Refer to http://maven.apache.org/install.html for the installation instructions
@@ -28,9 +28,9 @@ The tool requires the following prerequisites:
  *	**Wikipedia Explicit Semantic Analysis index.** If you want to be able to access to the full range of features available in this pipeline, please, download the precompiled the Wikipedia Explicit Semantic Analysis index (see the Explicit Semantic Analysis: Vector Indexes section of the DKPro installation instructions).
  *	**Apache UIMA.** Follow the instructions at https://uima.apache.org/downloads.cgi. Note that you need to install Apache UIMA only if you are planning to modify or recompile the UIMA type system supplied with the RelationalTextRanking. Otherwise, all the relevant UIMA libraries are already included into the dependencies, and you do not need to install anything.
 
-###Installation steps###
+### Installation steps
 After making sure that you have all the necessary prerequisites, install the module as follows.
-####Step 1####
+#### Step 1 
 Check out the project repository and set ```JAVA_HOME``` variable
 ```bash
 git clone https://github.com/iKernels/RelationalTextRanking.git
@@ -38,7 +38,7 @@ cd ./RelationalTextRanking
 ```
 Set ```JAVA_HOME``` variable.
 
-####Step 2: Build the Maven project.####
+#### Step 2: Build the Maven project.
 Import PTK.jar, available in the ./RelationalTextRanking/lib folder into your local Maven repository using the following command:
 ```bash
 mvn install:install-file -Dfile=lib/PTK.jar -DgroupId=it.unitn.kernels.ptk -DartifactId=ptk -Dversion=1.0 -Dpackaging=jar
@@ -49,11 +49,11 @@ mvn clean install
 mvn clean dependency:copy-dependencies package
 ```
 
-####Step 3:	Generate the UIMA Annotation Type classes (optional)####
+#### Step 3:	Generate the UIMA Annotation Type classes (optional)
 We provide the pre-generated UIMA type classes. They are identified by the UIMA Type System descriptor in desc/PipelineTypeSystem.xml.
 In case if you modify the type system for your purposes, you need to regenerate the classes, following the instructions in https://uima.apache.org/d/uimaj-2.4.0/tutorials_and_users_guides.html#ugr.tug.aae.generating_jcas_sources.
 
-####Step 4: Build the SVMLight-TK library####
+#### Step 4: Build the SVMLight-TK library
 (please make sure that the Java classpath includes the ```tools/SVM-Light-TK-1.5.Lib/``` folder)
 ```bash
 cd tools/SVM-Light-TK-1.5.Lib/
@@ -61,7 +61,7 @@ make clean; make
 cd ../..
 ```
 
-##Running an end-to-end example##
+## Running an end-to-end example
 The example employs data from the [WikiQA](https://www.microsoft.com/en-us/research/publication/wikiqa-a-challenge-dataset-for-open-domain-question-answering/) dataset.
 
 First you need to download the WikiQA data following the above link.
