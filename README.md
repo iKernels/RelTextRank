@@ -1,6 +1,3 @@
-### Repository updates: we have published a [project wiki](https://github.com/iKernels/RelTextRank/wiki). It will be expanded and edited during 13-17 March, 2017. 
-
-
 **RelTextRank** is a flexible Java pipeline for converting pairs of raw texts into structured representations and enriching them with semantic information about the relations between the two pieces of text (e.g., lexical exact match). 
 
 See the [System](https://github.com/iKernels/RelTextRank/wiki/System-module) page in the [project wiki](https://github.com/iKernels/RelTextRank/wiki) for the details on how to run the application for reranking and classification.
