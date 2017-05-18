@@ -53,15 +53,15 @@ public class QuestionClassifierWithCustomModels extends JCasAnnotator_ImplBase {
 		if (getContext().getConfigParameterValue(FINALIZE_LEAVES)!=null){
 			this.finalizeTreeLeavesToText = (Boolean)getContext().getConfigParameterValue(FINALIZE_LEAVES);
 			String leafFinalizerClassName = DEFAULT_TREE_FINALIZER_CLASS; 
-			System.out.println("Initializing leaf finalizer: "+leafFinalizerClassName);
+			//System.out.println("Initializing leaf finalizer: "+leafFinalizerClassName);
 			
 			if ((getContext().getConfigParameterValue(LEAF_FINALIZER_CLASS_PARAM)!=null)){
 				leafFinalizerClassName = (String) getContext().getConfigParameterValue(LEAF_FINALIZER_CLASS_PARAM);
-				System.out.println("Initializing leaf finalizer: "+leafFinalizerClassName);
+				//System.out.println("Initializing leaf finalizer: "+leafFinalizerClassName);
 			}
 			Class<?> c = null;
 			try {
-				System.out.println("Initializing leaf finalizer: "+leafFinalizerClassName);
+				//System.out.println("Initializing leaf finalizer: "+leafFinalizerClassName);
 				c = Class.forName(leafFinalizerClassName);
 				
 				leafFinalizer = (ITreePostprocessor) c.newInstance();

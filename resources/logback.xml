@@ -41,11 +41,11 @@
     <appender-ref ref="STDOUT" />
   </logger>
   
-  <logger name="it.unitn.nlpir.util.MatchingTreeUtils" level="DEBUG" additivity="false">
+  <logger name="it.unitn.nlpir.util.MatchingTreeUtils" level="INFO" additivity="false">
     <appender-ref ref="STDOUT" />
   </logger>
   
-  <logger name="it.unitn.nlpir.annotators.FromFileQuestionClassifier" level="DEBUG" additivity="false">
+  <logger name="it.unitn.nlpir.annotators.FromFileQuestionClassifier" level="INFO" additivity="false">
     <appender-ref ref="STDOUT" />
   </logger>
    <logger name="it.unitn.nlpir.annotators.arabicfile.ArabicFromFile" level="WARN" additivity="false">
@@ -53,20 +53,20 @@
   </logger>
   
   
-  <logger name="it.unitn.nlpir.projectors.LODMultiProjector" level="DEBUG" additivity="false">
+  <logger name="it.unitn.nlpir.projectors.LODMultiProjector" level="INFO" additivity="false">
     <appender-ref ref="STDOUT" />
   </logger>
   
-   <logger name="it.unitn.nlpir.projectors.MultiProjector" level="DEBUG" additivity="false">
+   <logger name="it.unitn.nlpir.projectors.MultiProjector" level="INFO" additivity="false">
     <appender-ref ref="STDOUT" />
   </logger>
   
 
-    <logger name="it.unitn.nlpir.experiment.rer" level="DEBUG" additivity="false">
+    <logger name="it.unitn.nlpir.experiment.rer" level="INFO" additivity="false">
     <appender-ref ref="STDOUT" />
   </logger>
    
-   <logger name="it.unitn.nlpir.experiment" level="DEBUG" additivity="false">
+   <logger name="it.unitn.nlpir.experiment" level="INFO" additivity="false">
     <appender-ref ref="STDOUT" />
   </logger>
   
@@ -74,7 +74,7 @@
     <appender-ref ref="STDOUT" />
   </logger>
   
-  <logger name="it.unitn.nlpir.util.wiki" level="DEBUG" additivity="false">
+  <logger name="it.unitn.nlpir.util.wiki" level="INFO" additivity="false">
     <appender-ref ref="STDOUT" />
   </logger>
   
@@ -84,7 +84,7 @@
   <logger name="it.unitn.nlpir.util" level="INFO" additivity="false">
     <appender-ref ref="STDOUT" />
   </logger>
-   <logger name="it.unitn.nlpir.util.wiki.RDFWikiWrapper" level="DEBUG" additivity="false">
+   <logger name="it.unitn.nlpir.util.wiki.RDFWikiWrapper" level="INFO" additivity="false">
     <appender-ref ref="STDOUT" />
   </logger>
   
@@ -92,13 +92,13 @@
     <appender-ref ref="STDOUT" />
   </logger>
   
-  <logger name="it.unitn.nlpir.system" level="DEBUG" additivity="false">
+  <logger name="it.unitn.nlpir.system" level="INFO" additivity="false">
     <appender-ref ref="SHORT_STDOUT" />
   </logger>
-<logger name="it.unitn.nlpir.system.ae.QAAnswerExtractorFull" level="DEBUG" additivity="false">
+<logger name="it.unitn.nlpir.system.ae.QAAnswerExtractorFull" level="INFO" additivity="false">
     <appender-ref ref="SHORT_STDOUT" />
   </logger>
-  <logger name=" it.unitn.nlpir.questions" level="DEBUG" additivity="false">
+  <logger name=" it.unitn.nlpir.questions" level="INFO" additivity="false">
     <appender-ref ref="SHORT_STDOUT" />
   </logger>
   
