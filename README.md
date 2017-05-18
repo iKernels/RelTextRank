@@ -9,21 +9,22 @@ This readme provides [Installation instructions](#installation) and  [End-to-end
 
 ### Prerequisites
 The tool requires the following prerequisites:
-*	Java 1.8+
+*	JDK 1.8+
 *	Apache Maven > 3.3.9. Refer to http://maven.apache.org/install.html for the installation instructions
-*	Additional DKPro resources for computing semantic Wikipedia and WordNet-based DKPro similarity features. Refer to https://dkpro.github.io/dkpro-similarity/settinguptheresources/ for the instructions on how to setup the following DKPro resources 
+*	Additional DKPro resources for computing semantic Wikipedia and WordNet-based DKPro similarity features. **(This is not needed for running the end-to-end example.)** Refer to https://dkpro.github.io/dkpro-similarity/settinguptheresources/ for the instructions on how to setup the following DKPro resources 
 (Please, remember to set up the DKPRO_HOME environment variable as described in the installation instructions web-page):
-  * **WordNet Lexical Semantic Resource index.**  Follow all the official installation instructions, but substitute the original wordnet_properties.xml file supplied within WordNet resource graph archive, with the following file instead: https://raw.githubusercontent.com/dkpro/dkpro-lsr/master/de.tudarmstadt.ukp.dkpro.lexsemresource.wordnet-asl/src/main/resources/resource/WordNet_3/wordnet_properties.xml.
 
- We do not employ Wiktionary in the pipeline. Therefore, you need to remove the following lines from the resources.xml file (or, alternatively, you may download and install the Wiktionary resources as described in the DKPro installation instructions):
- ```xml
-<bean id="wiktionary-en" lazy-init="true" class="de.tudarmstadt.ukp.dkpro.lexsemresource.wiktionary.WiktionaryResource">
-<constructor-arg value="ENGLISH"/>
-<constructor-arg value="${DKPRO_HOME}/LexSemResources/Wiktionary/jwktl_0.15.2_en20100403"/>
-</bean>
-```
- *	**Wikipedia Explicit Semantic Analysis index.** If you want to be able to access to the full range of features available in this pipeline, please, download the precompiled the Wikipedia Explicit Semantic Analysis index (see the Explicit Semantic Analysis: Vector Indexes section of the DKPro installation instructions).
- *	**Apache UIMA.** Follow the instructions at https://uima.apache.org/downloads.cgi. Note that you need to install Apache UIMA only if you are planning to modify or recompile the UIMA type system supplied with the RelationalTextRanking. Otherwise, all the relevant UIMA libraries are already included into the dependencies, and you do not need to install anything.
+    * **WordNet Lexical Semantic Resource index.**  Follow all the official installation instructions, but substitute the original wordnet_properties.xml file supplied within WordNet resource graph archive, with the following file instead: https://raw.githubusercontent.com/dkpro/dkpro-lsr/master/de.tudarmstadt.ukp.dkpro.lexsemresource.wordnet-asl/src/main/resources/resource/WordNet_3/wordnet_properties.xml.
+
+    We do not employ Wiktionary in the pipeline. Therefore, you need to remove the following lines from the resources.xml file (or, alternatively, you may download and install the Wiktionary resources as described in the DKPro installation instructions):
+     ```xml
+    <bean id="wiktionary-en" lazy-init="true" class="de.tudarmstadt.ukp.dkpro.lexsemresource.wiktionary.WiktionaryResource">
+    <constructor-arg value="ENGLISH"/>
+    <constructor-arg value="${DKPRO_HOME}/LexSemResources/Wiktionary/jwktl_0.15.2_en20100403"/>
+    </bean>
+    ```
+    *	**Wikipedia Explicit Semantic Analysis index.** If you want to be able to access to the full range of features available in this pipeline, please, download the precompiled the Wikipedia Explicit Semantic Analysis index (see the Explicit Semantic Analysis: Vector Indexes section of the DKPro installation instructions).
+    *	**Apache UIMA.** Follow the instructions at https://uima.apache.org/downloads.cgi. Note that **you need to install Apache UIMA only if you are planning to modify or recompile the UIMA type system supplied with the RelationalTextRanking (this is not needed if you want to run an end-to-end example)**. Otherwise, all the relevant UIMA libraries are already included into the dependencies, and you do not need to install anything.
 
 ### Installation steps
 After making sure that you have all the necessary prerequisites, install the module as follows.
@@ -32,8 +33,10 @@ Check out the project repository and set ```JAVA_HOME``` variable
 ```bash
 git clone https://github.com/iKernels/RelationalTextRanking.git
 cd ./RelationalTextRanking
+
+export JAVA_HOME=<path to your JDK distribution>
 ```
-Set ```JAVA_HOME``` variable.
+
 
 #### Step 2: Build the Maven project.
 Import PTK.jar, available in the ./RelationalTextRanking/lib folder into your local Maven repository using the following command:
@@ -61,7 +64,7 @@ cd ../..
 ## Running an end-to-end example
 The example employs data from the [WikiQA](https://www.microsoft.com/en-us/research/publication/wikiqa-a-challenge-dataset-for-open-domain-question-answering/) dataset.
 
-First you need to download the WikiQA data following the above link.
+First you need to download the WikiQA data [here](https://www.microsoft.com/en-us/download/details.aspx?id=52419).
 Then run the following commands from the root of the RelTextRank distribution.
 
 ```bash
@@ -71,6 +74,11 @@ python scripts/converters/wikiqa_convert.py ${wikiqa_location}/WikiQA-test.tsv d
 python scripts/converters/wikiqa_convert.py ${wikiqa_location}/WikiQA-dev.tsv data/wikiQA/WikiQA-dev.questions.txt  data/wikiQA/WikiQA-dev.tsv.resultset
 ```
 
+Set the classpath:
+
+```bash
+export CLASSPATH=bin/:target/dependency/*:target/classes
+```
 
 Generate a training file:
 ```bash
