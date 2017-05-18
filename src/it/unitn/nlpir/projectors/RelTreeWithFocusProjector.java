@@ -63,7 +63,7 @@ public class RelTreeWithFocusProjector implements Projector {
 	
 	protected Tree[] prune(Tree questionTree, Tree documentTree){
 		Tree [] t = new Tree[2];
-		System.out.println(this.pruner);
+		//System.out.println(this.pruner);
 		if (this.pruner != null) {
 			//System.out.println("Before pruning: "+TreeUtil.serializeTree(documentTree));
 			t[1] = pruner.prune(documentTree);

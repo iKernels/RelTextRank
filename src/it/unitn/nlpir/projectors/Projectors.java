@@ -95,7 +95,9 @@ public class Projectors {
 	
 	public static Projector getProjector(TreeBuilder treeBuilder, int pruneRay, PruningRule pruningRule, ITreePostprocessor tp) {
 		NodeMatcher matcher = getHard2ParentMatcher();
-		ChunkTreePruner pruner = new ChunkTreePruner(pruningRule, pruneRay);
+		ChunkTreePruner pruner  = null;
+		if (pruneRay>0)
+			pruner = new ChunkTreePruner(pruningRule, pruneRay);
 		return new RelTreeProjector(treeBuilder, matcher, tp, pruner);
 	}
 	
