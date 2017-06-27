@@ -127,4 +127,5 @@ Here MRR, MAP and P@1 are Mean Reciprocal Rank, Mean Average Precision and Preci
 * *SVM* line reports the output of the system (``data/examples/wikiqa/wikiqa-ch-rer-baselinefeats.pred``).
 * *REF_FILE* is the performance evaluated on the gold standard file  (``data/wikiQA/WikiQA-test.tsv.resultset``). Given that this is the file with the gold labels and we leave the questions without the correct answer passage out of the consideration (``--ignore_noanswer``), the the values of all the metrics are 100.00.
 
-
+# License
+This software is licensed under [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) license.
