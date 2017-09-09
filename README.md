@@ -4,7 +4,7 @@ See the [System](https://github.com/iKernels/RelTextRank/wiki/System-module) pag
 
 This readme provides [Installation instructions](#installation) and  [End-to-end example usage](#running-an-end-to-end-example).
 
-***An improved and updated version of RelTextRank will be made available on August 18, 2017***
+***An improved and updated version of RelTextRank will be made available on September 30, 2017***
 
 # Installation
 
