@@ -1,16 +1,16 @@
 package it.unitn.nlpir.projectors;
 
-import it.unitn.nlpir.nodematchers.AllNonTokenChildrenMatchingStrategy;
 import it.unitn.nlpir.nodematchers.LCTHardNodeMatcher;
 import it.unitn.nlpir.nodematchers.NodeMatcher;
-import it.unitn.nlpir.nodematchers.SecondParentMatchingStrategy;
-import it.unitn.nlpir.nodematchers.TwoParentsMatchingStrategy;
 import it.unitn.nlpir.nodematchers.lct.LCTFocusEntityNodeMatcher;
 import it.unitn.nlpir.nodematchers.lct.LCTHardNodeTwoStrategiesMatcher;
 import it.unitn.nlpir.nodematchers.lct.LCTTwoStrategyFocusEntityNodeMatcher;
-import it.unitn.nlpir.nodematchers.lct.TokenAndAllNonTokenChildrenMatchingStrategy;
+
 import it.unitn.nlpir.nodematchers.strategies.AddChildMatchingStrategy;
+import it.unitn.nlpir.nodematchers.strategies.AllNonTokenChildrenMatchingStrategy;
 import it.unitn.nlpir.nodematchers.strategies.MarkGrChildrenMatchingStrategy;
+import it.unitn.nlpir.nodematchers.strategies.SecondParentMatchingStrategy;
+import it.unitn.nlpir.nodematchers.strategies.TwoParentsMatchingStrategy;
 import it.unitn.nlpir.pruners.ChunkTreePruner;
 import it.unitn.nlpir.pruners.PrePreTerminalLevelTreePruner;
 import it.unitn.nlpir.pruners.StartsWithTagPruningRule;
@@ -23,7 +23,6 @@ import it.unitn.nlpir.tree.SPTKFullTokenNodesNoNERFinalizer;
 import it.unitn.nlpir.tree.TreeBuilder;
 import it.unitn.nlpir.tree.TreeLeafFinalizer;
 import it.unitn.nlpir.tree.leaffinalizers.TreeTokenNodeRelFinalizer;
-import it.unitn.nlpir.tree.misc.SPTKFullTokenNodesKeepCustomTagsFinalizer;
 import it.unitn.nlpir.uima.TokenTextGetterFactory;
 
 
@@ -71,12 +70,7 @@ public class LCTProjectors extends Projectors {
 		return getProjector(treeBuilder, matcher);
 	}
 	
-	public static Projector getLCTProjectorMarkTokensAsRel() {
-		TreeBuilder treeBuilder = new LCTWithGrDistinctionBuilder();
-		NodeMatcher matcher = new LCTHardNodeMatcher( new TokenAndAllNonTokenChildrenMatchingStrategy());
-		ITreePostprocessor tp = new SPTKFullTokenNodesKeepCustomTagsFinalizer();
-		return new RelTreeProjector(treeBuilder, matcher, tp);
-	}
+	
 	
 	
 	public static Projector getMixedProjectorLCTandDepPH(int pruningRay) {
@@ -97,7 +91,22 @@ public class LCTProjectors extends Projectors {
 	
 	
 	public static Projector getMixedFocusProjectorLCTandDepPH(int pruningRay) {
-		NodeMatcher focusMatcher = new LCTTwoStrategyFocusEntityNodeMatcher(new MarkGrChildrenMatchingStrategy(), new SecondParentMatchingStrategy(), true,true);
+		return getMixedFocusProjectorLCTandDepPH(pruningRay, true, true, true);
+	}
+	
+	/**
+	 * Projector class that generates and LCT structure to generate question and DT2 structure to generate answer
+	 * @param pruningRay
+	 * @param addFocus
+	 * @param typeFocus
+	 * @param addFocusToQ
+	 * @return
+	 */
+	public static Projector getMixedFocusProjectorLCTandDepPH(int pruningRay,  boolean addFocus, boolean typeFocus, boolean addFocusToQ) {
+		NodeMatcher focusMatcher = null;
+		
+		if (typeFocus)
+			focusMatcher = new LCTTwoStrategyFocusEntityNodeMatcher(new MarkGrChildrenMatchingStrategy(), new SecondParentMatchingStrategy(), typeFocus, addFocusToQ);
 		
 		TreeBuilder questionTreeBuilder = new LCTWithGrDistinctionBuilder();
 		TreeBuilder answerTreeBuilder = new PhraseDependencyTreeBuilder();
@@ -111,6 +120,8 @@ public class LCTProjectors extends Projectors {
 		NodeMatcher matcher = new LCTHardNodeTwoStrategiesMatcher( new AllNonTokenChildrenMatchingStrategy(), new TwoParentsMatchingStrategy());
 		return new MixedRelTreeWithFocusProjector(questionTreeBuilder,answerTreeBuilder, matcher , focusMatcher, new SPTKFullTokenNodesFinalizer(), new TreeLeafFinalizer() ,pruner);
 	}
+	
+	
 	
 	public static Projector getMixedFocusProjectorLCTandDepPHNoNER(int pruningRay) {
 		NodeMatcher focusMatcher = new LCTTwoStrategyFocusEntityNodeMatcher(new MarkGrChildrenMatchingStrategy(), new SecondParentMatchingStrategy(), true,true);

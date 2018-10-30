@@ -43,4 +43,9 @@ public class BowWordNetSynonymsProvider implements FVProvider {
 
 		return new Pair<FeatureVector, FeatureVector>(q, d);
 	}
+	
+	@Override
+	public String toString() {
+		return "BowWordNetSynonymsProvider [WordNet Synonyms]";
+	}
 }

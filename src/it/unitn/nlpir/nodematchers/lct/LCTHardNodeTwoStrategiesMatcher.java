@@ -1,8 +1,8 @@
 package it.unitn.nlpir.nodematchers.lct;
 
-import it.unitn.nlpir.nodematchers.MatchingStrategy;
 import it.unitn.nlpir.nodematchers.NodeMatcher;
 import it.unitn.nlpir.nodematchers.lct.LCTTreeUtils;
+import it.unitn.nlpir.nodematchers.strategies.MatchingStrategy;
 import it.unitn.nlpir.projectors.MatchedNode;
 import it.unitn.nlpir.types.Token;
 import it.unitn.nlpir.uima.TokenTextGetter;
@@ -17,8 +17,6 @@ import org.slf4j.LoggerFactory;
 import org.uimafit.util.JCasUtil;
 
 import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.trees.tregex.TregexMatcher;
-import edu.stanford.nlp.trees.tregex.TregexPattern;
 
 /**
  * This class performs a hard match on the tokens of the type specified by the

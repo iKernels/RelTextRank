@@ -31,19 +31,14 @@ public class SVMLightTK15 implements Classifier {
 	/**
 	 * svmlight_tk.so path
 	 */
-	//public static final String SVMLIGHT_TK_RELATIVE_PATH = "tools/SVM-Light-TK-1.5.Lib/svmlight_tk.dll";
-	public static final String SVMLIGHT_TK_RELATIVE_PATH = "tools/SVM-Light-1.5-rer/svmlight_tk.so";
 
+	public static final String SVMLIGHT_TK_RELATIVE_PATH = "tools/SVM-Light-1.5-rer/svmlight_tk.so";
 	public static final String SVMLIGHT_TK_RELATIVE_PATH_LINUX = "tools/SVM-Light-1.5-rer/svmlight_tk.so";
-	//public static final String SVMLIGHT_TK_RELATIVE_PATH_LINUX = "tools/SPTK.reranking.fixed/src/svmlight_tk.so";
 	public static final String SVMLIGHT_TK_RELATIVE_PATH_WIN = "tools/SVM-Light-1.5-rer/svmlight_tk.dll";
 	public static final String SVMLIGHT_TK;
 	
 	static {
 		String modelPath = SVMLIGHT_TK_RELATIVE_PATH_LINUX;
-	/*	if (System.getProperty("os.name").toLowerCase().indexOf("win") >= 0){
-			modelPath = SVMLIGHT_TK_RELATIVE_PATH_WIN;
-		}*/
 		String path = new File(modelPath).getAbsolutePath();
 		SVMLIGHT_TK = path;
 		System.load(SVMLIGHT_TK);

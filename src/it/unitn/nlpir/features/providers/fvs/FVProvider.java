@@ -6,4 +6,6 @@ import cc.mallet.types.FeatureVector;
 
 public interface FVProvider {
 	Pair<FeatureVector, FeatureVector> getFeatureVectors(QAPair qaPair);
+	
+	
 }

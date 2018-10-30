@@ -5,7 +5,7 @@ import edu.stanford.nlp.trees.Tree;
 
 public class StartsWithTagPruningRule implements PruningRule {
 	
-	private final String tag;
+	protected final String tag;
 	
 	public StartsWithTagPruningRule(String tag) {
 		this.tag = tag;

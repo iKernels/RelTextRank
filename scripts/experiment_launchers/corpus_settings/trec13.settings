@@ -1,0 +1,16 @@
+train_q=data/trec13/train.questions
+train_a=data/trec13/train.resultset
+test_q=data/trec13/test.questions
+test_a=data/trec13/test.resultset
+dev_q=data/trec13/dev.questions
+dev_a=data/trec13/dev.resultset
+
+train_c=CASes/trec13
+test_c=CASes/trec13
+dev_c=CASes/trec13
+
+train_n=10
+test_n=100000
+dev_n=100000
+
+

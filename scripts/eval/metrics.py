@@ -1,6 +1,6 @@
 from __future__ import division
 
-
+import logging
 def mrr(out, th):
   """Computes MRR.
 
@@ -15,6 +15,7 @@ def mrr(out, th):
     for i in xrange(min(th, len(candidates))):
       if candidates[i] == "true":
         MRR += 1.0 / (i + 1)
+        # logging.debug("MRR: %s\t%.2f" %(qid,1.0 / (i + 1)))
         break
   return MRR * 100.0 / n
 
@@ -70,7 +71,7 @@ def map(out):
     
     if precisions:
       avg_prec = sum(precisions)/len(precisions)
-    
+    # logging.debug("MAP: %s\t%.2f" %(qid,avg_prec))
     MAP += avg_prec
   return MAP / num_queries
 

@@ -1,0 +1,22 @@
+{
+  "embedding_locations" : [
+    {
+      "id" : "aqw2v",
+      "file": "/home/kateryna/resources/embeddings/aquaint+wiki.txt.gz.ndim=50.bin",
+      "binary": true,
+      "comment": "word2vec pretrained on Wikipedia+Aquaint; download them embeddings from https://drive.google.com/open?id=0B-yipfgecoSBb1dTcW5MdVhGNkE"
+    },
+    {
+      "id" : "gw2v",
+      "file": "/home/kateryna/resources/embeddings/GoogleNews-vectors-negative300.bin",
+      "binary": true,
+      "comment": "word2vec embeddings pretrained on google news; download them from https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing"
+    },
+    {
+      "id" : "gl",
+      "file": "/home/kateryna/resources/embeddings/glove.42B.300d.txt.w2v",
+      "binary": false,
+      "comment": "glove embeddings. download them from http://nlp.stanford.edu/data/glove.42B.300d.zip then convert to w2v format as follows: python -m gensim.scripts.glove2word2vec --input glove.42B.300d.txt --output glove.42B.300d.txt.w2v"
+    }
+  ]
+}

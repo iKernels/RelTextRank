@@ -5,7 +5,6 @@ import java.util.Properties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import it.unitn.nlpir.experiment.rer.cl.qc.tois.StanfordAETrecQAWithQCExperiment;
 import it.unitn.nlpir.projectors.LCTProjectors;
 
 /**
@@ -37,8 +36,8 @@ public class LCTqDT2aExperiment extends StanfordAETrecQAWithQCExperiment{
 		super();
 	}
 	protected void setupProjector() {
-		this.pruningRay = 0;
-		this.projector = LCTProjectors.getMixedFocusProjectorLCTandDepPH();
+		pruningRay = -1;
+		this.projector = LCTProjectors.getMixedFocusProjectorLCTandDepPH(pruningRay,   this.doFocusMatch,  this.typeFocusMatch, this.markFocusInQuestion);
 	}
 }	
 	

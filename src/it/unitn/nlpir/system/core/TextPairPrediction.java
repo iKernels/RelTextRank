@@ -9,11 +9,16 @@ import it.unitn.nlpir.system.datagen.ClassificationDataGenScoresPrediction;
 import it.unitn.nlpir.system.datagen.RerankingDataGen;
 import it.unitn.nlpir.system.datagen.RerankingDataGenScoresPrediction;
 import it.unitn.nlpir.system.datagen.RerankingDataGenTrain;
+import it.unitn.nlpir.system.demo.QAPStructure;
 import it.unitn.nlpir.uima.Analyzer;
 import it.unitn.nlpir.uima.UIMAUtil;
 import it.unitn.nlpir.util.Pair;
 import it.unitn.nlpir.util.TreeUtil;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Scanner;
 
 import org.apache.uima.jcas.JCas;
@@ -56,10 +61,18 @@ public class TextPairPrediction extends RERTextPairConversion {
 
 	protected JCas questionCas;
 	protected JCas documentCas;
+	protected SVMLightTK classifier;
+	
 	
 	public TextPairPrediction(){
 		super();
+		classifier = new SVMLightTK(svmModel);
 	}
+
+	public void resetClassifier(String svmModel) {
+		classifier = new SVMLightTK(svmModel);
+	}
+	
 
 	
 	protected RerankingDataGen instantiateRerankingDataGen(String mode, String outputDir) {
@@ -102,6 +115,31 @@ public class TextPairPrediction extends RERTextPairConversion {
 		return example;
 	}
 
+	
+	public List<Pair<String,Double>> rerank(QAPStructure structure) {
+		List<Pair<String,Double>> rankedIds = new ArrayList<Pair<String,Double>>();
+		
+		analyzer.enableAllAnalysisEngine();
+		analyzer.analyze(questionCas);
+		UIMAUtil.setupCas(questionCas, structure.getQ().getId(), structure.getQ().getText());
+		for (Result r : structure.getR()) {
+			disableQuestionRelevantAnalyzersOnly();
+			UIMAUtil.setupCas(documentCas, r.documentId, r.documentText);
+			analyzer.analyze(documentCas);
+			Candidate c = experiment.generateCandidate(questionCas, documentCas, r);
+			String svmlightTKInstance= generateExample(c);
+			double prediction = classifier.classify(svmlightTKInstance);
+			rankedIds.add(new Pair<String,Double>(r.documentId,prediction));
+		}
+		Collections.sort(rankedIds, new Comparator<Pair<String,Double>>(){
+		     public int compare(Pair<String,Double> o1, Pair<String,Double> o2){
+		         if(o1.getB() == o2.getB())
+		             return 0;
+		         return o1.getB()> o2.getB() ? -1 : 1;
+		     }
+		});
+		return rankedIds;
+	}
 	
 	
 	public void executeInteractive(){

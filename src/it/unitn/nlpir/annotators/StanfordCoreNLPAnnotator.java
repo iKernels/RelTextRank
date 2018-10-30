@@ -126,7 +126,6 @@ public class StanfordCoreNLPAnnotator extends JCasAnnotator_ImplBase {
 
 		edu.stanford.nlp.pipeline.Annotation document = new edu.stanford.nlp.pipeline.Annotation(
 				text);
-		
 		try {
 			this.pipeline.annotate(document);
 		} catch (OutOfMemoryError e) {

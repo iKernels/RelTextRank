@@ -47,7 +47,7 @@ public class UIMAFilePersistence implements UIMAPersistence {
 	@Override
 	public void deserialize(JCas cas, String id) {
 		try (FileInputStream in = new FileInputStream(Paths.get(casDir, id).toFile())) {
-			logger.info("Deserializing cas for the document: {}", id);
+			logger.debug("Deserializing cas for the document: {}", id);
 			XmiCasDeserializer.deserialize(in, cas.getCas());
 		} catch (IOException | SAXException e) {
 			logger.error("Failed to deserialize cas for the document: {}", id);

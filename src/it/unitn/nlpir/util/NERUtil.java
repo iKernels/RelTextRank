@@ -67,8 +67,8 @@ public class NERUtil {
 			classTypes.add(NERTypes.SET);
 			break;
 		case "ENTY":
-			classTypes.add(NERTypes.ORGANIZATION);
-			classTypes.add(NERTypes.PERSON);
+			//classTypes.add(NERTypes.ORGANIZATION);
+			//classTypes.add(NERTypes.PERSON);
 			classTypes.add(NERTypes.MISC);
 			//classTypes.add(NERTypes.LOCATION);
 			break;

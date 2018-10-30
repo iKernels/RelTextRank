@@ -42,6 +42,7 @@ public class CosineSimilarity implements FeatureExtractor {
 
 	@Override
 	public String getFeatureName() {
-		return this.getClass().getSimpleName() + "." + fvProvider.getClass().getSimpleName();
+		
+		return String.format("%s.%s (%s)",this.getClass().getSimpleName(), fvProvider.getClass().getSimpleName(), fvProvider.toString());
 	}
 }

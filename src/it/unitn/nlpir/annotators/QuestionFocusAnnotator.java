@@ -1,9 +1,15 @@
 package it.unitn.nlpir.annotators;
 
+import it.uniroma2.sag.kelp.data.example.Example;
+import it.uniroma2.sag.kelp.data.example.SimpleExample;
+import it.uniroma2.sag.kelp.data.representation.Representation;
+import it.uniroma2.sag.kelp.data.representation.tree.TreeRepresentation;
+import it.unitn.nlpir.classifiers.Classifier;
 import it.unitn.nlpir.tree.ConstituencyTreeBuilder;
 import it.unitn.nlpir.types.QuestionFocus;
 import it.unitn.nlpir.types.Token;
 import it.unitn.nlpir.util.TreeUtil;
+import it.unitn.nlpir.util.kelp.KelpWrapper;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,27 +24,48 @@ import org.apache.uima.resource.ResourceInitializationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.uimafit.component.JCasAnnotator_ImplBase;
+import org.uimafit.descriptor.TypeCapability;
 import org.uimafit.util.JCasUtil;
 
 import svmlighttk.SVMTKExample;
 import svmlighttk.SVMLightTK;
 import edu.stanford.nlp.trees.Tree;
 
+@TypeCapability(inputs = {  }, outputs = { "it.unitn.nlpir.types.QuestionFocus" })
 public class QuestionFocusAnnotator extends JCasAnnotator_ImplBase {
 	static final Logger logger = LoggerFactory.getLogger(QuestionFocusAnnotator.class);
 
 	private static final String MODEL_FILE = "data/question-focus/question-focus.model";
-
+	private static final String KELP_MODEL_FILE = "data/question-focus/kelp-question-focus.model";
+	
 	private Set<String> allowedTags = new HashSet<>(Arrays.asList(new String[] { "NN", "NNS",
 			"NNP", "NNPS" }));
-
-	private SVMLightTK classifier;
+	protected boolean useKelp = false;
+	private Classifier classifier;
 	private static ConstituencyTreeBuilder treeBuilder = new ConstituencyTreeBuilder();
-
+	public static final String CLASSIFIER_FRAMEWORK_TO_USE_PARAM = "classifierToUse";
+	public static final String KELP_NAME = "kelp";
+	
+	
+	protected Classifier getClassifier(){
+		String base = System.getProperty("resource.home")==null ? "" : System.getProperty("resource.home")+"/";
+		if (this.useKelp) {
+			logger.info("Reading KELP question focus annotator from: "+base+KELP_MODEL_FILE);
+			return new KelpWrapper(base+KELP_MODEL_FILE);
+		}
+		else {
+			logger.info("Reading SVMLight question focus annotator from: "+base+MODEL_FILE);
+			return new SVMLightTK(base+MODEL_FILE);
+		}
+	}
 	@Override
 	public void initialize(UimaContext context) throws ResourceInitializationException {
 		super.initialize(context);
-		this.classifier = new SVMLightTK(MODEL_FILE);
+		if (getContext().getConfigParameterValue(CLASSIFIER_FRAMEWORK_TO_USE_PARAM)!=null){
+			this.useKelp  = ((String)getContext().getConfigParameterValue(CLASSIFIER_FRAMEWORK_TO_USE_PARAM)).equals(KELP_NAME);
+		}
+		
+		this.classifier = getClassifier();
 	}
 
 	@Override
@@ -99,10 +126,9 @@ public class QuestionFocusAnnotator extends JCasAnnotator_ImplBase {
 			 */
 			if (skipNotNPs && !this.allowedTags.contains(originalParentLabel))
 				continue;
-
-			SVMTKExample builder = new SVMTKExample().positive().addTree(
-					taggedConstituencyTree);
-			String instance = builder.toString();
+			
+			String instance = this.useKelp ? generateKelpString(taggedConstituencyTree): generateSVMLightTKExampleString(taggedConstituencyTree);
+					
 			double confidence = this.classifier.classify(instance);
 			if (confidence > maxConfidence) {
 				currentFocus = Integer.parseInt(currentLeafLabel);
@@ -114,6 +140,28 @@ public class QuestionFocusAnnotator extends JCasAnnotator_ImplBase {
 		return ch;
 	}
 
+	private String generateSVMLightTKExampleString(String taggedConstituencyTree){
+		SVMTKExample builder = new SVMTKExample().positive().addTree(
+				taggedConstituencyTree);
+		return builder.toString();
+		
+	}
+	
+
+	
+	protected String generateKelpString(String taggedConstituencyTree){
+		Example example = new SimpleExample();
+		Representation r = new TreeRepresentation();
+		try {
+			r.setDataFromText(taggedConstituencyTree);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		example.addRepresentation("T", r);
+		return example.toString();
+	}
+	
 	public class FocusChunk{
 		private int id; 
 		private double confidence;

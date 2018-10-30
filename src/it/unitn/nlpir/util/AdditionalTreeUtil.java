@@ -306,21 +306,7 @@ public class AdditionalTreeUtil {
 			Tree parent = node.parent(tree);
 			int number = parent.objectIndexOf(node);
 			
-			/*
-			 * boolean alreadyPresent = false;
-				for (int i = number+1; i < parent.children().length; i++){
-					if (parent.getChild(i).value().equals(label)){
-						alreadyPresent = true;
-						break;
-					}
-					
-				}
-				if (!alreadyPresent){
-					Tree childNode = TreeUtil.createNode(label);
-					parent.addChild(number+1,childNode);
-					TreeUtil.markNode(childNode, mark);
-				}
-			 */
+			
 			boolean merged = false;
 			boolean alreadyPresent =false;;
 			for (int i = number+1; i < parent.children().length; i++){
@@ -332,7 +318,7 @@ public class AdditionalTreeUtil {
 			
 			if (!alreadyPresent){
 				if (parent.children().length>number+1){
-					String oldsiblinglabel = parent.getChild(number+1).label().value();
+					//String oldsiblinglabel = parent.getChild(number+1).label().value();
 					if ((parent.getChild(number+1).label().value().equals(sibling.label().value()))){
 						if ((sibling.children()!=null)&&(sibling.children().length==1)){
 							parent.getChild(number+1).addChild(sibling.getChild(0));

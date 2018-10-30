@@ -1,0 +1,23 @@
+{
+  "standalone_experiments" : [
+    { "id": "PTK",
+      "kernels" : ["ptk_rel_sum"]},
+    { "id": "SST",
+      "kernels" : ["sst_rel_sum"]},
+    { "id": "PTK_MULT",
+      "kernels" : ["ptk_mult"]},
+    { "id": "SST_MULT",
+      "kernels" : ["sst_mult"]}
+  ],
+  "standalone_experiments_to_sum" : [
+
+  ],
+
+  "standalone_systems_to_run_cv_upon" : [
+
+  ],
+  "ensembles" : [
+
+  ]
+
+}

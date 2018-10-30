@@ -4,6 +4,10 @@ import it.unitn.nlpir.util.Pair;
 import svmlighttk.SVMVector;
 
 public class Candidate {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public Pair<String, String> qa;
 	public SVMVector features;
 	public Result result;
@@ -38,4 +42,6 @@ public class Candidate {
 	public void setResult(Result result) {
 		this.result = result;
 	}
+
+
 }

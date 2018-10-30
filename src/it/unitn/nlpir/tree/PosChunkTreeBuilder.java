@@ -9,6 +9,7 @@ import org.apache.uima.jcas.JCas;
 import edu.stanford.nlp.trees.Tree;
 
 public class PosChunkTreeBuilder implements TreeBuilder {
+
 	
 	public Tree getTree(JCas cas) {
 		Tree tree = null;

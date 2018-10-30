@@ -9,8 +9,6 @@ import it.unitn.nlpir.resultsets.Result;
 import it.unitn.nlpir.resultsets.ResultSetFileReader;
 import it.unitn.nlpir.system.datagen.RerankingDataGen;
 import it.unitn.nlpir.types.QuestionClass;
-import it.unitn.nlpir.uima.Analyzer;
-import it.unitn.nlpir.uima.UIMAFilePersistence;
 import it.unitn.nlpir.uima.UIMAUtil;
 
 import java.util.ArrayList;
@@ -20,7 +18,6 @@ import org.apache.uima.jcas.JCas;
 import org.uimafit.util.JCasUtil;
 
 import com.google.common.base.Stopwatch;
-import com.google.common.base.Strings;
 
 
 
@@ -58,27 +55,10 @@ public class RERTextPairConversion extends TextPairConversionBase {
 	@Argument(description = "Generation mode of SVM examples: [train, dev, test]", required=false)
 	protected static String mode = "train";
 	
-	@Argument(description = "Path to the SVM file which contains the feature vectors for the corpus", required=false)
-	protected static String featureFile;
-	
-	@Argument(description = "Path to the SVM file which contains the ids of the examples "
-			+ "with the feature vectors for the corpus", required=false)
-	protected static String featureLabelFile;
-	
-	
+
 	public RERTextPairConversion(){
 		super();
 	
-
-		// Instantiate the analyzer with persistence layer
-		if (!Strings.isNullOrEmpty(filePersistence)) {
-			analyzer = new Analyzer(experiment.getAnalysisEngineList(), new UIMAFilePersistence(
-					filePersistence),!doNotSerializeNewAnnotations);
-		} else {
-			analyzer = new Analyzer(experiment.getAnalysisEngineList());
-		}
-		
-		logger.info("Do not store new annotation: "+doNotSerializeNewAnnotations);
 
 		// Create CAS for the question
 		questionCas = analyzer.getNewJCas();
@@ -103,15 +83,7 @@ public class RERTextPairConversion extends TextPairConversionBase {
 		
 	}
 
-	protected void disableEngines(){
-		
-		analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.old.QuestionClassifierWithCustomModels");	
-		analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.old.SPTKQuestionClassifierWithCustomModels");
-		analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.old.QuestionFocusThresholdAnnotator");
-		analyzer.disableAnalysisEngine("QuestionFocusThresholdAnnotator");
-		analyzer.disableAnalysisEngine("QuestionFocusAnnotator");
-
-	}
+	
 
 	public void execute() {
 		// Instantiate the logic of the generation process
@@ -125,15 +97,12 @@ public class RERTextPairConversion extends TextPairConversionBase {
 			logger.info(String.format("Processing question: %s (%s of %s)", id, i + 1, n));
 			
 			// Setup the question CAS
-			UIMAUtil.setupCas(questionCas, "question-" + id, question.getText());
+			setupQuestionCas(question, id);
 			logger.info(questionCas.getDocumentText());
 
 			// Analyze question
 			if (allowOverwriting){
-				analyzer.forceExecutionOfAnalysisEngine("it.unitn.nlpir.annotators.old.QuestionClassifierWithCustomModels");
-				analyzer.forceExecutionOfAnalysisEngine("it.unitn.nlpir.annotators.old.SPTKQuestionClassifierWithCustomModels");
-				analyzer.forceExecutionOfAnalysisEngine("it.unitn.nlpir.annotators.QuestionFocusThresholdAnnotator");
-				analyzer.forceExecutionOfAnalysisEngine("QuestionFocusThresholdAnnotator");
+				forceEnginesExecution();
 			}
 			try {
 				analyzeQuestion(questionCas);
@@ -143,42 +112,41 @@ public class RERTextPairConversion extends TextPairConversionBase {
 				logger.error("ERROR when processing question {}, {}", id, question.getText());
 				continue;
 			}
-			analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.old.QuestionClassifierWithCustomModels");
-			analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.old.SPTKQuestionClassifierWithCustomModels");
+
 			String questionClass = null;
 			if (JCasUtil.select(questionCas, QuestionClass.class).size()>0)
 					questionClass = JCasUtil.selectSingle(questionCas, QuestionClass.class)
 					.getQuestionClass();
 
 
-			List<Result> results = answers.getResults(id, candidatesToKeep);
+			List<Result> results = getResults(id);
 			if (results == null) {
 				logger.warn("No resultlist found for qid: {}", id);
 				continue;
 			}
 			List<Candidate> candidates = new ArrayList<>();
+			
+			disableQuestionRelevantAnalyzersOnly();
+			disableForcedEnginesExecution();
+			
 			for (Result result : results) {
 				
 				// Setup the document CAS
-				UIMAUtil.setupCas(documentCas, "document-" + result.documentId, result.documentText);
-				logger.info(String.format("%s: %s", result.relevantFlag.toUpperCase(), documentCas.getDocumentText()));
-				disableEngines();
+				setupResultCAS(result);
 				
 				// Analyze document
 				try {
 					analyzeDocument(documentCas);
 
-					// Re-enable the analysis engines
-					analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.DiscourseFromFileAnnotator");
-					if (questionClass!=null){
-						
+					if (questionClass!=null){						
 						it.unitn.nlpir.util.UIMAUtil.addQuestionClassToTheCandidateDocument(questionClass, documentCas);
 					}
 
 					//add question class to the documentCas as well (it will not be stored, however)
 					additionalProcessing(questionCas, documentCas, j);
 					j++;
-					candidates.add(experiment.generateCandidate(questionCas, documentCas, result));
+					Candidate candidate = getCandidate(questionCas, documentCas, result);
+					candidates.add(candidate);
 				}
 				catch (Exception e){
 					e.printStackTrace();
@@ -198,6 +166,25 @@ public class RERTextPairConversion extends TextPairConversionBase {
 
 		// Close resources used by the generation logic
 		rerankingDataGen.cleanUp();
+	}
+
+	protected List<Result> getResults(String id) {
+		List<Result> results = answers.getResults(id, candidatesToKeep);
+		return results;
+	}
+
+	protected void setupResultCAS(Result result) {
+		UIMAUtil.setupCas(documentCas, "document-" + result.documentId, result.documentText);
+		logger.info(String.format("%s: %s", result.relevantFlag.toUpperCase(), documentCas.getDocumentText()));
+	}
+
+	protected void setupQuestionCas(Question question, String id) {
+		UIMAUtil.setupCas(questionCas, "question-" + id, question.getText());
+	}
+
+	protected Candidate getCandidate(JCas questionCas, JCas documentCas, Result result) {
+		Candidate candidate = experiment.generateCandidate(questionCas, documentCas, result);
+		return candidate;
 	}
 
 	public static void main(String[] args) {

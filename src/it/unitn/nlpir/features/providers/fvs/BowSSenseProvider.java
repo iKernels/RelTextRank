@@ -36,4 +36,11 @@ public class BowSSenseProvider implements FVProvider {
 
 		return new Pair<FeatureVector, FeatureVector>(q, d);
 	}
+
+	@Override
+	public String toString() {
+		return "BowSSenseProvider [SuperSenses]";
+	}
+	
+	
 }

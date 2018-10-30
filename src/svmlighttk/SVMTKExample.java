@@ -119,7 +119,7 @@ public class SVMTKExample {
 				if ((this.trees.size()>0)||(this.vectors.size()>1))
 					example += " |BV|";
 			}
-			String features = this.vectors.get(i).toString();
+			String features = (!this.trees.isEmpty()) ? this.vectors.get(i).toString() :this.vectors.get(i).toString(true);
 			if (!features.equals("")) {
 				example += " " + features;
 			}

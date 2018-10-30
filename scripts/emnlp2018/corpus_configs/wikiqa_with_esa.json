@@ -1,0 +1,53 @@
+{
+"basedir": "",
+"dataset_pickled_path": "data/wikiQA/pkl/wikiqa.pkl",
+"precomputed_features_file": "features/pandas_qa_coling/wikiqa.gz",
+"examples_train": 10,
+"answers_files" : [
+  {
+    "mode" : "train",
+    "file" : "data/wikiQA/WikiQA-train.tsv.resultset"
+  },
+  {
+    "mode": "dev",
+    "file": "data/wikiQA/WikiQA-dev.tsv.resultset"
+  },
+  {
+    "mode" : "test",
+    "file" : "data/wikiQA/WikiQA-test.tsv.resultset"
+  }
+],
+"svm_light_feature_files" : [
+    {
+      "id": "strong_features",
+      "array_size": 48,
+      "files": [
+        {
+          "mode" : "dev",
+          "features" : "data/examples/wikiqa_strong_features_emnlp2018/svm.dev",
+          "labels" : "data/examples/wikiqa_strong_features_emnlp2018/svm.dev.relevancy"
+        },
+        {
+          "mode" : "test",
+          "features" : "data/examples/wikiqa_strong_features_emnlp2018/svm.test",
+          "labels" : "data/examples/wikiqa_strong_features_emnlp2018/svm.test.relevancy"
+        },
+        {
+          "mode" : "train",
+          "features" : "data/examples/wikiqa_strong_features_emnlp2018/svm.train",
+          "labels" : "data/examples/wikiqa_strong_features_emnlp2018/svm.train.relevancy"
+        }
+      ],
+      "description" : "Strong baseline features from Table 2"
+    }
+ ],
+ "pandas_based_feature_files": [
+     {"feature_file" : "data/wikiQA/pkl/embeddings.pkl.gz",
+     "description" : "embedding-based features"}
+ ],
+
+
+"remove_irrelevant": true,
+"qa_task": true
+
+}

@@ -1,5 +1,7 @@
 package it.unitn.nlpir.experiment.cqa.semeval;
 
+import java.util.Properties;
+
 import it.unitn.nlpir.experiment.AnalyzerConfig;
 import it.unitn.nlpir.experiment.TrecQAExperiment;
 import it.unitn.nlpir.features.builder.FeaturesBuilder;
@@ -22,6 +24,14 @@ import it.unitn.nlpir.uima.AnalysisEngineList;
  *
  */
 public class QuestionToCommentCQAChunkPosExperiment extends TrecQAExperiment {
+	
+	public QuestionToCommentCQAChunkPosExperiment() {
+		super();
+	}
+	
+	public QuestionToCommentCQAChunkPosExperiment(Properties p) {
+		super(p);
+	}
 	protected void setupProjector() {
 		this.pruningRay = -1;
 		this.projector = Projectors.getRelPruneQandAProjector(new PosChunkTreeLimitSLengthPruneSignaturesBuilder(70), pruningRay, 

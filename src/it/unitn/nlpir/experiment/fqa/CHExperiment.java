@@ -5,10 +5,10 @@ import java.util.Properties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import it.unitn.nlpir.experiment.rer.cl.qc.tois.StanfordAETrecQAWithQCExperiment;
 import it.unitn.nlpir.projectors.Projectors;
 import it.unitn.nlpir.pruners.StartsWithOrContainsTagPruningRule;
 import it.unitn.nlpir.tree.PosChunkTreeBuilder;
+import it.unitn.nlpir.tree.TreeLeafFinalizer;
 
 /**
  * CH + FC + QT (defined by config file, Stanford 3.6.0 preprocessing pipeline), pruning ray=2
@@ -34,11 +34,10 @@ public class CHExperiment extends StanfordAETrecQAWithQCExperiment {
 	}
 	
 	protected void setupProjector() {
-		this.pruningRay = -1;
-		logger.info(String.format("Pruning ray: %d", this.pruningRay));
-		this.projector = Projectors.getFocusProjector(new PosChunkTreeBuilder(), pruningRay, new StartsWithOrContainsTagPruningRule());
-		
-		
+		logger.info(String.format("pruningRay=%d", pruningRay));
+		logger.info(String.format("doFocusMatch=%s", doFocusMatch));
+		this.projector = Projectors.getFocusProjector(new PosChunkTreeBuilder(), pruningRay,  new StartsWithOrContainsTagPruningRule(), 
+				new TreeLeafFinalizer(), doFocusMatch, typeFocusMatch, markFocusInQuestion);
 	}
 
 

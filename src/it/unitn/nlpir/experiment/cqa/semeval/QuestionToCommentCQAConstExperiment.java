@@ -1,9 +1,9 @@
 package it.unitn.nlpir.experiment.cqa.semeval;
 
+import java.util.Properties;
+
 import it.unitn.nlpir.experiment.AnalyzerConfig;
 import it.unitn.nlpir.experiment.TrecQAExperiment;
-import it.unitn.nlpir.features.FeatureSets;
-import it.unitn.nlpir.features.builder.FeaturesBuilder;
 import it.unitn.nlpir.projectors.Projectors;
 import it.unitn.nlpir.pruners.StartsWithOrContainsTagPruningRule;
 import it.unitn.nlpir.tree.cqa.semeval.ConstituencyTreeLimitSLengthBuilder;
@@ -29,26 +29,24 @@ import it.unitn.nlpir.uima.AnalysisEngineList;
  *
  */
 public class QuestionToCommentCQAConstExperiment extends TrecQAExperiment {
-	private final String MODELS_FILE = "data/question-classifier/fine-const-stanford/sst-bow-non-opt-finenum-models";
-
-	protected String modelsFile;
+		
+	public QuestionToCommentCQAConstExperiment() {
+		super();
+	}
 	
+	public QuestionToCommentCQAConstExperiment(Properties p) {
+		super(p);
+	}
 	
 	protected void setupProjector() {
 		this.pruningRay = -1;
 		this.projector = Projectors.getRelPruneOnlyAProjectorWithAuthor(new ConstituencyTreeLimitSLengthBuilder(70), pruningRay, 
 				new StartsWithOrContainsTagPruningRule(), new TreeLeafFinalizerURLReplacerQSubjKeeperPruner(), 3);
-		this.modelsFile = MODELS_FILE;
-		
 	}
 	
 	@Override
 	public AnalysisEngineList getAnalysisEngineList() {
-		return AnalyzerConfig.getStanfordGenericAnalysisEngineList();//getQAFocusAnalysisWithFromFileQCEngineList(trainCategories, testCategories);
+		return AnalyzerConfig.getStanfordGenericAnalysisEngineList();
 	}
 
-	protected void setupFeatures() {
-		fb = new FeaturesBuilder()
-		.extend(FeatureSets.buildBowFeatures());
-	}
 }

@@ -2,7 +2,7 @@ package it.unitn.nlpir.projectors.old;
 
 import it.unitn.nlpir.nodematchers.HardNodeMatcher;
 import it.unitn.nlpir.nodematchers.NodeMatcher;
-import it.unitn.nlpir.nodematchers.TwoParentsMatchingStrategy;
+import it.unitn.nlpir.nodematchers.strategies.TwoParentsMatchingStrategy;
 import it.unitn.nlpir.projectors.MatchedNode;
 import it.unitn.nlpir.projectors.Projector;
 import it.unitn.nlpir.projectors.nodematchmarkers.NodesMarker;
@@ -17,13 +17,10 @@ import it.unitn.nlpir.util.TreeUtil;
 import java.util.List;
 
 import org.apache.uima.jcas.JCas;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import edu.stanford.nlp.trees.Tree;
 
 public class ConstituencyTreeProjector implements Projector {
-	private static final Logger logger = LoggerFactory.getLogger(ConstituencyTreeProjector.class);
+	
 	
 	private final ITreePostprocessor treeProcessor; 
 	private NodeMatcher matcher;

@@ -2,7 +2,6 @@ package it.unitn.nlpir.experiment.fqa;
 
 import java.util.Properties;
 
-import it.unitn.nlpir.experiment.rer.cl.qc.tois.StanfordAETrecQAWithQCExperiment;
 import it.unitn.nlpir.projectors.Projectors;
 import it.unitn.nlpir.pruners.StartsWithOrContainsTagPruningRule;
 import it.unitn.nlpir.tree.PhraseDependencyTreeBuilder;
@@ -28,13 +27,14 @@ public class DT2Experiment  extends StanfordAETrecQAWithQCExperiment {
 	public DT2Experiment() {
 		super();
 	}
-	
+		
 	public DT2Experiment(String configFile, Properties p) {
 		super(configFile, p);
 	}
 	
 	protected void setupProjector() {
-		this.projector = Projectors.getFocusProjector(new PhraseDependencyTreeBuilder(), pruningRay, new StartsWithOrContainsTagPruningRule(), new LeafSPTKFullAllLeavesFinalizer());
+		this.projector = Projectors.getFocusProjector(new PhraseDependencyTreeBuilder(), pruningRay, new StartsWithOrContainsTagPruningRule(), new LeafSPTKFullAllLeavesFinalizer(),
+				doFocusMatch, typeFocusMatch, markFocusInQuestion);
 	}
 	
 

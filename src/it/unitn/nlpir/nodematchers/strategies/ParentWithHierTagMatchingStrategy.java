@@ -1,6 +1,5 @@
 package it.unitn.nlpir.nodematchers.strategies;
 
-import it.unitn.nlpir.nodematchers.MatchingStrategy;
 import it.unitn.nlpir.projectors.MatchedNode;
 import it.unitn.nlpir.util.TreeUtil;
 

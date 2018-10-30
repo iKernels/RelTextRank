@@ -7,11 +7,8 @@ import org.slf4j.LoggerFactory;
 
 import it.unitn.nlpir.features.FeatureExtractor;
 import it.unitn.nlpir.features.QAPair;
-import it.unitn.nlpir.features.providers.fvs.FVProvider;
 import it.unitn.nlpir.features.providers.lists.CollectionProvider;
-import it.unitn.nlpir.system.core.TextPairConversionBase;
 import it.unitn.nlpir.util.Pair;
-import cc.mallet.types.FeatureVector;
 import dkpro.similarity.algorithms.api.SimilarityException;
 import dkpro.similarity.algorithms.api.TextSimilarityMeasureBase;
 
@@ -57,6 +54,6 @@ public class DKProSimilarity implements FeatureExtractor {
 
 	@Override
 	public String getFeatureName() {
-		return this.getClass().getSimpleName() + "." + fvProvider.getClass().getSimpleName();
+		return String.format("%s.%s.%s (%s)",this.getClass().getSimpleName(), fvProvider.getClass().getSimpleName(), textSim.getName(), fvProvider.toString());
 	}
 }

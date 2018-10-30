@@ -1,71 +1,49 @@
-**RelTextRank** is a flexible Java pipeline for converting pairs of raw texts into structured representations and enriching them with semantic information about the relations between the two pieces of text (e.g., lexical exact match). 
-
-See the [System](https://github.com/iKernels/RelTextRank/wiki/System-module) page in the [project wiki](https://github.com/iKernels/RelTextRank/wiki) for the details on how to run the application for reranking and classification.
-
-This readme provides [Installation instructions](#installation) and  [End-to-end example usage](#running-an-end-to-end-example).
-
-
-
-# Installation
-
-### Prerequisites
-The tool requires the following prerequisites:
-*	JDK 1.8+
-*	Apache Maven > 3.3.9. Refer to http://maven.apache.org/install.html for the installation instructions
-*	Additional DKPro resources for computing semantic Wikipedia and WordNet-based DKPro similarity features. **(This is not needed for running the end-to-end example.)** Refer to https://dkpro.github.io/dkpro-similarity/settinguptheresources/ for the instructions on how to setup the following DKPro resources 
-(Please, remember to set up the DKPRO_HOME environment variable as described in the installation instructions web-page):
-
-    * **WordNet Lexical Semantic Resource index.**  Follow all the official installation instructions, but substitute the original wordnet_properties.xml file supplied within WordNet resource graph archive, with the following file instead: https://raw.githubusercontent.com/dkpro/dkpro-lsr/master/de.tudarmstadt.ukp.dkpro.lexsemresource.wordnet-asl/src/main/resources/resource/WordNet_3/wordnet_properties.xml.
-
-    We do not employ Wiktionary in the pipeline. Therefore, you need to remove the following lines from the resources.xml file (or, alternatively, you may download and install the Wiktionary resources as described in the DKPro installation instructions):
-     ```xml
-    <bean id="wiktionary-en" lazy-init="true" class="de.tudarmstadt.ukp.dkpro.lexsemresource.wiktionary.WiktionaryResource">
-    <constructor-arg value="ENGLISH"/>
-    <constructor-arg value="${DKPRO_HOME}/LexSemResources/Wiktionary/jwktl_0.15.2_en20100403"/>
-    </bean>
-    ```
-    *	**Wikipedia Explicit Semantic Analysis index.** If you want to be able to access to the full range of features available in this pipeline, please, download the precompiled the Wikipedia Explicit Semantic Analysis index (see the Explicit Semantic Analysis: Vector Indexes section of the DKPro installation instructions).
-    *	**Apache UIMA.** Follow the instructions at https://uima.apache.org/downloads.cgi. Note that **you need to install Apache UIMA only if you are planning to modify or recompile the UIMA type system supplied with the RelationalTextRanking (this is not needed if you want to run an end-to-end example)**. Otherwise, all the relevant UIMA libraries are already included into the dependencies, and you do not need to install anything.
-
-### Installation steps
-After making sure that you have all the necessary prerequisites, install the module as follows.
-#### Step 1 
-Check out the project repository and set ```JAVA_HOME``` variable
+## Installing
 ```bash
-git clone https://github.com/iKernels/RelationalTextRanking.git
-cd ./RelationalTextRanking
+git clone https://github.com/iKernels/RelTextRank.git
+```
+
+Run the following command sequence to install the software and set the Java classpath.
+
+```bash
+cd ./RelTextRank
 
 export JAVA_HOME=<path to your JDK distribution>
+
+sh scripts/install/install.sh 
+
+rm target/dependency/google-collections-1.0.jar 
+
+export CLASSPATH=${CLASSPATH}:bin/:target/dependency/*:target/classes
+
+mkdir logs
 ```
+# Reproducing the EMNLP 2018 results
+If you wish, to reproduce the results from our most recent publication:
+*  Tymoshenko, K. and Moschitti, A. (2018). [Cross-Pair Text Representations for Answer Sentence Selection.](http://aclweb.org/anthology/D18-1240) In EMNLP.
 
+please install the tool as above and follow the instructions at the [wiki page](https://github.com/iKernels/RelationalTextRanking/wiki/Reproducing-the-results-in-the-EMNLP-paper-%22Cross-Pair-Text-Representations-for-Answer-Sentence-Selection%22). 
 
-#### Step 2: Build the Maven project.
-Import PTK.jar, available in the ./RelationalTextRanking/lib folder into your local Maven repository using the following command:
-```bash
-mvn install:install-file -Dfile=lib/PTK.jar -DgroupId=it.unitn.kernels.ptk -DartifactId=ptk -Dversion=1.0 -Dpackaging=jar
-```
-Then download other dependencies and compile
-```bash
-mvn clean install
-mvn clean dependency:copy-dependencies package
-```
+# Running the experiments with structural representations
 
-#### Step 3:	Generate the UIMA Annotation Type classes (optional)
-We provide the pre-generated UIMA type classes. They are identified by the UIMA Type System descriptor in desc/PipelineTypeSystem.xml.
-In case if you modify the type system for your purposes, you need to regenerate the classes, following the instructions in https://uima.apache.org/d/uimaj-2.4.0/tutorials_and_users_guides.html#ugr.tug.aae.generating_jcas_sources.
+You can use the tool to build the structures employed in the following papers:
 
-#### Step 4: Build the SVMLight-TK library
-(please make sure that the Java classpath includes the ```tools/SVM-Light-TK-1.5.Lib/``` folder)
-```bash
-cd tools/SVM-Light-TK-1.5.Lib/
-make clean; make
-cd ../..
-```
+* Tymoshenko, K., Bonadiman, D., Moschitti, A. (2017). [Ranking Kernels for Structures and Embeddings: A Hybrid Preference and Classification Model.](http://aclweb.org/anthology/D17-1093) In EMNLP. 
 
-## Running an end-to-end example
-The example employs data from the [WikiQA](https://www.microsoft.com/en-us/research/publication/wikiqa-a-challenge-dataset-for-open-domain-question-answering/) dataset.
+* Tymoshenko, K., Moschitti, A. (2015). [Assessing the impact of syntactic and semantic structures for answer passages reranking.](https://doi.org/10.1145/2806416.2806490) In CIKM. 
 
-First you need to download the WikiQA data [here](https://www.microsoft.com/en-us/download/details.aspx?id=52419).
+* Tymoshenko, K., Moschitti, A., Nicosia, M.,  Severyn, A. (2017). [RelTextRank: An Open Source Framework for Building Relational Syntactic-Semantic Text Pair Representations.](http://www.aclweb.org/anthology/P17-4014) In ACL, System Demonstrations.
+
+* Tymoshenko, K., Bonadiman, D., & Moschitti, A. (2016). [Learning to rank non-factoid answers: Comment selection in Web forums.](https://doi.org/10.1145/2983323.2983906) In CIKM. 
+
+* Tymoshenko, K., Bonadiman, D., & Moschitti, A. (2016). [Convolutional neural networks vs. convolution kernels: Feature engineering for answer sentence reranking] (http://www.aclweb.org/anthology/N16-1152). In NAACL HLT.
+
+*(Note, that the results might slightly differ to the results reported in the above works due to changes in the code).*
+
+We show how to run the experiments on the example of the WikiQA dataset.
+
+## Downloading the WikiQA dataset
+First, you need to download the WikiQA data from https://www.microsoft.com/en-us/download/details.aspx?id=52419. 
 Then run the following commands from the root of the RelTextRank distribution.
 
 ```bash
@@ -76,57 +54,115 @@ python scripts/converters/wikiqa_convert.py ${wikiqa_location}/WikiQA-test.tsv d
 python scripts/converters/wikiqa_convert.py ${wikiqa_location}/WikiQA-dev.tsv data/wikiQA/WikiQA-dev.questions.txt  data/wikiQA/WikiQA-dev.tsv.resultset
 ```
 
-Set the classpath:
+It may take a long time to train the pipeline on the full-scale data on a single machine. If you wish to train on the subset of data,
+run the following command to prepare the input file with the toy input data:
+```bash
+python scripts/converters/extract_trainset_subset.py -i data/wikiQA/WikiQA-train.questions.txt -o  data/wikiQA/WikiQA-train.questions.toy.txt -p 0.3
+```
+
+## Running experiments with a conveniency script
+
+We provide a conveniency python script which generates a shell script which runs the end-to-end experiment in a specific configuration:
+
+```bash 
+python scripts/experiment_launchers/experiment_launcher.py  
+```
+You may find the detailed description of the script's parameters in the github Wiki [TODO: put a link].
+
+Below you may find examples of the commands to generate the shell scripts which will run end-to-end experiments with different structural representations and the Partial Tree Kernel SVM on WikiQA.
+
+First, you need to set the ```corpus_name``` environment variable.
+
+To train on full-scale data (will take time):
+```bash
+export corpus_name=wikiqa
+```
+OR 
+
+To train on toy data (hopefully, fast):
+```bash
+export corpus_name=wikiqa_toy
+```
+After you have set the variable, run one of the commands below.
+
+* **CH**, shallow chunk-pos based tree 
+   *  ```bash python scripts/experiment_launchers/experiment_launcher.py  -l ${corpus_name} -o scripts/generated_scripts -c CH -p "-t 5 -F 3 -C T -m 1000"  -e it.unitn.nlpir.experiment.fqa.CHExperiment -suf T -s it.unitn.nlpir.system.core.ClassTextPairConversion -ate " -skipAllSame" -ade " -skipAllSame"```
+   * Here, T1 and T2 are both represented as shallow tree structures with lemmas as leaves, their POS-tags as their parent nodes. The POS- tag nodes are further grouped under chunk and sentence nodes. CH excludes punctuation marks and words not included into any chunk
+   
+   ![](img/ch.png)
+* **DT1**, a dependency-based tree represntation 
+   * ```bash python scripts/experiment_launchers/experiment_launcher.py  -l ${corpus_name} -o scripts/generated_scripts -c DT1 -p "-t 5 -F 3 -C T -m 1000"  -e it.unitn.nlpir.experiment.fqa.DT1Experiment -suf T -s it.unitn.nlpir.system.core.ClassTextPairConversion  -ate " -skipAllSame" -ade " -skipAllSame"``` 
+   * A dependency tree in which grammatical relations become nodes and lemmas are located at the leaf level
+    
+    ![](img/dt1.png)
+* **DT2**, a dependency-based tree representation 
+    * ```bash python scripts/experiment_launchers/experiment_launcher.py  -l ${corpus_name} -o scripts/generated_scripts -c DT2 -p "-t 5 -F 3 -C T -m 1000"  -e it.unitn.nlpir.experiment.fqa.DT2Experiment -suf T -s it.unitn.nlpir.system.core.ClassTextPairConversion  -ate " -skipAllSame" -ade " -skipAllSame"```
+   * DT1 modified to include the chunking information, and lemmas in the same chunk are grouped under the same chunk node.
+    
+    ![](img/dt2.png)
+* **LCT<sub>Q</sub>-DT2<sub>A</sub>**, a dependency-based tree representation  
+   * ```bash python scripts/experiment_launchers/experiment_launcher.py  -l ${corpus_name} -o scripts/generated_scripts -c DT3q_DT2a -p "-t 5 -F 3 -C T -m 1000"  -e it.unitn.nlpir.experiment.fqa.LCTqDT2aExperiment -suf T -s it.unitn.nlpir.system.core.ClassTextPairConversion  -ate " -skipAllSame" -ade " -skipAllSame"``` 
+   * T2 is represented as DT2. T1 is represented as a lexical-centered dependency tree with the grammatical relation ```REL(head,child)``` represented as ```(head (child HEAD GR-REL POS-pos(head))```. Here ```REL``` is a grammatical relation, ```head``` and ```child``` are the head and child lemmas in the relation, respectively, and ```pos(head)``` is the POS-tag of the head lemma. ```GR-``` and ```POS-``` tag in the node name indicates that the node is grammar relation or part-of-speech node, respectively. 
+   
+   ![](img/lct.png)
+* **CONST**, a constituency-based tree representation 
+   * ```bash python scripts/experiment_launchers/experiment_launcher.py  -l ${corpus_name} -o scripts/generated_scripts -c CONST -p "-t 5 -F 3 -C T -m 1000"  -e it.unitn.nlpir.experiment.fqa.ConstExperiment -suf T -s it.unitn.nlpir.system.core.ClassTextPairConversion -ate " -skipAllSame" -ade " -skipAllSame"```
+   * Constituency tree
+   ![](img/const.png)
+   
+
+
+
+Below we provide the bash commands to generate shell scripts which will run the commands end-to-end:
+
+
+The above commands will output something like the following:
+```nohup sh scripts/generated_scripts/<experiment_script_name>.sh > logs/<experiment_script_name>.log 2>&1  &```
+Launch it  to run an end-to-end experiment.
+In order to see perfomance simply do:
+```bash
+tail -11 logs/<experiment_script_name>.log
+```
+First table reports performance on the development data, and the second on the test data. REF_FILE is the upper bound of performance. SVM is the performance of your system.
+
+You may see the expected performance of the below scrips in [this google spreadsheet](https://docs.google.com/spreadsheets/d/1IyAQmZbNECrQXGlf3r5ExlNY5oWh9OjlOttJbzovlP8/edit#gid=0).
+
+## Using the performance evaluation script
+Use the following script to evaluate the peformance:
 
 ```bash
-export CLASSPATH=bin/:target/dependency/*:target/classes
+python scripts/eval/ev.py --ignore_noanswer --ignore_allanswer data/examples/<experimental_folder>/svm.relevancy data/examples/<experimental_folder>/<predictions_file>
 ```
+Note that svm.relevancy and ```<predictions_file>``` should be aligned line-by-line.
 
-Generate a training file:
+## Visualizing the structural representations demo
+
+If you want to build and visualize structural representations for two input texts, run the following:
+
 ```bash
-java -Xmx5G -Xss512m it.unitn.nlpir.system.core.RERTextPairConversion -questionsPath data/wikiQA/WikiQA-train.questions.txt -answersPath data/wikiQA/WikiQA-train.tsv.resultset -outputDir data/examples/wikiqa -filePersistence CASes/wikiQA -candidatesToKeep 10 -mode train -expClassName it.unitn.nlpir.experiment.fqa.CHExperiment -featureExtractorClass it.unitn.nlpir.features.presets.BaselineFeatures
+java -Xmx4G it.unitn.nlpir.system.demo.TextPairRepresentationDemo -expClassName it.unitn.nlpir.experiment.fqa.<structure_generation_class_name>
 ```
-Please refer to the  [System](https://github.com/iKernels/RelTextRank/wiki/System-module) page in the [project wiki](https://github.com/iKernels/RelTextRank/wiki) for the parameters' descriptions.
 
-You may find the generated file in ```data/examples/wikiqa/svm.train```. The ```data/examples/wikiqa/svm.train.res``` will contain the labels of the corresponding text pairs from the files specified by ```-questionsPath``` and ```-answersPath``` parameters.
-
-
-Train a model:
-If you are using the software for the first time and you want to use the SVMLight-TK distribution supplied with this pipeline, you must compile it first:
+For example, if you want to see a CONST structure, you may run:
 ```bash
-cd tools/SVM-Light-1.5-rer
-make clean; make
-cd ../..
+java -Xmx4G it.unitn.nlpir.system.demo.TextPairRepresentationDemo -expClassName it.unitn.nlpir.experiment.fqa.ConstExperiment
 ```
+After initialization, the interactive prompt with ask you to enter question and answer delimited by a tab and press ```Enter```.
+The demo will then generate the pseudo-code for the structural representations of your input pairs.
 
-Train a reranking SVM model with  Partial Tree Kernel applied to the trees and a polynomial kernel applied to the feature vectors (refer to http://disi.unitn.it/moschitti/Tree-Kernel.htm for the full list of options description.
-```bash
-tools/SVM-Light-1.5-rer/svm_learn -W R -V R -t 5 -F 3 -C + -m 5000  data/examples/wikiqa/svm.train data/wikiQA/wikiqa-ch-rer-baselinefeats.model  data/examples/wikiqa/wikiqa-ch-rer-baselinefeats.pred
+For example, if you enter:
 ```
-
-Run classification on the test data:
-```bash
-java -Xmx5G -Xss512m  it.unitn.nlpir.system.core.TextPairPrediction -expClassName it.unitn.nlpir.experiment.fqa.CHExperiment -candidatesToKeep 1000 -svmModel data/wikiQA/wikiqa-ch-rer-baselinefeats.model -featureExtractorClass it.unitn.nlpir.features.presets.BaselineFeatures -questionsPath data/wikiQA/WikiQA-test.questions.txt -answersPath data/wikiQA/WikiQA-test.tsv.resultset -outputDir data/examples/wikiqa -outputFile wikiqa-ch-rer-baselinefeats.pred  -mode reranking -filePersistence CASes/wikiQA/test
+What is the capital of Italy?   Rome is the capital.
 ```
-
-Evaluate:
-``` bash
-python scripts/eval/ev.py --ignore_noanswer --ignore_allanswer -t 1000 data/wikiQA/WikiQA-test.tsv.resultset data/examples/wikiqa/wikiqa-ch-rer-baselinefeats.pred
+the demo will output:
 ```
-* ``--ignore_noanswer`` means that the questions which have no correct answer passage in ``data/wikiQA/WikiQA-test.tsv.resultset`` will be excluded from the evaluation, as they are not useful for comparing the performance of the answer passage reranking systems 
-* ``--ignore_allanswer`` means that the questions which have only correct answer  passage in ``data/wikiQA/WikiQA-test.tsv.resultset`` will be excluded from the evaluation, as they are not useful for comparing the performance of the answer passage reranking systems 
-* ``-t 1000`` means that we evaluate using only 1000 top-ranked answer passages per question (i.e. all of them in case of WikiQA corpus)
+[main] INFO it.unitn.nlpir.experiment.fqa.TrecQAWithQCExperiment - [ROOT [ROOT [SBARQ [WHNP [WP [what::w]]] [SQ [VBZ [be::v]] [NP [REL-FOCUS-LOC-NP [DT [the::d]] [REL-NN [capital::n]]] [PP [IN [of::i]] [NP [NNP [italy::n]]]]]] [. [?::.]]]]]       [ROOT [ROOT [S [REL-FOCUS-LOC-NP [NNP [rome::n]]] [VP [VBZ [be::v]] [REL-NP [DT [the::d]] [REL-NN [capital::n]]]] [. [.::.]]]]]
+[main] INFO it.unitn.nlpir.system.demo.TextPairRepresentationDemo - Text1: (ROOT (ROOT (SBARQ (WHNP (WP (what::w))) (SQ (VBZ (be::v)) (NP (REL-FOCUS-LOC-NP (DT (the::d)) (REL-NN (capital::n))) (PP (IN (of::i)) (NP (NNP (italy::n)))))) (. (?::.)))))
+[main] INFO it.unitn.nlpir.system.demo.TextPairRepresentationDemo - Text2: (ROOT (ROOT (S (REL-FOCUS-LOC-NP (NNP (rome::n))) (VP (VBZ (be::v)) (REL-NP (DT (the::d)) (REL-NN (capital::n)))) (. (.::.)))))
+```
+Copy-paste the first line, namely
+``` 
+[ROOT [ROOT [SBARQ [WHNP [WP [what::w]]] [SQ [VBZ [be::v]] [NP [REL-FOCUS-LOC-NP [DT [the::d]] [REL-NN [capital::n]]] [PP [IN [of::i]] [NP [NNP [italy::n]]]]]] [. [?::.]]]]]       [ROOT [ROOT [S [REL-FOCUS-LOC-NP [NNP [rome::n]]] [VP [VBZ [be::v]] [REL-NP [DT [the::d]] [REL-NN [capital::n]]]] [. [.::.]]]]]
+```
+to http://ironcreek.net/phpsyntaxtree/? and you will see the visualization of your question and answer trees.
 
-If you have followed all of the instructions above, the output must be as follows:
-
-| System | MRR | MAP  | P@1 |
-|----|----|----|----|
-|REF_FILE |  100.00 | 100.00 | 100.00 |
-|SVM   |  71.69 |  70.31 |  56.12 |
-
-Here MRR, MAP and P@1 are Mean Reciprocal Rank, Mean Average Precision and Precision at rank 1, respectively.
-* *SVM* line reports the output of the system (``data/examples/wikiqa/wikiqa-ch-rer-baselinefeats.pred``).
-* *REF_FILE* is the performance evaluated on the gold standard file  (``data/wikiQA/WikiQA-test.tsv.resultset``). Given that this is the file with the gold labels and we leave the questions without the correct answer passage out of the consideration (``--ignore_noanswer``), the the values of all the metrics are 100.00.
-
-# License
-This software is licensed under [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) license.

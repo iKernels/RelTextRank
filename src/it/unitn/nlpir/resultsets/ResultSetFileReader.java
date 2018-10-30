@@ -39,6 +39,10 @@ public class ResultSetFileReader {
 
 	private HashMap<String, List<Result>> qid2resultSet;
 
+	public HashMap<String, List<Result>> getQid2resultSet() {
+		return qid2resultSet;
+	}
+
 	public ResultSetFileReader(String path) {
 		constructResultSet(path, candidatesToKeep, new QAResultSetParser());
 	}

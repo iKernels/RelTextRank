@@ -47,9 +47,11 @@ public class SVMLightTK implements Classifier {
 		if (System.getProperty("os.name").toLowerCase().indexOf("win") >= 0){
 			modelPath = SVMLIGHT_TK_RELATIVE_PATH_WIN;
 		}
-		String path = new File(modelPath).getAbsolutePath();
+
+		String path =  (System.getProperty("svmlighttk.home")!=null)? new File(System.getProperty("svmlighttk.home")+"/"+modelPath).getAbsolutePath() :new File(modelPath).getAbsolutePath();
 		SVMLIGHT_TK = path;
 		System.load(SVMLIGHT_TK);
+		System.out.println(String.format("SVMLightTK loaded from %s", SVMLIGHT_TK));
 	}
 																			
 	final private int modelHandle;
@@ -64,7 +66,7 @@ public class SVMLightTK implements Classifier {
 	 * @param modelFile
 	 */
 	public SVMLightTK(String modelFile) {
-		//System.out.println("MODELFILE:"+modelFile);
+		System.out.println("MODELFILE:"+modelFile);
 		this.modelHandle = load_model(modelFile);
 		this.modelThreshold = get_threshold();
 	}

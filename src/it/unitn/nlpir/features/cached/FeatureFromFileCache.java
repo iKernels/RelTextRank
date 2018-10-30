@@ -30,13 +30,18 @@ public class FeatureFromFileCache implements FeatureExtractor {
 				new FileInputStream(featureFile), "UTF8"));
 		String line = null;
 
+
 		while ((line = inValues.readLine()) != null) {
-			line= inValues.readLine();			
+			
 			String [] parts =line.split("\t");
 			if (parts.length!=3){
-				logger.warn(String.format("Skipping empty line: '%s'", line));
+				logger.info(String.format("Skipping empty line: '%s'", line));
 			}
-			features.put(new Pair<String,String>(parts[0].trim(), parts[1].trim()), new SVMVector(parts[2].trim()));
+			Pair<String, String> key = new Pair<String,String>(parts[0].trim(), parts[1].trim());
+			if (features.containsKey(key))
+				logger.error(String.format("key %s is already in the map", key.toString()));
+			features.put(key, new SVMVector(parts[2].trim()));
+
 		}
 		inValues.close();
 		logger.info(String.format("%d feature vectors read from %s", features.size(), featureFile));

@@ -6,7 +6,6 @@ import it.unitn.nlpir.types.Token;
 import it.unitn.nlpir.util.Pair;
 
 import org.apache.uima.jcas.JCas;
-import org.apache.uima.jcas.cas.StringArray;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.uimafit.util.JCasUtil;
@@ -42,5 +41,11 @@ public class BowNEProvider implements FVProvider {
 		logger.debug("Document fvec: {}", d.toString(true));
 
 		return new Pair<FeatureVector, FeatureVector>(q, d);
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Named Entities BOW";
 	}
 }

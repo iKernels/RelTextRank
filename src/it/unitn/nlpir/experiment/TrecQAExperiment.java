@@ -2,7 +2,7 @@ package it.unitn.nlpir.experiment;
 
 import it.unitn.nlpir.features.QAPair;
 import it.unitn.nlpir.features.builder.FeaturesBuilder;
-import it.unitn.nlpir.features.presets.IVectorFeatureExtractor;
+import it.unitn.nlpir.features.presets.FeatureExtractorFactory;
 import it.unitn.nlpir.projectors.Projector;
 import it.unitn.nlpir.projectors.Projectors;
 import it.unitn.nlpir.resultsets.Candidate;
@@ -14,8 +14,6 @@ import it.unitn.nlpir.util.Pair;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.util.Properties;
 
 import org.apache.uima.jcas.JCas;
@@ -27,17 +25,14 @@ import svmlighttk.SVMVector;
 import com.google.common.base.Strings;
 
 public class TrecQAExperiment implements Experiment {
-	protected final Logger logger = LoggerFactory.getLogger(TrecQAExperiment.class);
+	protected  Logger logger = LoggerFactory.getLogger(TrecQAExperiment.class);
 
-	private boolean lowerCaseOutput = true;
-	private String leafTextType = TokenTextGetterFactory.LEMMA;
-	private String matchingTokenTextType = TokenTextGetterFactory.LEMMA;
+	protected boolean lowerCaseOutput = true;
+	protected String leafTextType = TokenTextGetterFactory.LEMMA;
+	protected String matchingTokenTextType = TokenTextGetterFactory.LEMMA;
 	protected String relTag = "REL";
-	protected int pruningRay = 1;
-	private boolean topicAsPostag = true;
-	private boolean firstTopicAsChunk = false;
-	private boolean keepNoRelSentence = true;
-	private String topicModelPath;
+	protected int pruningRay = -1;
+	
 
 	
 	public static final String FEATURE_EXTRACTOR_CLASS_PROPERTY = "featureExtractorClass";
@@ -60,43 +55,10 @@ public class TrecQAExperiment implements Experiment {
 		logger.info("Projector set: {}", this.projector.getClass().getName());
 	}
 	
+	
+	
 	protected void setupFeatures() {
-		fb = new FeaturesBuilder();
-		if (this.featureExtractorClassName!=null){
-			IVectorFeatureExtractor vfe = null;
-			
-				try {
-					if (!((this.featureIDCacheFileName!=null)&&(this.featureCacheFileName!=null))){
-						Class<?> c = null;
-						c = Class.forName(featureExtractorClassName);
-						vfe = (IVectorFeatureExtractor) c.newInstance();
-					}
-					else{
-						Constructor<?> c = null;
-						c = Class.forName(featureExtractorClassName).getConstructor(String.class, String.class);
-						vfe = (IVectorFeatureExtractor) c.newInstance();
-					}
-					fb = vfe.getFeaturesBuilder();
-				} catch (ClassNotFoundException e) {
-					e.printStackTrace();
-				} catch (InstantiationException e) {
-					e.printStackTrace();
-				} catch (IllegalAccessException e) {
-					e.printStackTrace();
-				} catch (NoSuchMethodException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (SecurityException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IllegalArgumentException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (InvocationTargetException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
+		fb = FeatureExtractorFactory.getFeatureBuilder(this.featureExtractorClassName, this.featureCacheFileName);
 	}
 
 	protected void init() {
@@ -104,23 +66,33 @@ public class TrecQAExperiment implements Experiment {
 		setupFeatures();
 	}
 
+	protected void initializeDefaultValues() {
+		
+	}
+	
+	
 	public TrecQAExperiment() {
+		super();
+		initializeDefaultValues();
 		init();
 	}
 
 	public TrecQAExperiment(String configFile) {
+		initializeDefaultValues();
 		loadProperties(configFile);
 		init();
 	}
 
 	
 	public TrecQAExperiment(String configFile, Properties p) {
+		initializeDefaultValues();
 		loadProperties(configFile);
 		setVariablesFromProperties(p);
 		init();
 	}
 	
 	public TrecQAExperiment(Properties p) {
+		initializeDefaultValues();
 		setVariablesFromProperties(p);
 		init();
 	}
@@ -159,7 +131,7 @@ public class TrecQAExperiment implements Experiment {
 				new SVMVector(), qaProj));
 		
 		
-		logger.info((qaProj.getA()+"\t"+qaProj.getB()).replace("(", "[").replace(")", "]"));
+		logger.debug((qaProj.getA()+"\t"+qaProj.getB()).replace("(", "[").replace(")", "]"));
 		return new Candidate(result, qaProj, featureVector);
 	}
 
@@ -175,14 +147,17 @@ public class TrecQAExperiment implements Experiment {
 			ex.printStackTrace();
 		}
 		logger.info("Experiment settings: ");
-		logger.info("lowerCaseOutput = {}", this.lowerCaseOutput);
+		for (Object key : prop.keySet()) {
+			logger.info("{} = {}", (String)key, prop.get(key));
+		}
+		/*logger.info("lowerCaseOutput = {}", this.lowerCaseOutput);
 		logger.info("leafTextType = {}", this.leafTextType);
 		logger.info("matchingTokenTextType = {}", this.matchingTokenTextType);
 		logger.info("pruningRay = {}", this.pruningRay);
 		logger.info("keepNoRelSentence = {}", this.keepNoRelSentence);
 		logger.info("topicAsPostag = {}", this.topicAsPostag);
 		logger.info("firstTopicAsChunk = {}", this.firstTopicAsChunk);
-		logger.info("topicModelPath = {}", this.topicModelPath);
+		logger.info("topicModelPath = {}", this.topicModelPath);*/
 	}
 
 	protected void setVariablesFromProperties(Properties prop) {
@@ -210,37 +185,14 @@ public class TrecQAExperiment implements Experiment {
 			this.relTag = propRelTag;
 		}
 
-		// topicAsPostag
-		String proptopicAsPostag = prop.getProperty("topicAsPostag");
-		if (!Strings.isNullOrEmpty(proptopicAsPostag)) {
-			this.topicAsPostag = Boolean.parseBoolean(proptopicAsPostag);
-		}
-
-		// firstTopicAsChunk
-		String propFirstTopicAsChunk = prop.getProperty("firstTopicAsChunk");
-		if (!Strings.isNullOrEmpty(propFirstTopicAsChunk)) {
-			this.firstTopicAsChunk = Boolean.parseBoolean(propFirstTopicAsChunk);
-		}
-
-		// keepNoRelSentence
-		String propKeepNoRelSentence = prop.getProperty("keepNoRelSentence");
-		if (!Strings.isNullOrEmpty(propKeepNoRelSentence)) {
-			this.keepNoRelSentence = Boolean.parseBoolean(propKeepNoRelSentence);
-		}
-
-		// topicModelPath
-		String propTopicModelPath = prop.getProperty("topicModelPath");
-		if (!Strings.isNullOrEmpty(propTopicModelPath)) {
-			this.topicModelPath = propTopicModelPath;
-		}
-
+		
 		// pruningRay
 		String propPruningRay = prop.getProperty("pruningRay");
-		if (!Strings.isNullOrEmpty(propPruningRay)) {
+		
+		if (!Strings.isNullOrEmpty(propPruningRay)) {{
 			this.pruningRay = Integer.parseInt(propPruningRay);
+			
 		}
-		else{
-			this.pruningRay = 0;
 		}
 		
 		String featureExtractorClassName = prop.getProperty(FEATURE_EXTRACTOR_CLASS_PROPERTY);

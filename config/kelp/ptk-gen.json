@@ -1,0 +1,1 @@
+{"kernelType":"norm","kernelID":1,"baseKernel":{"kernelType":"ptk","kernelID":2,"representation":"constTree","mu":0.4,"lambda":0.4,"terminalFactor":1.0,"maxSubseqLeng":2147483647,"squaredNormCache":{"cacheType":"fixIndex","cacheID":3,"size":1000000},"kernelCache":null},"squaredNormCache":null,"kernelCache":null}

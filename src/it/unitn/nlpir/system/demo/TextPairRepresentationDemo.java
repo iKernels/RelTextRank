@@ -80,6 +80,15 @@ public class TextPairRepresentationDemo {
 
 	}
 
+	protected void disableQuestionRelevantAnalyzersOnly(){
+		analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.old.QuestionClassifierWithCustomModels");
+		analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.old.SPTKQuestionClassifierWithCustomModels");
+		analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.QuestionFocusThresholdAnnotator");
+		analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.QuestionFocusAnnotator");
+		analyzer.disableAnalysisEngine("QuestionFocusAnnotator");
+		analyzer.disableAnalysisEngine("QuestionFocusThresholdAnnotator");
+	} 
+	
 	
 	public void execute(){
 		Scanner scanner = new Scanner(System.in);

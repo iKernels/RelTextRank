@@ -2,7 +2,6 @@ package it.unitn.nlpir.experiment.fqa;
 
 import java.util.Properties;
 
-import it.unitn.nlpir.experiment.rer.cl.qc.tois.StanfordAETrecQAWithQCExperiment;
 import it.unitn.nlpir.projectors.Projectors;
 import it.unitn.nlpir.pruners.StartsWithOrContainsTagPruningRule;
 import it.unitn.nlpir.tree.ConstituencyTreeBuilder;
@@ -33,8 +32,9 @@ public class ConstExperiment extends  StanfordAETrecQAWithQCExperiment {
 	}
 	
 	protected void setupProjector() {
-		this.pruningRay = 0;		
-		this.projector = Projectors.getFocusProjector(new ConstituencyTreeBuilder(), pruningRay, new StartsWithOrContainsTagPruningRule(), new LeafSPTKFullAllLeavesFinalizer());
+		this.pruningRay = -1;		
+		this.projector = Projectors.getFocusProjector(new ConstituencyTreeBuilder(), pruningRay, new StartsWithOrContainsTagPruningRule(), new LeafSPTKFullAllLeavesFinalizer(),
+				doFocusMatch, typeFocusMatch, markFocusInQuestion);
 	}
 	
 

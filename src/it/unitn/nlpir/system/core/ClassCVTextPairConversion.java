@@ -1,6 +1,7 @@
 package it.unitn.nlpir.system.core;
 
 import it.unitn.nlpir.cli.Args;
+import it.unitn.nlpir.cli.Argument;
 import it.unitn.nlpir.questions.Question;
 import it.unitn.nlpir.resultsets.Candidate;
 import it.unitn.nlpir.system.datagen.ClassifierDataGen;
@@ -19,11 +20,13 @@ import com.google.common.base.Stopwatch;
 
 public class ClassCVTextPairConversion extends CVRERTextPairConversion {
 	
-
+	@Argument(description = "When generating training data do not skip questions with now correct answers", required = false)
+	protected static boolean keepAllNegatives = false;
 
 	protected void writeExamples(HashMap<Question, List<Candidate>> qid2candidates,
 			List<Question> questions, String mode, String outputDir) {
-		RerankingDataGen rerankingDataGenTest = new ClassifierDataGen(outputDir, mode);
+		logger.info(String.format("Experiment mode: %s; KeepAllNegatives: %s",mode, keepAllNegatives));
+		RerankingDataGen rerankingDataGenTest = new ClassifierDataGen(outputDir, mode,verboseResultset, !keepAllNegatives);
 		for (Question q : questions) {
 			rerankingDataGenTest.handleData(qid2candidates.get(q));
 		}

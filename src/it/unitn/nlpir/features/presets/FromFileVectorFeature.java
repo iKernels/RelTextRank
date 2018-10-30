@@ -20,7 +20,7 @@ public class FromFileVectorFeature implements IVectorFeatureExtractor{
 	@Override
 	public FeaturesBuilder getFeaturesBuilder() {
 		FeaturesBuilder fb = new FeaturesBuilder();
-		logger.info(String.format("Reading features from %s, %s", featureFile));
+		logger.info(String.format("Reading features from %s", featureFile));
 		fb.extend(FeatureSets.buildFeaturesFromExternalFile(featureFile));
 		return fb;
 	}

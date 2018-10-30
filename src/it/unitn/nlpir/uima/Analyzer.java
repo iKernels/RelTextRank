@@ -60,10 +60,20 @@ public class Analyzer {
 		try {
 			String[] typeSystems = this.aes.getTypeSystemsForCas();
 			if (typeSystems.length == 0) {
-				throw new IllegalStateException(
-						"No typesystem specified in the Analysis Engine list.");
+				return JCasFactory.createJCas();
+				/*throw new IllegalStateException(
+						"No typesystem specified in the Analysis Engine list.");*/
 			}
-			cas = JCasFactory.createJCas(typeSystems);
+			//System.out.println("TYPE SYSTEMS: "+typeSystems[0]);
+			try {
+			
+				cas = JCasFactory.createJCas(typeSystems);
+			}
+			catch (Exception e) {
+				//e.printStackTrace();
+			
+				cas = JCasFactory.createJCasFromPath(typeSystems);
+			}
 		} catch (UIMAException e) {
 			e.printStackTrace();
 		}
@@ -141,7 +151,7 @@ public class Analyzer {
 					}
 
 					// Run the annotator
-					logger.info("Running {}", aeName);
+					logger.debug("Running {}", aeName);
 					SimplePipeline.runPipeline(cas, ae);
 
 					// Add annotator run tag in the cas

@@ -40,6 +40,19 @@ public class AnalysisEngineList implements Iterable<AnalysisEngine> {
 		this.typeSystemsForCAS = new ArrayList<>();
 		this.forceExecution = new HashSet<>();
 	}
+	
+	public AnalysisEngineList addAnalysisEngine(AnalysisEngine ae) {
+		return addAnalysisEngine(ae, false);
+	}
+	public AnalysisEngineList addAnalysisEngine(AnalysisEngine ae, boolean forceExecution) {
+		this.aes.add(ae);
+		String aeName=ae.getClass().getSimpleName();
+		this.aesNames.add(aeName);
+		if (forceExecution) {
+			this.forceExecution.add(aeName);
+		}
+		return this;
+	}
 
 	public AnalysisEngineList addAnalysisEngine(AnalysisEngineDescription aeDesc, boolean forceExecution) {
 		AnalysisEngine ae;

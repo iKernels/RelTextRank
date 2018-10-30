@@ -5,13 +5,14 @@ import org.uimafit.factory.AnalysisEngineFactory;
 
 
 
+
+
 import it.unitn.nlpir.annotators.FromFileQuestionClassifier;
 import it.unitn.nlpir.annotators.PosChunkAnnotator;
+import it.unitn.nlpir.annotators.QuestionClassifierWithCustomModels;
+import it.unitn.nlpir.annotators.QuestionFocusAnnotator;
 import it.unitn.nlpir.annotators.StanfordCoreNLPAnnotator;
 import it.unitn.nlpir.annotators.StanfordCoreNLPWithPropsAnnotator;
-import it.unitn.nlpir.annotators.old.QuestionClassifierWithCustomModels;
-import it.unitn.nlpir.annotators.old.SPTKQuestionClassifierWithCustomModels;
-
 import it.unitn.nlpir.uima.AnalysisEngineList;
 import it.unitn.nlpir.uima.TokenTextGetterFactory;
 public class AnalyzerConfig {
@@ -36,11 +37,13 @@ public class AnalyzerConfig {
 	
 	public static AnalysisEngineList getStanfordQAAnalysisEngineListWithQCFromFile(String modelsFolder) {
 		try {
-			
+			String descFolder = "desc";
+			if (System.getProperty("resource.home")!=null)
+				descFolder = System.getProperty("resource.home")+"/"+descFolder;
 			return getStanfordGenericAnalysisEngineList()
 				.addAnalysisEngine(AnalysisEngineFactory.createPrimitiveDescription(FromFileQuestionClassifier.class,
 						FromFileQuestionClassifier.QUESTION_CATEGORIES_FILE, modelsFolder))
-				.addAnalysisEngine("desc/QuestionFocusAnnotator.xml");
+				.addAnalysisEngine(descFolder+"/QuestionFocusAnnotator.xml");
 		} catch (ResourceInitializationException e) {
 			e.printStackTrace();
 		}
@@ -78,14 +81,20 @@ public class AnalyzerConfig {
 
 	
 	public static AnalysisEngineList getStanfordGenericAnalysisEngineList() {
-		return new AnalysisEngineList().addTypeSystemForCas("desc/PipelineTypeSystem.xml")
+		System.out.println("IAMHERE!!!");
+		String descFolder = "desc";
+		System.out.println("Reading descriptors from "+descFolder);
+		if (System.getProperty("resource.home")!=null)
+			descFolder = System.getProperty("resource.home")+"/"+descFolder;
+		System.out.println("Reading descriptors from "+descFolder);
+		return new AnalysisEngineList().addTypeSystemForCas(descFolder+"/PipelineTypeSystem.xml")
 				.addAnalysisEngine(
 						StanfordCoreNLPAnnotator
 						//StanfordCoreNLPWithPropsAnnotator
 						.getDescription("tokenize, ssplit, pos, lemma, ner, parse"))
-				.addAnalysisEngine("desc/TokenFilter.xml")
-				.addAnalysisEngine("desc/IllinoisChunker.xml")
-				.addAnalysisEngine("desc/PosChunkAnnotator.xml", PosChunkAnnotator.PARAM_LOWERCASE,
+				.addAnalysisEngine(descFolder+"/TokenFilter.xml")
+				.addAnalysisEngine(descFolder+"/IllinoisChunker.xml")
+				.addAnalysisEngine(descFolder+"/PosChunkAnnotator.xml", PosChunkAnnotator.PARAM_LOWERCASE,
 						true, PosChunkAnnotator.PARAM_LEAF_TEXT_TYPE, TokenTextGetterFactory.LEMMA);
 	}
 	
@@ -178,14 +187,36 @@ public class AnalyzerConfig {
 	
 	
 
+	public static AnalysisEngineList getStanfordQAAnalysisEngineListWithKelpQC(String modelFile, String treeBuilderClassName, 
+			String treeLeafFinalizerClassName) {
+		try {
+			
+			AnalysisEngineList ae = getStanfordGenericAnalysisEngineList();
+			ae.addAnalysisEngine(AnalysisEngineFactory.createPrimitiveDescription(QuestionFocusAnnotator.class,
+					QuestionFocusAnnotator.CLASSIFIER_FRAMEWORK_TO_USE_PARAM, QuestionFocusAnnotator.KELP_NAME));
+			
+			if (modelFile!=null)
+				ae.addAnalysisEngine(AnalysisEngineFactory.createPrimitiveDescription(QuestionClassifierWithCustomModels.class,
+						QuestionClassifierWithCustomModels.MODELS_FOLDER, modelFile, 
+						QuestionClassifierWithCustomModels.FINALIZE_LEAVES,true,
+						QuestionClassifierWithCustomModels.TREE_BUILDER_CLASS_PARAM, treeBuilderClassName,
+						QuestionClassifierWithCustomModels.LEAF_FINALIZER_CLASS_PARAM, treeLeafFinalizerClassName,
+						QuestionClassifierWithCustomModels.CLASSIFIER_FRAMEWORK_TO_USE_PARAM, QuestionClassifierWithCustomModels.KELP_NAME));
+			return ae;
+		} catch (ResourceInitializationException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 	
 	
 	public static AnalysisEngineList getStanfordQAAnalysisEngineList(String modelsFolder, String treeBuilderClassName, 
 			String treeLeafFinalizerClassName) {
 		try {
-			
-			AnalysisEngineList ae = getStanfordGenericAnalysisEngineList()
-				.addAnalysisEngine("desc/QuestionFocusAnnotator.xml");
+			AnalysisEngineList ae = getStanfordGenericAnalysisEngineList();
+			ae.addAnalysisEngine(AnalysisEngineFactory.createPrimitiveDescription(QuestionFocusAnnotator.class));
+			/*AnalysisEngineList ae = getStanfordGenericAnalysisEngineList()
+				.addAnalysisEngine("desc/QuestionFocusAnnotator.xml");*/
 			if (modelsFolder!=null)
 				ae.addAnalysisEngine(AnalysisEngineFactory.createPrimitiveDescription(QuestionClassifierWithCustomModels.class,
 						QuestionClassifierWithCustomModels.MODELS_FOLDER, modelsFolder, 
@@ -233,60 +264,7 @@ public class AnalyzerConfig {
 		//return null;
 	}
 	
-	public static AnalysisEngineList getStanfordQAAnalysisEngineListWithSPTKQC(String modelsFolder, String treeBuilderClassName, 
-			String treeLeafFinalizerClassName) {
-		try {
-			return getStanfordGenericAnalysisEngineList()
-				.addAnalysisEngine(AnalysisEngineFactory.createPrimitiveDescription(SPTKQuestionClassifierWithCustomModels.class,
-						SPTKQuestionClassifierWithCustomModels.MODELS_FOLDER, modelsFolder, 
-						SPTKQuestionClassifierWithCustomModels.FINALIZE_LEAVES,true,
-							SPTKQuestionClassifierWithCustomModels.TREE_BUILDER_CLASS_PARAM, treeBuilderClassName,
-							SPTKQuestionClassifierWithCustomModels.LEAF_FINALIZER_CLASS_PARAM, treeLeafFinalizerClassName))
-				.addAnalysisEngine("desc/QuestionFocusAnnotator.xml");
-		} catch (ResourceInitializationException e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
 	
-	public static AnalysisEngineList getStanfordQAAnalysisEngineListWithPropsWithSPTKQC(String modelsFolder, String treeBuilderClassName, 
-			String treeLeafFinalizerClassName) {
-		try {
-			return getStanfordWithPropsGenericAnalysisEngineList()
-				.addAnalysisEngine(AnalysisEngineFactory.createPrimitiveDescription(SPTKQuestionClassifierWithCustomModels.class,
-						SPTKQuestionClassifierWithCustomModels.MODELS_FOLDER, modelsFolder, 
-						SPTKQuestionClassifierWithCustomModels.FINALIZE_LEAVES,true,
-							SPTKQuestionClassifierWithCustomModels.TREE_BUILDER_CLASS_PARAM, treeBuilderClassName,
-							SPTKQuestionClassifierWithCustomModels.LEAF_FINALIZER_CLASS_PARAM, treeLeafFinalizerClassName))
-				.addAnalysisEngine("desc/QuestionFocusAnnotator.xml");
-		} catch (ResourceInitializationException e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
-	
-	/**
-	 * Does only question classification
-	 * @param modelsFolder
-	 * @param treeBuilderClassName
-	 * @param treeLeafFinalizerClassName
-	 * @return
-	 */
-	public static AnalysisEngineList getOnlYSPTKQAAnalysisEngineList(String modelsFolder, String treeBuilderClassName, 
-			String treeLeafFinalizerClassName) {
-		try {
-				return new AnalysisEngineList().addTypeSystemForCas("desc/PipelineTypeSystem.xml")
-						.addAnalysisEngine(AnalysisEngineFactory.createPrimitiveDescription(SPTKQuestionClassifierWithCustomModels.class,
-								SPTKQuestionClassifierWithCustomModels.MODELS_FOLDER, modelsFolder, 
-								SPTKQuestionClassifierWithCustomModels.FINALIZE_LEAVES,true,
-									SPTKQuestionClassifierWithCustomModels.TREE_BUILDER_CLASS_PARAM, treeBuilderClassName,
-									SPTKQuestionClassifierWithCustomModels.LEAF_FINALIZER_CLASS_PARAM, treeLeafFinalizerClassName));
-		} catch (ResourceInitializationException e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
-
 	
 
 

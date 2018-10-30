@@ -10,4 +10,5 @@ import edu.stanford.nlp.trees.Tree;
 
 public interface NodeMatcher {
 	public List<MatchedNode> getMatches(JCas questionCas, JCas documentCas, Tree questionTree, Tree documentTree);
+	
 }

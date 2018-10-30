@@ -19,6 +19,12 @@ public class Question {
 		this.type = "";
 	}
 	
+	@Override
+	public String toString() {
+		return "Question [id=" + id + ", text=" + text + ", perlAnswerPattern=" + perlAnswerPattern + ", type=" + type
+				+ "]";
+	}
+
 	public String getId() {
 		return this.id;
 	}

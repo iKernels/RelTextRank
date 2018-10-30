@@ -2,20 +2,16 @@ package it.unitn.nlpir.features.providers.lists;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
 
 import org.apache.uima.jcas.JCas;
 import org.uimafit.util.JCasUtil;
 
 import it.unitn.nlpir.features.QAPair;
-import it.unitn.nlpir.features.providers.fvs.FVProvider;
 import it.unitn.nlpir.types.Token;
 import it.unitn.nlpir.uima.TokenTextGetter;
 import it.unitn.nlpir.uima.TokenTextGetterFactory;
 import it.unitn.nlpir.util.Pair;
-import cc.mallet.types.FeatureSequence;
-import cc.mallet.types.FeatureVector;
 
 public class OrderedLexicalUnitProvider implements CollectionProvider {
 
@@ -38,6 +34,11 @@ public class OrderedLexicalUnitProvider implements CollectionProvider {
 	}
 
 	
+	@Override
+	public String toString() {
+		return "OrderedLexicalUnitProvider [filterStopwords=" + filterStopwords + ", tGetter=" + tGetter + "]";
+	}
+
 	protected List<Token> getOriginalTokenList(JCas cas){
 		List<Token> ts = new ArrayList<>(JCasUtil.select(cas, Token.class));
 		return ts;

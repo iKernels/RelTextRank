@@ -21,7 +21,7 @@ public class ClassifierDataGen implements RerankingDataGen {
 	private static final String defaultMode = "train";
 	protected String mode;
 	
-	public static final int MAX_NUMBER_OF_NODES = 1000;
+	public static final int MAX_NUMBER_OF_NODES = 10000;
 
 	protected WriteFile svmFile;
 	protected WriteFile relevancyFile;
@@ -29,6 +29,8 @@ public class ClassifierDataGen implements RerankingDataGen {
 	public static String TRUE_LABEL = "true";
 	public static String FALSE_LABEL = "false";
 	protected String trueLabel = "true";
+	protected boolean skipAllNegativesInTrain=true;
+	
 	public ClassifierDataGen(String outputDir) {
 		this(outputDir, defaultMode);
 	}
@@ -37,16 +39,22 @@ public class ClassifierDataGen implements RerankingDataGen {
 		this(outputDir, mode, true);
 	}
 	
+	
 	public ClassifierDataGen(String outputDir, String mode, boolean verboseResultset) {
+		this(outputDir, mode, verboseResultset, true);
+	}
+	
+	public ClassifierDataGen(String outputDir, String mode, boolean verboseResultset, boolean skipAllNegativesInTrain) {
 		this.mode = mode;
 		this.verboseResultset = verboseResultset;
 		this.svmFile = new WriteFile(outputDir, "svm." + mode);
 		if (this.mode.equals("test"))
-			this.relevancyFile = new WriteFile(outputDir, "svm.relevancy");
+			this.relevancyFile = new WriteFile(outputDir, "svm.test.relevancy");
 		else if (this.mode.equals("dev"))
 			this.relevancyFile = new WriteFile(outputDir, "svm.dev.relevancy");
 		else
 			this.relevancyFile = new WriteFile(outputDir, "svm." + mode + ".relevancy");
+		this.skipAllNegativesInTrain = skipAllNegativesInTrain;
 	}
 
 	@Override
@@ -77,7 +85,7 @@ public class ClassifierDataGen implements RerankingDataGen {
 	public void handleData(List<Candidate> candidates) {
 		
 		// skip examples with no correct answer when generating examples in the training mode
-		if (this.mode.equals("train") && !containsCorrectAnswer(candidates))
+		if (this.mode.equals("train") && !containsCorrectAnswer(candidates) && skipAllNegativesInTrain)
 			return;
 		
 		if (candidates==null){
@@ -87,19 +95,20 @@ public class ClassifierDataGen implements RerankingDataGen {
 		for (Candidate c : candidates) {
 			Pair<String, String> qa = c.getQa();
 
-
-			String documentTree = qa.getB();
-			
-			//check if the documentTree size does not exceed the amount
-			if (!checkNodesNumber(documentTree))
-				continue;
-
-			//check if the questionTree size does not exceed the amount
-			int numberOfNodes = TreeUtil.numberOfNodes(qa.getA());
-			if (numberOfNodes >= RerankingDataGenTrain.MAX_NUMBER_OF_NODES) {
-				logger.warn("Skipping example with (question tree has more than {} nodes): {}",
-						RerankingDataGenTrain.MAX_NUMBER_OF_NODES, documentTree);
-				continue;
+			if (qa!=null) {
+				String documentTree = qa.getB();
+				
+				//check if the documentTree size does not exceed the amount
+				if (!checkNodesNumber(documentTree))
+					continue;
+	
+				//check if the questionTree size does not exceed the amount
+				int numberOfNodes = TreeUtil.numberOfNodes(qa.getA());
+				if (numberOfNodes >= RerankingDataGenTrain.MAX_NUMBER_OF_NODES) {
+					logger.warn("Skipping example with (question tree has more than {} nodes): {}",
+							RerankingDataGenTrain.MAX_NUMBER_OF_NODES, documentTree);
+					continue;
+				}
 			}
 			generateAndWriteExample(c);
 		}
@@ -117,9 +126,14 @@ public class ClassifierDataGen implements RerankingDataGen {
 		} else {
 			builder.negative();
 		}
-		String documentTree = qa.getB();
-		generateExampleTreeAndVector(qa, pairVectorFeatures, documentTree,
-				builder);
+		if (qa!=null) {
+			String documentTree = qa.getB();
+			generateExampleTreeAndVector(qa, pairVectorFeatures, documentTree,
+					builder);
+		}
+		else {
+			generateExampleVector(pairVectorFeatures, builder);
+		}
 
 		String example = builder.toString();
 
@@ -145,5 +159,16 @@ public class ClassifierDataGen implements RerankingDataGen {
 			SVMTKExample builder) {
 		builder.addTree(qa.getA()).addTree(documentTree).addVector(pairVectorFeatures);
 	}
+	
+	protected void generateExampleVector(SVMVector pairVectorFeatures,
+			SVMTKExample builder) {
+		if (pairVectorFeatures.getFeatures().size()==0) {
+			pairVectorFeatures.addFeature(0.0);
+		}
+		builder.addVector(pairVectorFeatures);
+	}
+
+
+	
 
 }

@@ -8,7 +8,7 @@ from optparse import OptionParser
 from res_file_reader import ResFileReader
 import metrics
 
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+
 
 
 def read_res_file(res_fname, format):
@@ -211,6 +211,17 @@ def main():
 	parser.add_option("--ignore_allanswer", dest="ignore_allanswer", default=False, action="store_true",
 	                  help="ignore questions with all correct answers [default: %default]")
 	(options, args) = parser.parse_args()
+
+	# logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+
+	if options.verbose:
+		logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.DEBUG)
+	else:
+		logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+
+	logging.info("INFO")
+	logging.debug("Debug")
+
 
 	if len(args) == 1:
 		res_fname = args[0]

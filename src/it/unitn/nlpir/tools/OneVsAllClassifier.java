@@ -21,7 +21,7 @@ import java.util.Map;
  * confidence value.
  *
  */
-public class OneVsAllClassifier {
+public class OneVsAllClassifier implements IOneVsAllClassifier{
 	
 	private Map<String, Classifier> models;
 	private ClassifierFactory factory;

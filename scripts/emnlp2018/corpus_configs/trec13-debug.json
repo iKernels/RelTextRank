@@ -1,0 +1,22 @@
+{
+"basedir": "/home/kateryna/software/distribution/emnlp2018/RelationalTextRanking",
+"dataset_pickled_path": "data/trec13/pkl/trec13.pkl",
+"examples_train": 10,
+"answers_files" : [
+  {
+    "mode" : "train",
+    "file" : "data/trec13/train.resultset"
+  },
+  {
+    "mode": "dev",
+    "file": "data/trec13/dev.resultset"
+  },
+  {
+    "mode" : "test",
+    "file" : "data/trec13/test.resultset"
+  }
+],
+  "remove_irrelevant": true,
+"qa_task": true
+
+}

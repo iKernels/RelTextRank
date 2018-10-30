@@ -21,7 +21,7 @@ import edu.stanford.nlp.trees.Tree;
 public class PhraseDepTreeRelProjector implements Projector {
 	private final Logger logger = LoggerFactory.getLogger(PhraseDepTreeRelProjector.class);
 	
-	private String relationalTag;
+	
 	private String leafTextType; 
 	private NodeMatcher matcher;
 
@@ -29,7 +29,7 @@ public class PhraseDepTreeRelProjector implements Projector {
 			String relationalTag) {
 		this.matcher = matcher;
 		this.leafTextType = leafTextType;
-		this.relationalTag = relationalTag;
+	
 	}
 	
 	@Override
@@ -42,8 +42,6 @@ public class PhraseDepTreeRelProjector implements Projector {
 			questionTree = qBuilder.buildPhraseDepTree();
 			PhraseDependencyTree docBuilder = new PhraseDependencyTree(documentCas);
 			documentTree = docBuilder.buildPhraseDepTree();
-//			questionTree = TreeUtil.buildPhraseDependencyTree(questionCas);
-//			documentTree = TreeUtil.buildPhraseDependencyTree(documentCas);
 		} catch (Exception e) {
 			logger.error("Failed to build the phrase trees.");
 			return new Pair<String, String>("(ROOT)", "(ROOT)");

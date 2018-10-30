@@ -1,5 +1,6 @@
 package it.unitn.nlpir.nodematchers;
 
+import it.unitn.nlpir.nodematchers.strategies.MatchingStrategy;
 import it.unitn.nlpir.projectors.MatchedNode;
 import it.unitn.nlpir.types.NER;
 import it.unitn.nlpir.types.QuestionClass;
@@ -143,7 +144,7 @@ public class FocusEntityNodeMatcher implements NodeMatcher {
 
 	protected Tree getFocusLeafNode(JCas questionCas, Tree[] qLeafNodes) {
 		QuestionFocus questionFocus = JCasUtil.selectSingle(questionCas, QuestionFocus.class);
-		String focus = questionFocus.getCoveredText();
+		
 		List<Token> qTokenFocus = JCasUtil.selectCovered(Token.class, questionFocus);
 
 		if (qTokenFocus.isEmpty()) {

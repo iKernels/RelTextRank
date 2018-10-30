@@ -43,4 +43,8 @@ public class BowWordNetHypernymsProvider implements FVProvider {
 
 		return new Pair<FeatureVector, FeatureVector>(q, d);
 	}
+	@Override
+	public String toString() {
+		return "BowWordNetHypernymsProvider [WordNet Hypernyms]";
+	}
 }

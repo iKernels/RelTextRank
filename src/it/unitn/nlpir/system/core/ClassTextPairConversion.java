@@ -1,6 +1,7 @@
 package it.unitn.nlpir.system.core;
 
 import it.unitn.nlpir.cli.Args;
+import it.unitn.nlpir.cli.Argument;
 import it.unitn.nlpir.system.datagen.ClassifierDataGen;
 import it.unitn.nlpir.system.datagen.RerankingDataGen;
 
@@ -12,13 +13,17 @@ import com.google.common.base.Stopwatch;
 
 public class ClassTextPairConversion extends RERTextPairConversion{
 	
-
+	//allow overwriting new annotations in the dynamic CASes in RAM (serialization in XMIs is controlled by doNotStoreNew)
+	@Argument(description = "When generating training data do not skip questions with now correct answers", required = false)
+	protected static boolean keepAllNegatives = false;
 	
 	protected RerankingDataGen instantiateRerankingDataGen(String mode, String outputDir) {
 		RerankingDataGen rerankingDataGen = null;
 
-		logger.info("Generating data in the train mode");
-		rerankingDataGen = new ClassifierDataGen(outputDir, mode, verboseResultset);
+		logger.info(String.format("Generating data in the %s mode", mode));
+		if (mode.equals("train"))
+			logger.info(String.format("Keep all negatives: %s",String.valueOf(keepAllNegatives)));
+		rerankingDataGen = new ClassifierDataGen(outputDir, mode, verboseResultset, !keepAllNegatives);
 		
 
 		return rerankingDataGen;

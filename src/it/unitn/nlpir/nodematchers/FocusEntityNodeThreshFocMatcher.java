@@ -1,15 +1,9 @@
 package it.unitn.nlpir.nodematchers;
 
+import it.unitn.nlpir.nodematchers.strategies.MatchingStrategy;
 import it.unitn.nlpir.projectors.MatchedNode;
-import it.unitn.nlpir.types.NER;
-import it.unitn.nlpir.types.QuestionClass;
 import it.unitn.nlpir.types.QuestionFocus;
 import it.unitn.nlpir.types.Token;
-import it.unitn.nlpir.util.NERUtil;
-import it.unitn.nlpir.util.TreeUtil;
-
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 import org.apache.uima.jcas.JCas;
@@ -60,10 +54,12 @@ public class FocusEntityNodeThreshFocMatcher extends FocusEntityNodeMatcher impl
 			boolean markQuestionTag, boolean typeFocusTagInQuestion, MatchingStrategy focusMatchingStrategy) {
 		super(strategy, relTag, typedRelTag, markQuestionTag,focusMatchingStrategy);
 		this.typeFocusTagInQuestion =typeFocusTagInQuestion;
+		logger.debug(String.format("Type focus tag in question: %s", String.valueOf(this.typeFocusTagInQuestion)));
 	}
 	public FocusEntityNodeThreshFocMatcher(MatchingStrategy strategy, String relTag, boolean typedRelTag, boolean markQuestionTag, boolean typeFocusTagInQuestion) {
 		super(strategy, relTag, typedRelTag, markQuestionTag);
 		this.typeFocusTagInQuestion =typeFocusTagInQuestion;
+		logger.debug(String.format("Type focus tag in question: %s", String.valueOf(this.typeFocusTagInQuestion)));
 	}
 
 	

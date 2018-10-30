@@ -1,0 +1,10 @@
+{
+  "matcherClass" :  "it.unitn.nlpir.nodematchers.FocusEntityNodeMatcher",
+  "matcherType" : "relfocus",
+  "matchingStrategyClassName" : "it.unitn.nlpir.nodematchers.SecondParentMatchingStrategy",
+  "parameters" : {
+  	"typeFocus": "true",
+  	"addFocusToQ": "true"
+  	}
+  
+}

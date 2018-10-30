@@ -17,7 +17,7 @@ import org.apache.uima.jcas.JCas;
 import edu.stanford.nlp.trees.Tree;
 
 public class DependencyTreeRelProjector implements Projector {
-	private String relationalTag;
+	
 	private String leafTextType; 
 	private NodeMatcher matcher;
 
@@ -25,7 +25,7 @@ public class DependencyTreeRelProjector implements Projector {
 			String relationalTag) {
 		this.matcher = matcher;
 		this.leafTextType = leafTextType;
-		this.relationalTag = relationalTag;
+		
 	}
 	
 	@Override

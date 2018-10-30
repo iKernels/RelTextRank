@@ -11,7 +11,8 @@ import math
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 
-def stats_cv(path=".",  format="trec", prefix="svm", th=50, verbose=False):
+def stats_cv(path=".",  format="trec", prefix="svm",  th=50, suf="",  verbose=False, ignore_noanswer=False,
+             ignore_allanswer=False):
   mrrs_se = []
   mrrs_svm = []
   abs_mrrs = []
@@ -41,24 +42,25 @@ def stats_cv(path=".",  format="trec", prefix="svm", th=50, verbose=False):
     print fold
 
     # Relevancy file
-    res_fname = os.path.join(currentFold, "%s.relevancy" % prefix)
+    res_fname = os.path.join(currentFold, "%s.test.relevancy" % prefix)
     if not os.path.exists(res_fname):
       logging.error("Relevancy file not found: %s", res_fname)
       sys.exit(1)
 
     # Predictions file
-    pred_fname = os.path.join(currentFold, "%s.pred" % prefix)
+    pred_fname = os.path.join(currentFold, "%s.pred" % (prefix + suf))
     if not os.path.exists(pred_fname):
       logging.error("SVM prediction file not found: %s", pred_fname)
       sys.exit(1)
 
-    try:
-      ir, svm = read_res_pred_files(res_fname, pred_fname, format, verbose)   
+    #try:
+    ir, svm = read_res_pred_files(res_fname, pred_fname, format, verbose, ignore_noanswer=ignore_noanswer,ignore_allanswer=ignore_allanswer)
+    '''
     except:
       logging.error("Failed to process input files: %s %s", res_fname, pred_fname)
       logging.error("Check that the input file format is correct")
       sys.exit(1)
-
+    '''
     # MRR
     mrr_se = metrics.mrr(ir, th)
     mrr_svm = metrics.mrr(svm, th)
@@ -124,8 +126,12 @@ def stats_cv(path=".",  format="trec", prefix="svm", th=50, verbose=False):
   print "Averaged over %s folds" % num_folds
   print "%17s %12s %14s %14s" %("IR", "SVM", "(abs)", "(rel)")
   print FMT % ("MRR", avg_mrr_se, std_mrr_se, avg_mrr_svm, std_mrr_svm, avg_abs_impr_mrr, std_abs_impr_mrr, avg_rel_impr_mrr, std_rel_impr_mrr)
-  print FMT % ("MAP", avg_map_se*100, std_map_se*100, avg_map_svm*100, std_map_svm*100, avg_abs_impr_map, std_abs_impr_map, avg_rel_impr_map, std_rel_impr_map)
+  print FMT % ("MAP",  avg_map_se*100, std_map_se*100, avg_map_svm*100, std_map_svm*100, avg_abs_impr_map, std_abs_impr_map, avg_rel_impr_map, std_rel_impr_map)
   print FMT % ("P@1", avg_rec1_se, std_rec1_se, avg_rec1_svm, std_rec1_svm, avg_abs_impr_rec1, std_abs_impr_rec1, avg_rel_impr_rec1, std_rel_impr_rec1)
+
+  print "\nMRR\tMAP\tP@1\tMRRstd\tMAPstd\tP@1std"
+  print "%5.2f\t%5.2f\t%5.2f\t%4.2f\t%4.2f\t%4.2f" % (avg_mrr_svm, avg_map_svm*100, avg_rec1_svm, std_mrr_svm,
+                                                   std_map_svm*100, std_rec1_svm)
 
   # print "Averaged absolute improvement"
   # print "MRRof1: %6.2f%%" % abs_mrr_impr
@@ -162,14 +168,20 @@ def main():
                     metavar="VALUE")      
   parser.add_option("-v", "--verbose", dest="verbose", default=False, action="store_true",
                     help="produce verbose output [default: %default]")      
-
+  parser.add_option("-s", "--suf", dest="suf", default=False,
+                    help="")
+  parser.add_option("--ignore_noanswer", dest="ignore_noanswer", default=False, action="store_true",
+	                  help="ignore questions with no correct answer [default: %default]")
+  parser.add_option("--ignore_allanswer", dest="ignore_allanswer", default=False, action="store_true",
+	                  help="ignore questions with all correct answers [default: %default]")
   (options, args) = parser.parse_args()
 
   # args = ["/Users/aseveryn/PhD/projects/qapipeline-git/data/examples/dd1/cand5.ray1.cv5fold"]
-  #args = ["d:/Work/qa/qapipeline_current/qapipeline/data/examples/stanfordbaseline-classification-oneroot-2015-03-25"]
   if len(args) == 1:
     path = args[0]
-    stats_cv(path=path, format=options.format, th=options.th)
+
+    stats_cv(path=path, format=options.format, th=options.th, suf=options.suf, ignore_noanswer=options.ignore_noanswer,
+             ignore_allanswer=options.ignore_allanswer)
   else:
     parser.print_help()
     sys.exit(1)

@@ -54,6 +54,12 @@ public class PosChunkFullTreeBuilder implements TreeBuilder {
 		return chunks;
 	}
 	
+	protected Tree createPseudoChunk(Token token) {
+		Tree chunkNode;
+		chunkNode = TreeUtil.createNode(token.getPostag());
+		addTokenToCurrentChunk(chunkNode, token);
+		return chunkNode;
+	}
 	public Tree getTree(JCas cas) {
 		
 		Tree tree = TreeUtil.createNode(paragraphRootLabel);
@@ -76,12 +82,10 @@ public class PosChunkFullTreeBuilder implements TreeBuilder {
 					}
 				}
 				else {//create a singular pseudo chunk 
-					chunkNode = TreeUtil.createNode(token.getPostag());
-					addTokenToCurrentChunk(chunkNode, token);
+					chunkNode = createPseudoChunk(token);
 					
 				}
 				if ((chunkNode != null) && (chunkNode.numChildren() > 0)) {
-					// Update chunk label with the non-null topic of the last token
 					sentenceTree.addChild(chunkNode);
 				}
 				

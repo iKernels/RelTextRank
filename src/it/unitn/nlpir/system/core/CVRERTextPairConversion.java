@@ -67,6 +67,8 @@ public class CVRERTextPairConversion extends TextPairConversionBase {
 	}
 	
 	protected void additionalQARelatedProcessing(JCas questionCas, JCas documentCas, int qNum){
+		if (JCasUtil.select(questionCas,  QuestionClass.class).size()<1)
+			return;
 		String questionClass = JCasUtil.selectSingle(questionCas, QuestionClass.class)
 				.getQuestionClass();
 		it.unitn.nlpir.util.UIMAUtil.addQuestionClassToTheCandidateDocument(questionClass, documentCas);
@@ -130,16 +132,14 @@ public class CVRERTextPairConversion extends TextPairConversionBase {
 			UIMAUtil.setupCas(questionCas, "question-" + id, question.getText());
 
 			if (allowOverwriting){
-				analyzer.forceExecutionOfAnalysisEngine("it.unitn.nlpir.annotators.old.QuestionClassifierWithCustomModels");
-				analyzer.forceExecutionOfAnalysisEngine("it.unitn.nlpir.annotators.old.SPTKQuestionClassifierWithCustomModels");
+				forceEnginesExecution();
 			}
 			logger.info(questionCas.getDocumentText());
 			// Analyze question
 			analyzer.analyze(questionCas);
 			
 
-			analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.old.QuestionClassifierWithCustomModels");
-			analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.old.SPTKQuestionClassifierWithCustomModels");
+
 			List<Result> results = answers.getResults(id, candidatesToKeep);
 			if (results == null) {
 				logger.warn("No resultlist found for qid: {}", id);
@@ -151,18 +151,8 @@ public class CVRERTextPairConversion extends TextPairConversionBase {
 				UIMAUtil.setupCas(documentCas, "document-" + result.documentId, result.documentText);
 
 				// Disable analysis engines not desired for documents
-				analyzer.disableAnalysisEngine("QuestionClassifier");
-
-				analyzer.disableAnalysisEngine("QuestionFocusAnnotator");
-				analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.old.QuestionClassifierWithCustomModels");
-				analyzer.disableAnalysisEngine("QuestionClassifier");
-				analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.FromFileQuestionClassifier");
-				analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.old.QuestionClassifierWithCustomModels");
-
-				analyzer.disableAnalysisEngine("QuestionFocusAnnotator");
-				
-				analyzer.disableAnalysisEngine("it.unitn.nlpir.annotators.QuestionFocusThresholdAnnotator");
-				analyzer.disableAnalysisEngine("QuestionFocusThresholdAnnotator");
+				disableForcedEnginesExecution();
+				disableQuestionRelevantAnalyzersOnly();
 				
 				// Analyze document
 				analyzer.analyze(documentCas);

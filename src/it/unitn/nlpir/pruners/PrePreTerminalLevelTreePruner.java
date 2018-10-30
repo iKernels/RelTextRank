@@ -171,7 +171,7 @@ public class PrePreTerminalLevelTreePruner implements Pruner {
 	
 	public class PruneTreeFilter implements Predicate<Tree> {
 
-		private static final long serialVersionUID = 1L;
+		
 		private Set<Tree> treesToKeep;
 		public PruneTreeFilter(Set<Tree> treesToKeep) {
 			this.treesToKeep = treesToKeep;

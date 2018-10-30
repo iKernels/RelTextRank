@@ -1,0 +1,5 @@
+{
+  "matcherClass" : "it.unitn.nlpir.nodematchers.HardNodeMatcher",
+  "matchingStrategyClassName" : "it.unitn.nlpir.nodematchers.TwoParentsMatchingStrategy",
+  "matcherType" : "rel"
+}

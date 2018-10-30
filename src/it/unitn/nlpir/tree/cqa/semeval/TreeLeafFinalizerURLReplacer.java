@@ -35,12 +35,14 @@ public class TreeLeafFinalizerURLReplacer implements ITreePostprocessor {
 	protected void replaceURLs(Tree tree) {
 		//go through leaves and if any of them starts with http or www -> substitue with URL
 		TregexPattern tgrepPattern = TregexPattern.compile("/(http\\:\\/\\/|https\\:\\/\\/)?([a-z0-9][a-z0-9\\-]*\\.)+[a-z]+/");
+		//TregexPattern tgrepPattern = TregexPattern.compile("/(http\\:\\/\\/|https\\:\\/\\/)([a-z0-9][a-z0-9\\-]*\\.)+[a-z]+/");
 		
 		TregexMatcher m = tgrepPattern.matcher(tree);
 		
 		while (m.find()) {
 			 Tree urlNode = m.getMatch();
 			 Tree urlParent = urlNode.parent(tree);
+			 System.out.println(String.format("Found URL: %s", urlNode.value()));
 			 urlNode.setValue("URL");
 			 urlParent.setValue("URL");
 			 

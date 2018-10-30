@@ -1,0 +1,52 @@
+{
+"basedir": "",
+"dataset_pickled_path": "data/semeval/pkl/semeval.pkl",
+"examples_train": 10,
+"answers_files" : [
+  {
+    "mode" : "train",
+    "file" : "data/semeval/train-candidates.txt"
+  },
+  {
+    "mode": "dev",
+    "file": "data/semeval/dev-candidates.txt"
+  },
+  {
+    "mode" : "test",
+    "file" : "data/semeval/test-candidates.txt"
+  }
+],
+ "pandas_based_feature_files": [
+     {
+       "feature_file" : "data/semeval/pkl/embeddings.pkl.gz",
+     "description" : "embedding-based features"}
+ ],
+"svm_light_feature_files" : [
+    {
+      "id": "strong_features",
+      "array_size": 82,
+      "files": [
+        {
+          "mode" : "dev",
+          "features" : "data/semeval/qcri_strong_features/svm.dev",
+          "labels" : "data/semeval/qcri_strong_features/svm.dev.relevancy"
+        },
+        {
+          "mode" : "test",
+          "features" : "data/semeval/qcri_strong_features/svm.test",
+          "labels" : "data/semeval/qcri_strong_features/svm.test.relevancy"
+        },
+        {
+          "mode" : "train",
+          "features" : "data/semeval/qcri_strong_features/svm.train",
+          "labels" : "data/semeval/qcri_strong_features/svm.train.relevancy"
+        }
+      ],
+      "description" : "Strong baseline features from Table 2"
+    }
+ ],
+
+"remove_irrelevant": true,
+"qa_task": true
+
+}

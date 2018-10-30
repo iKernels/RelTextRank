@@ -1,0 +1,16 @@
+{
+	"kernelType" : "norm",
+	"kernelID" : 1,
+	"baseKernel" : {
+		"kernelType" : "ptk",
+		"kernelID" : 2,
+		"representation" : "T",
+		"lambda" : 0.4,
+		"mu" : 0.4,
+		"terminalFactor" : 1	,
+		"squaredNormCache" : {
+			"cacheType" : "fixIndex",
+			"size" : 160213950
+		}
+	}
+}

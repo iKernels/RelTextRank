@@ -100,6 +100,24 @@ public class SVMVector {
 				continue;
 			feats.add(fid + ":" + score);
 		}
+		
+		return Joiner.on(" ").join(feats);
+	}
+	
+	
+	public String toString(boolean doNotAllowEmptyVectors) {
+		List<String> feats = new ArrayList<>();
+		for (Entry<Integer, Double> entry : features.entrySet()) {
+			int fid = entry.getKey();
+			Double score = entry.getValue();
+			if (score.isInfinite() || score.isNaN() || Math.abs(score) < TOLERANCE)
+				continue;
+			feats.add(fid + ":" + score);
+		}
+		if  (doNotAllowEmptyVectors) {
+			if (feats.size()==0)
+				feats.add("1:0.0");
+		}
 		return Joiner.on(" ").join(feats);
 	}
 }

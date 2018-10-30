@@ -2,7 +2,7 @@ package it.unitn.nlpir.projectors;
 
 import it.unitn.nlpir.nodematchers.HardNodeMatcher;
 import it.unitn.nlpir.nodematchers.NodeMatcher;
-import it.unitn.nlpir.nodematchers.TwoParentsMatchingStrategy;
+import it.unitn.nlpir.nodematchers.strategies.TwoParentsMatchingStrategy;
 import it.unitn.nlpir.projectors.nodematchmarkers.NodesMarker;
 import it.unitn.nlpir.pruners.Pruner;
 import it.unitn.nlpir.tree.ITreePostprocessor;

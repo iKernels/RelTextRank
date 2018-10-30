@@ -17,7 +17,7 @@ import com.google.common.base.Joiner;
 public class RerankingDataGenTrain implements RerankingDataGen {
 	private final Logger logger = LoggerFactory.getLogger(RerankingDataGenTest.class);
 	
-	public static final int MAX_NUMBER_OF_NODES = 650;
+	public static final int MAX_NUMBER_OF_NODES = 10000;
 
 	private String train_file;
 	private String train_file_res;

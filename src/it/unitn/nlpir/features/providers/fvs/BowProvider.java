@@ -6,14 +6,8 @@ import it.unitn.nlpir.uima.TokenTextGetter;
 import it.unitn.nlpir.uima.TokenTextGetterFactory;
 import it.unitn.nlpir.util.Pair;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.PrintStream;
-import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -38,6 +32,13 @@ public class BowProvider implements FVProvider {
 	private final boolean filterStopwords;
 
 	private TokenTextGetter tGetter;
+
+
+	
+	@Override
+	public String toString() {
+		return "BowProvider [ngramSizes=" + Arrays.toString(ngramSizes) + ", filterStopwords=" + filterStopwords + "]";
+	}
 
 	public BowProvider() {
 		this(defaultTokenTextType, defaultNgramSizes, false);
@@ -86,16 +87,9 @@ public class BowProvider implements FVProvider {
 		}
 		FeatureVector fv = new FeatureVector(fseq);
 		int[] fids = fv.getIndices();
-		double[] values = fv.getValues();
+		
 		for (int i = 0; i < fv.numLocations(); i++) {
 			int fid = fids[i];
-//			String word = (String) featureDict.lookupObject(fid);
-//			if (word == null)
-//				continue;
-//			Double weight = wordWeights.get(word);
-//			if (weight == null)
-//				weight = 0.0;
-//			fv.setValue(fid, values[i] * weight);
 			fv.setValue(fid, 1.0);
 		}
 		SVMVector vec = new SVMVector(fv);

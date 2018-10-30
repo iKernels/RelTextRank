@@ -1,0 +1,111 @@
+{
+  "standalone_experiments" : [
+    {
+      "id": "B",
+      "kernels":["intra_bow"]},
+    { "id": "V",
+      "kernels" : ["strong_linear"]},
+    { "id": "E",
+      "kernels" : ["intra_embedding"]},
+    {
+      "id": "V+E",
+      "kernels" : [
+        "intra_embedding",
+        "strong_linear"
+      ]
+    },
+    {
+      "id": "B+V+E",
+      "kernels" : [
+        "intra_embedding",
+        "strong_linear",
+        "intra_bow"
+      ]
+    },
+    { "id": "B_CR",
+      "kernels" : ["cross_bow"]},
+    { "id": "E_CR",
+      "kernels" : ["cross_embedding"]},
+    { "id": "SST",
+      "kernels" : ["sst_rel_sum"]},
+    {
+      "id": "B_cr+E_cr",
+      "kernels": [
+        "cross_embedding",
+        "cross_bow"
+      ]
+    },
+    {
+      "id": "B_cr+E_cr+SST",
+      "kernels": [
+        "cross_embedding",
+        "cross_bow",
+        "sst_rel_sum"
+      ]
+    },
+    {
+      "id": "V+E_cr",
+      "kernels" : [
+        "strong_linear",
+        "cross_embedding"
+      ]
+    },
+    {
+      "id": "V+B_cr",
+      "kernels" : [
+        "strong_linear",
+        "cross_bow"
+      ]
+    },
+    {
+      "id": "V+SST",
+      "kernels" : [
+        "strong_linear",
+        "sst_rel_sum"
+      ]
+    },
+    {
+      "id": "V+B_CR+E_CR+E",
+      "kernels" : [
+        "strong_linear",
+        "cross_bow",
+        "cross_embedding",
+        "intra_embedding"
+      ]
+    },
+    {
+      "id": "V+B_CR+E_CR+E+SST",
+      "kernels" : [
+        "strong_linear",
+        "cross_bow",
+        "cross_embedding",
+        "intra_embedding",
+        "sst_rel_sum"
+      ]
+    },
+  ],
+  "standalone_experiments_to_sum" : [
+     {
+      "id" : "sum(V+B_CR+E_CR+E;SST)",
+      "kernels": [
+        "V+B_CR+E_CR+E",
+        "SST"
+      ]
+    }
+  ],
+
+  "standalone_systems_to_run_cv_upon" : [
+    "SST",
+    "V+B_CR+E_CR+E"
+  ],
+  "ensembles" : [
+    {
+      "id" : "META(V+B_CR+E_CR+E;SST)",
+      "kernels": [
+        "V+B_CR+E_CR+E",
+        "SST"
+      ]
+    }
+  ]
+
+}

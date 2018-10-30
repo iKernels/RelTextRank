@@ -1,10 +1,7 @@
 package it.unitn.nlpir.projectors;
 
-import it.unitn.nlpir.nodematchers.HardNodeMatcher;
 import it.unitn.nlpir.nodematchers.IMatcherWithTreeModifyingNodesMarker;
 import it.unitn.nlpir.nodematchers.NodeMatcher;
-import it.unitn.nlpir.nodematchers.TwoParentsMatchingStrategy;
-
 import it.unitn.nlpir.projectors.nodematchmarkers.ITreeModifyingNodeMarker;
 import it.unitn.nlpir.projectors.nodematchmarkers.NodesMarker;
 import it.unitn.nlpir.pruners.Pruner;
@@ -32,17 +29,27 @@ public class MultiProjector implements Projector, IMultiProjector {
 	protected final Pruner pruner;
 
 	public MultiProjector(TreeBuilder treeBuilder) {
-		this(treeBuilder, new HardNodeMatcher(new TwoParentsMatchingStrategy()), new TreeLeafFinalizer(), null);
+		//this(treeBuilder, new HardNodeMatcher(new TwoParentsMatchingStrategy()), new TreeLeafFinalizer(), null);
+		this(treeBuilder, new TreeLeafFinalizer());
 	}
 	
 	public MultiProjector(TreeBuilder treeBuilder, NodeMatcher matcher, ITreePostprocessor treeProcessor) {
 		this(treeBuilder, matcher, treeProcessor, null);
 	}
 	
+	public MultiProjector(TreeBuilder treeBuilder, ITreePostprocessor treeProcessor) {
+		this(treeBuilder, null, treeProcessor, null);
+	}
+	
+	public MultiProjector(TreeBuilder treeBuilder, ITreePostprocessor treeProcessor, Pruner pruner) {
+		this(treeBuilder, null, treeProcessor, pruner);
+	}
+	
 	public MultiProjector(TreeBuilder treeBuilder, NodeMatcher matcher, ITreePostprocessor treeProcessor, Pruner pruner) {
 		this.matchers = new ArrayList<>();
 		this.treeBuilder = treeBuilder;
-		this.matchers.add(matcher);
+		if (matcher!=null)
+			this.matchers.add(matcher);
 		this.treeProcessor = treeProcessor;
 		this.pruner = pruner;
 	}

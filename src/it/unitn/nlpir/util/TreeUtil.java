@@ -107,10 +107,6 @@ public class TreeUtil {
 				leafText = tokens[id].getLemma();
 			}
 			leafText = leafText.toLowerCase().replace("(", "[").replace(")", "]");
-			
-			//leafText = leafText.replace("(", "[").replace(")", "]");
-			
-			// leafText = cleanupWord(leafText);
 			setNodeLabel(leaf, leafText);
 		}
 	}
@@ -714,6 +710,37 @@ public class TreeUtil {
 		return chunks;
 	}
 
-	
+	public static void addNonDuplicatingSibling(Tree tree, Tree node, String label){
+		if (node.parent(tree)!=null){
+			//get parent of node to be marked
+			Tree parent = node.parent(tree);
+			
+			//get number of the node
+			int number = parent.objectIndexOf(node);
+			
+			String mark = "M";
+			if ((label.contains("-"))&&(label.split("-").length==2)){
+				mark = label.split("-")[1];
+				label = label.split("-")[0];
+			}
+			
+			if (number > -1){
+				//check if any nodes to the right already contain this label
+				boolean alreadyPresent = false;
+				for (int i = number+1; i < parent.children().length; i++){
+					if (parent.getChild(i).value().equals(label)){
+						alreadyPresent = true;
+						break;
+					}
+					
+				}
+				if (!alreadyPresent){
+					Tree childNode = TreeUtil.createNode(label);
+					parent.addChild(number+1,childNode);
+					TreeUtil.markNode(childNode, mark);
+				}
+			}
+		}
+	}
 	
 }

@@ -47,6 +47,6 @@ public class PTKSimilarity implements FeatureExtractor {
 
 	@Override
 	public String getFeatureName() {
-		return this.getClass().getSimpleName() + "." + treeProvider.getClass().getSimpleName();
+		return String.format("PTK similarity on the trees built by %s", treeProvider.getClass().getSimpleName());
 	}
 }

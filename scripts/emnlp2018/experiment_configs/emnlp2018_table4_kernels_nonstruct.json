@@ -1,0 +1,71 @@
+{
+  "standalone_experiments" : [
+    {
+      "id": "B",
+      "kernels":["intra_bow"]},
+    { "id": "V",
+      "kernels" : ["strong_linear"]},
+    { "id": "E",
+      "kernels" : ["intra_embedding"]},
+    {
+      "id": "V+E",
+      "kernels" : [
+        "intra_embedding",
+        "strong_linear"
+      ]
+    },
+    {
+      "id": "B+V+E",
+      "kernels" : [
+        "intra_embedding",
+        "strong_linear",
+        "intra_bow"
+      ]
+    },
+    { "id": "B_CR",
+      "kernels" : ["cross_bow"]},
+    { "id": "E_CR",
+      "kernels" : ["cross_embedding"]},
+    {
+      "id": "B_cr+E_cr",
+      "kernels": [
+        "cross_embedding",
+        "cross_bow"
+      ]
+    },
+    {
+      "id": "V+E_cr",
+      "kernels" : [
+        "strong_linear",
+        "cross_embedding"
+      ]
+    },
+    {
+      "id": "V+B_cr",
+      "kernels" : [
+        "strong_linear",
+        "cross_bow"
+      ]
+    },
+    {
+      "id": "V+B_CR+E_CR+E",
+      "kernels" : [
+        "strong_linear",
+        "cross_bow",
+        "cross_embedding",
+        "intra_embedding"
+      ]
+    }
+  ],
+  "standalone_experiments_to_sum" : [
+
+  ],
+
+  "standalone_systems_to_run_cv_upon" : [
+
+  ],
+  "ensembles" : [
+
+  ]
+
+}

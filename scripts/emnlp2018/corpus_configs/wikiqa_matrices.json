@@ -1,0 +1,68 @@
+{
+"precomputed_serialized_matrices": [
+    {
+        "name": "ptk_sum",
+        "description" : "sum of ptk matrix constructed using kelp for questions and answers separately",
+        "path" : {
+            "train": "data/gram-matrices/wikiqa/ptk_sum_train.npy",
+            "test" :  "data/gram-matrices/wikiqa/ptk_sum_test.npy",
+            "dev" :  "data/gram-matrices/wikiqa/ptk_sum_dev.npy"
+        }
+    },
+    {
+        "name": "ptk_mult",
+        "description" : "product of ptk matrix constructed using kelp for questions and answers separately",
+        "path" : {
+            "train": "data/gram-matrices/wikiqa/rel-ch/ptk_sst_train.npy",
+            "test" :  "data/gram-matrices/wikiqa/rel-ch/ptk_sst_test.npy",
+            "dev" :  "data/gram-matrices/wikiqa/rel-ch/ptk_sst_dev.npy"
+        }
+    },
+    {
+        "name": "sst_mult",
+        "description" : "product of sst matrix constructed using kelp for questions and answers separately",
+        "path" : {
+            "train": "data/gram-matrices/wikiqa/rel-const/sst_sst_train.npy",
+            "test" :  "data/gram-matrices/wikiqa/rel-const/sst_sst_test.npy",
+            "dev" :  "data/gram-matrices/wikiqa/rel-const/sst_sst_dev.npy"
+        }
+    },
+    {
+        "name": "ptk_rel_sum",
+        "description" : "sum of rel_ptk matrix constructed using kelp for questions and answers separately",
+        "path" : {
+            "train": "data/gram-matrices/wikiqa/rel-ch/ptk_sum_train.npy",
+            "test" :  "data/gram-matrices/wikiqa/rel-ch/ptk_sum_test.npy",
+            "dev" :  "data/gram-matrices/wikiqa/rel-ch/ptk_sum_dev.npy"
+        }
+    },
+    {
+        "name": "sst_rel_sum",
+        "description" : "sum of rel_sst matrix constructed using kelp for questions and answers separately",
+        "path" : {
+            "train": "data/gram-matrices/wikiqa/rel-const/sst_sum_train.npy",
+            "test" :  "data/gram-matrices/wikiqa/rel-const/sst_sum_test.npy",
+            "dev" :  "data/gram-matrices/wikiqa/rel-const/sst_sum_dev.npy"
+        }
+    },
+    {
+        "name": "sst_sum",
+        "description" : "sum of sst-const matrix constructed using kelp for questions and answers separately",
+        "path" : {
+            "train": "data/gram-matrices/wikiqa/sst_sum_train.npy",
+            "test" :  "data/gram-matrices/wikiqa/sst_sum_test.npy",
+            "dev" :  "data/gram-matrices/wikiqa/sst_sum_dev.npy"
+        }
+    },
+    {
+        "name": "cross_bow",
+        "path" : {
+            "train": "data/gram-matrices/wikiqa/bow_qq_aa_matrix_train.npy",
+            "test" :  "data/gram-matrices/wikiqa/bow_qq_aa_matrix_test.npy",
+            "dev" :  "data/gram-matrices/wikiqa/bow_qq_aa_matrix_dev.npy"
+        },
+        "description" : "cross-pair matrix based on bag of words. It is a sum of gram matrices, where each gram matrix is constructed by applying a linear kernel to the normalized bag-of-ngram representation of texts. There are 23 variants of different n-grams overall."
+    }
+
+]
+}

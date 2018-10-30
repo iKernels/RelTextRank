@@ -1,14 +1,12 @@
 package it.unitn.nlpir.nodematchers;
 
+import it.unitn.nlpir.nodematchers.strategies.MatchingStrategy;
 import it.unitn.nlpir.projectors.MatchedNode;
 import it.unitn.nlpir.types.QuestionFocus;
 import it.unitn.nlpir.types.Token;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.uima.jcas.JCas;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.uimafit.util.JCasUtil;
 
 import edu.stanford.nlp.trees.Tree;
@@ -18,7 +16,7 @@ import edu.stanford.nlp.trees.Tree;
  * 
  */
 public class FocusNodeMarker extends ThreshFocusNodeMarker implements NodeMatcher {
-	private final static Logger logger = LoggerFactory.getLogger(FocusNodeMarker.class);
+	
 	
 	private final static String defaultRelTag = "REL";
 	

@@ -1,12 +1,10 @@
 package it.unitn.nlpir.nodematchers.lct;
 
-import it.unitn.nlpir.nodematchers.MatchingStrategy;
 import it.unitn.nlpir.nodematchers.NodeMatcher;
+import it.unitn.nlpir.nodematchers.strategies.MatchingStrategy;
 import it.unitn.nlpir.projectors.MatchedNode;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import edu.stanford.nlp.trees.Tree;
 
 /**
@@ -16,7 +14,7 @@ import edu.stanford.nlp.trees.Tree;
  * 
  */
 public class LCTTwoStrategyFocusEntityNodeMatcher extends LCTFocusEntityNodeMatcher implements NodeMatcher, EnhancedNodeMatcher {
-	private final static Logger logger = LoggerFactory.getLogger(LCTTwoStrategyFocusEntityNodeMatcher.class);
+	
 	
 	private final static String defaultRelTag = "REL";
 	

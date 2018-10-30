@@ -24,6 +24,7 @@ public class Result {
 	public final String relevantFlag;
 	public String documentText;
 	public String answerPhrase;
+	public final static String TRUE = "true";
 	protected static final Logger logger = LoggerFactory.getLogger(TextPairConversionBase.class);
 	
 	/**

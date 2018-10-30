@@ -1,0 +1,15 @@
+train_q=data/wikiQA/WikiQA-train.questions.txt
+train_a=data/wikiQA/WikiQA-train.tsv.resultset
+train_c=CASes/wikiqa/train
+
+dev_q=data/wikiQA/WikiQA-dev.questions.txt
+dev_a=data/wikiQA/WikiQA-dev.tsv.resultset
+dev_c=CASes/wikiqa/dev
+
+test_q=data/wikiQA/WikiQA-test.questions.txt
+test_a=data/wikiQA/WikiQA-test.tsv.resultset
+test_c=CASes/wikiqa/test
+
+train_n=10
+test_n=1000
+dev_n=1000

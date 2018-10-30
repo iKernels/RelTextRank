@@ -1,5 +1,6 @@
 package it.unitn.nlpir.nodematchers;
 
+import it.unitn.nlpir.nodematchers.strategies.MatchingStrategy;
 import it.unitn.nlpir.projectors.MatchedNode;
 import it.unitn.nlpir.types.Token;
 import it.unitn.nlpir.uima.TokenTextGetter;

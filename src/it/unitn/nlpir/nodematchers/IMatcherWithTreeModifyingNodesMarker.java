@@ -4,4 +4,5 @@ import it.unitn.nlpir.projectors.nodematchmarkers.ITreeModifyingNodeMarker;
 
 public interface IMatcherWithTreeModifyingNodesMarker {
 	public ITreeModifyingNodeMarker getNodeMarker();
+	public void setNodeMarker(ITreeModifyingNodeMarker marker);
 }

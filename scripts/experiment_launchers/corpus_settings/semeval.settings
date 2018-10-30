@@ -1,0 +1,15 @@
+train_q=data/semeval2016/train-questions.txt
+train_a=data/semeval2016/train-candidates.txt
+train_c=CASes/semeval2016/train
+
+dev_q=data/semeval2016/dev-questions.txt
+dev_a=data/semeval2016/dev-candidates.txt
+dev_c=CASes/semeval2016/dev
+
+test_q=data/semeval2016/test-questions.txt
+test_a=data/semeval2016/test-candidates.txt
+test_c=CASes/semeval2016/test
+
+train_n=10
+test_n=1000
+dev_n=1000

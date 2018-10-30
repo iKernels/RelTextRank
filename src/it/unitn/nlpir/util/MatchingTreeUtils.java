@@ -1,6 +1,6 @@
 package it.unitn.nlpir.util;
 
-import it.unitn.nlpir.nodematchers.MatchingStrategy;
+import it.unitn.nlpir.nodematchers.strategies.MatchingStrategy;
 import it.unitn.nlpir.projectors.MatchedNode;
 import it.unitn.nlpir.types.CoreferenceChain;
 import it.unitn.nlpir.types.Mention;
