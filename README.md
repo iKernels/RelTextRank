@@ -19,10 +19,10 @@ export CLASSPATH=${CLASSPATH}:bin/:target/dependency/*:target/classes
 mkdir logs
 ```
 # Reproducing the EMNLP 2018 results
-If you wish, to reproduce the results from our most recent publication:
+If you want to reproduce the results from our most recent publication
 *  Tymoshenko, K. and Moschitti, A. (2018). [Cross-Pair Text Representations for Answer Sentence Selection.](http://aclweb.org/anthology/D18-1240) In EMNLP.
 
-please install the tool as above and follow the instructions at the [wiki page](https://github.com/iKernels/RelationalTextRanking/wiki/Reproducing-the-results-in-the-EMNLP-paper-%22Cross-Pair-Text-Representations-for-Answer-Sentence-Selection%22). 
+please install the tool as above and follow the instructions at the [wiki page](https://github.com/iKernels/RelTextRank/wiki/Reproducing-the-results-in-the-EMNLP-2018-paper-%22Cross-Pair-Text-Representations-for-Answer-Sentence-Selection%22). 
 
 # Running the experiments with structural representations
 
@@ -36,9 +36,9 @@ You can use the tool to build the structures employed in the following papers:
 
 * Tymoshenko, K., Bonadiman, D., & Moschitti, A. (2016). [Learning to rank non-factoid answers: Comment selection in Web forums.](https://doi.org/10.1145/2983323.2983906) In CIKM. 
 
-* Tymoshenko, K., Bonadiman, D., & Moschitti, A. (2016). [Convolutional neural networks vs. convolution kernels: Feature engineering for answer sentence reranking] (http://www.aclweb.org/anthology/N16-1152). In NAACL HLT.
+* Tymoshenko, K., Bonadiman, D., & Moschitti, A. (2016). [Convolutional neural networks vs. convolution kernels: Feature engineering for answer sentence reranking](http://www.aclweb.org/anthology/N16-1152). In NAACL HLT.
 
-*(Note, that the results might slightly differ to the results reported in the above works due to changes in the code).*
+*(Note, that the results might slightly differ from the results reported in the above works due to some minor changes in the code).*
 
 We show how to run the experiments on the example of the WikiQA dataset.
 
