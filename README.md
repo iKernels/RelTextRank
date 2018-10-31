@@ -55,7 +55,9 @@ python scripts/converters/wikiqa_convert.py ${wikiqa_location}/WikiQA-dev.tsv da
 ```
 
 It may take a long time to train the pipeline on the full-scale data on a single machine. If you wish to train on the subset of data,
-run the following command to prepare the input file with the toy input data:
+run the following command to prepare the input file with the 
+
+input data:
 ```bash
 python scripts/converters/extract_trainset_subset.py -i data/wikiQA/WikiQA-train.questions.txt -o  data/wikiQA/WikiQA-train.questions.toy.txt -p 0.3
 ```
@@ -67,7 +69,6 @@ We provide a conveniency python script which generates a shell script which runs
 ```bash 
 python scripts/experiment_launchers/experiment_launcher.py  
 ```
-You may find the detailed description of the script's parameters in the github Wiki [TODO: put a link].
 
 Below you may find examples of the commands to generate the shell scripts which will run end-to-end experiments with different structural representations and the Partial Tree Kernel SVM on WikiQA.
 
@@ -79,7 +80,7 @@ export corpus_name=wikiqa
 ```
 OR 
 
-To train on toy data (hopefully, fast):
+To train on toy data (should be fast but less accurate):
 ```bash
 export corpus_name=wikiqa_toy
 ```
