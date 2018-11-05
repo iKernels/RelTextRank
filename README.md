@@ -1,3 +1,11 @@
+# Installation
+
+## Prerequisites
+The tool requires the following prerequisites:
+*	Java 1.8+
+*	Apache Maven > 3.3.9. Refer to http://maven.apache.org/install.html for the installation instructions
+* Python 2.7.x (required by the evaluation script and for reproducing the experiments on cross-pair kernels)
+
 ## Installing
 ```bash
 git clone https://github.com/iKernels/RelTextRank.git
@@ -19,10 +27,10 @@ export CLASSPATH=${CLASSPATH}:bin/:target/dependency/*:target/classes
 mkdir logs
 ```
 # Reproducing the EMNLP 2018 results
-If you wish, to reproduce the results from our most recent publication:
+If you want to reproduce the results from our most recent publication
 *  Tymoshenko, K. and Moschitti, A. (2018). [Cross-Pair Text Representations for Answer Sentence Selection.](http://aclweb.org/anthology/D18-1240) In EMNLP.
 
-please install the tool as above and follow the instructions at the [wiki page](https://github.com/iKernels/RelationalTextRanking/wiki/Reproducing-the-results-in-the-EMNLP-paper-%22Cross-Pair-Text-Representations-for-Answer-Sentence-Selection%22). 
+please install the tool as above and follow the instructions at the [wiki page](https://github.com/iKernels/RelTextRank/wiki/Reproducing-the-results-in-the-EMNLP-2018-paper-%22Cross-Pair-Text-Representations-for-Answer-Sentence-Selection%22). 
 
 # Running the experiments with structural representations
 
@@ -36,9 +44,9 @@ You can use the tool to build the structures employed in the following papers:
 
 * Tymoshenko, K., Bonadiman, D., & Moschitti, A. (2016). [Learning to rank non-factoid answers: Comment selection in Web forums.](https://doi.org/10.1145/2983323.2983906) In CIKM. 
 
-* Tymoshenko, K., Bonadiman, D., & Moschitti, A. (2016). [Convolutional neural networks vs. convolution kernels: Feature engineering for answer sentence reranking] (http://www.aclweb.org/anthology/N16-1152). In NAACL HLT.
+* Tymoshenko, K., Bonadiman, D., & Moschitti, A. (2016). [Convolutional neural networks vs. convolution kernels: Feature engineering for answer sentence reranking](http://www.aclweb.org/anthology/N16-1152). In NAACL HLT.
 
-*(Note, that the results might slightly differ to the results reported in the above works due to changes in the code).*
+*(Note, that the results might slightly differ from the results reported in the above works due to some minor changes in the code).*
 
 We show how to run the experiments on the example of the WikiQA dataset.
 
@@ -55,7 +63,9 @@ python scripts/converters/wikiqa_convert.py ${wikiqa_location}/WikiQA-dev.tsv da
 ```
 
 It may take a long time to train the pipeline on the full-scale data on a single machine. If you wish to train on the subset of data,
-run the following command to prepare the input file with the toy input data:
+run the following command to prepare the input file with the 
+
+input data:
 ```bash
 python scripts/converters/extract_trainset_subset.py -i data/wikiQA/WikiQA-train.questions.txt -o  data/wikiQA/WikiQA-train.questions.toy.txt -p 0.3
 ```
@@ -67,7 +77,6 @@ We provide a conveniency python script which generates a shell script which runs
 ```bash 
 python scripts/experiment_launchers/experiment_launcher.py  
 ```
-You may find the detailed description of the script's parameters in the github Wiki [TODO: put a link].
 
 Below you may find examples of the commands to generate the shell scripts which will run end-to-end experiments with different structural representations and the Partial Tree Kernel SVM on WikiQA.
 
@@ -79,7 +88,7 @@ export corpus_name=wikiqa
 ```
 OR 
 
-To train on toy data (hopefully, fast):
+To train on toy data (should be fast but less accurate):
 ```bash
 export corpus_name=wikiqa_toy
 ```
