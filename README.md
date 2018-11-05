@@ -1,3 +1,11 @@
+# Installation
+
+## Prerequisites
+The tool requires the following prerequisites:
+*	Java 1.8+
+*	Apache Maven > 3.3.9. Refer to http://maven.apache.org/install.html for the installation instructions
+* Python 2.7.x (required by the evaluation script and for reproducing the experiments on cross-pair kernels)
+
 ## Installing
 ```bash
 git clone https://github.com/iKernels/RelTextRank.git
