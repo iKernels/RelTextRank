@@ -26,12 +26,40 @@ export CLASSPATH=${CLASSPATH}:bin/:target/dependency/*:target/classes
 
 mkdir logs
 ```
+
+### Setting up DKPRO
+Additional DKPro resources for computing semantic Wikipedia and WordNet-based DKPro similarity featuress, if required. You do not need to do this, if you are going to generate the structures only following  examples in this readme.
+Refer to https://dkpro.github.io/dkpro-similarity/settinguptheresources/ for the instructions on how to setup the following DKPro resources 
+(Please, remember to set up the DKPRO_HOME environment variable as described in the installation instructions web-page):
+  * **WordNet Lexical Semantic Resource index.**  Follow all the official installation instructions, but substitute the original wordnet_properties.xml file supplied within WordNet resource graph archive, with the following file instead: https://raw.githubusercontent.com/dkpro/dkpro-lsr/master/de.tudarmstadt.ukp.dkpro.lexsemresource.wordnet-asl/src/main/resources/resource/WordNet_3/wordnet_properties.xml.
+
+    We do not employ Wiktionary in the pipeline. Therefore, you need to remove the following lines from the resources.xml file (or, alternatively, you may download and install the Wiktionary resources as described in the DKPro installation instructions):
+    ```xml
+    <bean id="wiktionary-en" lazy-init="true" class="de.tudarmstadt.ukp.dkpro.lexsemresource.wiktionary.WiktionaryResource">
+    <constructor-arg value="ENGLISH"/>
+    <constructor-arg value="${DKPRO_HOME}/LexSemResources/Wiktionary/jwktl_0.15.2_en20100403"/>
+    </bean>
+    ```
+    
+    Addtionaly:
+       * make sure to set up the correct paths to your WordNet resources in  ```${DKPRO_HOME}/LexSemResources/WordNet_3x/wordnet_properties.xml``` (check line 51).
+       * check that  that the WordNet entry in ```${DKPRO_HOME}/de.tudarmstadt.ukp.dkpro.lexsemresource.core.ResourceFactory/resources.xml``` looks as follows:
+         ```xml
+         <bean id="wordnet3-en" lazy-init="true"
+                class="de.tudarmstadt.ukp.dkpro.lexsemresource.wordnet.WordNetResource">
+                <constructor-arg value="${DKPRO_HOME}/LexSemResources/WordNet_3x/wordnet_properties.xml"/>
+         </bean>
+         ```
+          
+ *	**Wikipedia Explicit Semantic Analysis index.** If you want to be able to access to the full range of features available in this pipeline, please, download the precompiled the Wikipedia Explicit Semantic Analysis index (see the Explicit Semantic Analysis: Vector Indexes section of the DKPro installation instructions).
+
 # Reproducing the EMNLP 2018 results
 If you want to reproduce the results from our most recent publication
 *  Tymoshenko, K. and Moschitti, A. (2018). [Cross-Pair Text Representations for Answer Sentence Selection.](http://aclweb.org/anthology/D18-1240) In EMNLP.
 
 please install the tool as above and follow the instructions at the [wiki page](https://github.com/iKernels/RelTextRank/wiki/Reproducing-the-results-in-the-EMNLP-2018-paper-%22Cross-Pair-Text-Representations-for-Answer-Sentence-Selection%22). 
 
+Note that you need to set up the WordNet Lexical Semantic Resource index and the ```DKPRO_HOME``` environment variable if you wish to reproduce the EMNLP 18 results.
 # Running the experiments with structural representations
 
 You can use the tool to build the structures employed in the following papers:
