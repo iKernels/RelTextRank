@@ -49,7 +49,7 @@ Refer to https://dkpro.github.io/dkpro-similarity/settinguptheresources/ for the
                 class="de.tudarmstadt.ukp.dkpro.lexsemresource.wordnet.WordNetResource">
                 <constructor-arg value="${DKPRO_HOME}/LexSemResources/WordNet_3x/wordnet_properties.xml"/>
          </bean>
-        ```
+         ```
           
  *	**Wikipedia Explicit Semantic Analysis index.** If you want to be able to access to the full range of features available in this pipeline, please, download the precompiled the Wikipedia Explicit Semantic Analysis index (see the Explicit Semantic Analysis: Vector Indexes section of the DKPro installation instructions).
 
