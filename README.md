@@ -40,6 +40,17 @@ Refer to https://dkpro.github.io/dkpro-similarity/settinguptheresources/ for the
     <constructor-arg value="${DKPRO_HOME}/LexSemResources/Wiktionary/jwktl_0.15.2_en20100403"/>
     </bean>
     ```
+    
+    Addtionaly:
+       * make sure to set up the correct paths to your WordNet resources in  ```${DKPRO_HOME}/LexSemResources/WordNet_3x/wordnet_properties.xml``` (check line 51).
+       * check that  that the WordNet entry in ```${DKPRO_HOME}/de.tudarmstadt.ukp.dkpro.lexsemresource.core.ResourceFactory/resources.xml``` looks as follows:
+         ```xml
+         <bean id="wordnet3-en" lazy-init="true"
+                class="de.tudarmstadt.ukp.dkpro.lexsemresource.wordnet.WordNetResource">
+                <constructor-arg value="${DKPRO_HOME}/LexSemResources/WordNet_3x/wordnet_properties.xml"/>
+         </bean>
+        ```
+          
  *	**Wikipedia Explicit Semantic Analysis index.** If you want to be able to access to the full range of features available in this pipeline, please, download the precompiled the Wikipedia Explicit Semantic Analysis index (see the Explicit Semantic Analysis: Vector Indexes section of the DKPro installation instructions).
 
 # Reproducing the EMNLP 2018 results
