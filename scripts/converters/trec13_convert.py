@@ -66,7 +66,8 @@ def convert_input_file(data_file, remove_space_before_punkt=False):
     return questions, answers
 
 if __name__ == '__main__':
-    if len(sys.argv)!=2:
+    print len(sys.argv)
+    if len(sys.argv)!=3:
         print "Usage: python scripts/converters/trec13_convert.py <input_data_folder> <output_folder>"
         sys.exit(0)
 

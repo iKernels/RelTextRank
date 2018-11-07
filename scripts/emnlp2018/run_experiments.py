@@ -89,6 +89,7 @@ if __name__ == '__main__':
                                        label=key, show_test=True,
                                        skip_all_positives_and_all_negatives=args.remove_irrelevant)
         rwriter.write_results(key,standalone_predictions[key])
+        messages.append(message)
 
     logging.info("Results obtained by the standalone systems: ")
     for m in messages:
@@ -97,7 +98,7 @@ if __name__ == '__main__':
 
     # SUMMING OUTPUTS OF SELECTED STANDALONE SYSTEMS
     combo_rez = defaultdict(dict)
-    messages = []
+    sum_messages = []
     for experiment in experiments_config["standalone_experiments_to_sum"]:
         standalone_system_names = set(experiment["kernels"])
 
@@ -111,10 +112,10 @@ if __name__ == '__main__':
                                            label=experiment_id, show_test=True,
                                            skip_all_positives_and_all_negatives=args.remove_irrelevant)
         rwriter.write_results(experiment_id, combo_rez[experiment_id])
-        messages.append(message)
+        sum_messages.append(message)
 
     logging.info("Results obtained by the simple ensemble systems which simply sum outputs of the basic systems")
-    for m in messages:
+    for m in sum_messages:
         logging.info(m)
 
 
@@ -140,10 +141,11 @@ if __name__ == '__main__':
     for label, pred in cv_predictions.items():
         macrop = evaluate_macro_performance_and_std(pred)
         message = u"%s\t%5.2f \u00B1%5.2f\t%5.2f \u00B1%5.2f\t%5.2f \u00B1%5.2f" % (tuple([label]) + tuple(macrop))
-        print message
+        print message.encode('utf-8')
 
     #RUNNING ENSEMBLE SYSTEMS WITH LOGISTIC REGRESSION
     ensemble_systems = [(k["id"], k["kernels"]) for k in experiments_config["ensembles"]]
+    meta_messages=[]
     for system_name, feature_names in ensemble_systems:
         train_X, train_Y = get_metaclassifier_training_data_and_labels(cv_predictions, feature_names)
         X = get_metaclassifier_prediction_data(standalone_predictions, feature_names)
@@ -154,4 +156,25 @@ if __name__ == '__main__':
         for mode in [DEV, TEST]:
             ensemble_scores[mode] = classifier.predict_proba(X[mode])[:, 1]
         rwriter.write_results(system_name, ensemble_scores)
-        print evaluate_and_get_message(corpus.dataset, ensemble_scores, label=system_name, show_test=True)
+        meta_messages.append(evaluate_and_get_message(corpus.dataset, ensemble_scores, label=system_name, show_test=True))
+    
+    print ""
+    print "************"
+    print "Results obtained by the standalone SVMs which sum several kernels with different features (please refer to the paper for the notation explanations)"
+    print "System\tMRR-DEV\tMAP-DEV\tP@1-DEV\tMRR-TEST\tMAP-TEST\tP@1-TEST"
+    for m in messages:
+        
+        print m
+    
+    print ""
+    print "Results obtained by the simple ensemble systems which simply sum outputs of the basic systems"
+    print "System\tMRR-DEV\tMAP-DEV\tP@1-DEV\tMRR-TEST\tMAP-TEST\tP@1-TEST"
+    for m in sum_messages:
+
+        print m      
+
+    print ""
+    print "Results obtained by the logistic-regression meta_classifier"
+    print "System\tMRR-DEV\tMAP-DEV\tP@1-DEV\tMRR-TEST\tMAP-TEST\tP@1-TEST"
+    for m in meta_messages:
+        print m

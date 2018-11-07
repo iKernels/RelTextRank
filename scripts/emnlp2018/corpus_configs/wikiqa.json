@@ -1,6 +1,6 @@
 {
 "basedir": "",
-"dataset_pickled_path": "data/wikiQA/pkl/wikiqa.pkl",
+"dataset_pickled_path": "data/wikiqa/pkl/wikiqa.pkl",
 "examples_train": 10,
 "answers_files" : [
   {
@@ -41,7 +41,7 @@
     }
  ],
  "pandas_based_feature_files": [
-     {"feature_file" : "data/wikiQA/pkl/embeddings.pkl.gz",
+     {"feature_file" : "data/wikiqa/pkl/embeddings.pkl.gz",
      "description" : "embedding-based features"}
  ],
 

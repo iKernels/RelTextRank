@@ -73,7 +73,7 @@ for expclass in CHExperiment ConstExperiment; do
     echo "extracting the ${expclass} representation of the input data for cross-pair tree kernel computation and saving it to data/examples/${corpusname}_${expclass}_emnlp2018"
     pipeline_cmd=`eval python scripts/experiment_launchers/experiment_launcher_generic.py ${focus_cmd} -l ${corpusname} -o scripts/generated_scripts/cross_pair -c ${expclass} -e it.unitn.nlpir.experiment.fqa.${expclass} -s it.unitn.nlpir.system.core.ClassTextPairConversion --only_data_generation -d emnlp2018 --pararellize_annotation`
     echo "Running ${pipeline_cmd}"
-    eval  ${pipeline_cmd}
+    ${pipeline_cmd}
     wait
 done
 
@@ -111,7 +111,7 @@ if [ ${corpusname} != "semeval" ]; then
     cmd_feats=`python scripts/experiment_launchers/experiment_launcher_generic.py -l ${corpusname} -o scripts/generated_scripts/cross_pair -c noesa_strong_features -e it.unitn.nlpir.experiment.fqa.features.${expclass} -s it.unitn.nlpir.system.nonstruct.NonStructClassTextPairConversion --only_data_generation -d emnlp2018 --pararellize_annotation -a " -featureExtractorClass  it.unitn.nlpir.features.presets.NoESANoQCAllFeatures"`
 #    nohup sh scripts/generated_scripts/cross_pair/${corpusname}_noesa_strong_features_emnlp2018.sh > logs/${corpusname}_noesa_strong_features_emnlp2018.log 2>&1  &
     echo ${cmd_feats}
-    eval ${cmd_feats}
+    ${cmd_feats}
     wait
 fi
 echo "DONE"
