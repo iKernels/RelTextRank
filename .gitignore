@@ -15,6 +15,7 @@ copyto_new_server_mac.sh
 distrib_copy_to_new_server_mac.sh
 bin/*
 data/*
+scripts/generated_scripts/*
 #=======java ignore files=======
 *.class
 
