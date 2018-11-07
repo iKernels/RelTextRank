@@ -203,3 +203,5 @@ Copy-paste the first line, namely
 ```
 to http://ironcreek.net/phpsyntaxtree/? and you will see the visualization of your question and answer trees.
 
+# License
+This software is licensed under [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0) license.
